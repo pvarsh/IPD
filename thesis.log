@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  9 MAY 2014 11:55
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  9 MAY 2014 14:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -340,13 +340,13 @@ Chapter 4.
 [8
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 143.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 161.
 
  (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 143.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 161.
  [9]
 Chapter 5.
 [10
@@ -361,7 +361,7 @@ Here is how much of TeX's memory you used:
  6399 multiletter control sequences out of 15000+600000
  11074 words of font info for 43 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 42i,6n,28p,1673b,188s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,6n,28p,1673b,190s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/publ
@@ -371,7 +371,7 @@ msfonts/cm/cmsy10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmti12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfo
 nts/symbols/msbm10.pfb>
-Output written on thesis.pdf (11 pages, 116018 bytes).
+Output written on thesis.pdf (11 pages, 119645 bytes).
 PDF statistics:
  72 PDF objects out of 1000 (max. 8388607)
  50 compressed objects within 1 object stream
