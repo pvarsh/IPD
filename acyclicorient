@@ -1,0 +1,556 @@
+%%Created by jPicEdt 1.4.1_03: mixed JPIC-XML/LaTeX format
+%%Mon Jan 28 10:01:50 PST 2013
+%%Begin JPIC-XML
+%<?xml version="1.0" standalone="yes"?>
+%<jpic x-min="0" x-max="105" y-min="-3.12" y-max="94.38" auto-bounding="true">
+%<ellipse p3= "(43.12,23.12)"
+%	 p2= "(43.12,25.62)"
+%	 fill-style= "solid"
+%	 p1= "(40.62,25.62)"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<ellipse p3= "(51.25,8.75)"
+%	 p2= "(51.25,11.25)"
+%	 fill-style= "solid"
+%	 p1= "(48.75,11.25)"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<ellipse p3= "(35,8.75)"
+%	 p2= "(35,11.25)"
+%	 fill-style= "solid"
+%	 p1= "(32.5,11.25)"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(0,60);(0,60);(90,40);(90,40)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(32.5,90);(32.5,90);(69.38,0);(69.38,0)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(11.25,10.62);(11.25,10.62);(81.88,81.88);(81.88,81.88)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(41.88,24.38);(41.88,24.38);(50,10);(50,10)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(50,10);(50,10);(33.75,10);(33.75,10)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(33.75,10);(33.75,10);(41.88,24.38);(41.88,24.38)"
+%	 />
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(81.25,-3.12)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$x_1=x_2$
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(105,38.12)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$x_1=x_3$
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(90.62,86.25)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$x_2=x_3$
+%</text>
+%<multicurve fill-style= "none"
+%	 points= "(40.62,10);(40.62,10);(43.12,8.12);(43.12,8.12)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(40.62,10);(40.62,10);(43.12,11.88);(43.12,11.88)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(36.88,15.62);(36.88,15.62);(36.88,18.75);(36.88,18.75)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(36.88,15.62);(36.88,15.62);(40,16.88);(40,16.88)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(46.88,15.62);(46.88,15.62);(46.88,18.75);(46.88,18.75)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(46.88,15.62);(46.88,15.62);(43.75,16.88);(43.75,16.88)"
+%	 />
+%<ellipse p3= "(79.38,33.12)"
+%	 p2= "(79.38,35.62)"
+%	 fill-style= "solid"
+%	 p1= "(76.88,35.62)"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<ellipse p3= "(87.5,18.75)"
+%	 p2= "(87.5,21.25)"
+%	 fill-style= "solid"
+%	 p1= "(85,21.25)"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<ellipse p3= "(71.25,18.75)"
+%	 p2= "(71.25,21.25)"
+%	 fill-style= "solid"
+%	 p1= "(68.75,21.25)"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(78.12,34.38);(78.12,34.38);(86.25,20);(86.25,20)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(86.25,20);(86.25,20);(70,20);(70,20)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(70,20);(70,20);(78.12,34.38);(78.12,34.38)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(73.12,25.62);(73.12,25.62);(73.12,28.75);(73.12,28.75)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(73.12,25.62);(73.12,25.62);(76.25,26.88);(76.25,26.88)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(83.12,25.62);(83.12,25.62);(83.12,28.75);(83.12,28.75)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(83.12,25.62);(83.12,25.62);(80,26.88);(80,26.88)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(79.38,20);(79.38,20);(76.88,21.88);(76.88,21.88)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(79.38,20);(79.38,20);(76.88,18.12);(76.88,18.12)"
+%	 />
+%<ellipse p3= "(13.12,46.25)"
+%	 p2= "(13.12,48.75)"
+%	 fill-style= "solid"
+%	 p1= "(10.62,48.75)"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<ellipse p3= "(21.25,31.88)"
+%	 p2= "(21.25,34.38)"
+%	 fill-style= "solid"
+%	 p1= "(18.75,34.38)"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<ellipse p3= "(5,31.88)"
+%	 p2= "(5,34.38)"
+%	 fill-style= "solid"
+%	 p1= "(2.5,34.38)"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(11.88,47.5);(11.88,47.5);(20,33.12);(20,33.12)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(20,33.12);(20,33.12);(3.75,33.12);(3.75,33.12)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(3.75,33.12);(3.75,33.12);(11.88,47.5);(11.88,47.5)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(10.62,33.12);(10.62,33.12);(13.12,31.25);(13.12,31.25)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(10.62,33.12);(10.62,33.12);(13.12,35);(13.12,35)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(6.88,38.75);(6.88,38.75);(6.88,41.88);(6.88,41.88)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(6.88,38.75);(6.88,38.75);(10,40);(10,40)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(15.62,41.25);(15.62,41.25);(18.12,39.38);(18.12,39.38)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(15.62,41.25);(15.62,41.25);(15.62,38.12);(15.62,38.12)"
+%	 />
+%<ellipse p3= "(85.62,66.88)"
+%	 p2= "(85.62,69.38)"
+%	 fill-style= "solid"
+%	 p1= "(83.12,69.38)"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<ellipse p3= "(93.75,52.5)"
+%	 p2= "(93.75,55)"
+%	 fill-style= "solid"
+%	 p1= "(91.25,55)"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<ellipse p3= "(77.5,52.5)"
+%	 p2= "(77.5,55)"
+%	 fill-style= "solid"
+%	 p1= "(75,55)"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(84.38,68.12);(84.38,68.12);(92.5,53.75);(92.5,53.75)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(92.5,53.75);(92.5,53.75);(76.25,53.75);(76.25,53.75)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(76.25,53.75);(76.25,53.75);(84.38,68.12);(84.38,68.12)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(89.38,59.38);(89.38,59.38);(89.38,62.5);(89.38,62.5)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(89.38,59.38);(89.38,59.38);(86.25,60.62);(86.25,60.62)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(85.62,53.75);(85.62,53.75);(83.12,55.62);(83.12,55.62)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(85.62,53.75);(85.62,53.75);(83.12,51.88);(83.12,51.88)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(81.25,62.5);(81.25,62.5);(81.25,58.75);(81.25,58.75)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(81.25,62.5);(81.25,62.5);(78.12,60.62);(78.12,60.62)"
+%	 />
+%<ellipse p3= "(56.88,87.5)"
+%	 p2= "(56.88,90)"
+%	 fill-style= "solid"
+%	 p1= "(54.38,90)"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<ellipse p3= "(65,73.12)"
+%	 p2= "(65,75.62)"
+%	 fill-style= "solid"
+%	 p1= "(62.5,75.62)"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<ellipse p3= "(48.75,73.12)"
+%	 p2= "(48.75,75.62)"
+%	 fill-style= "solid"
+%	 p1= "(46.25,75.62)"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(55.62,88.75);(55.62,88.75);(63.75,74.38);(63.75,74.38)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(63.75,74.38);(63.75,74.38);(47.5,74.38);(47.5,74.38)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(47.5,74.38);(47.5,74.38);(55.62,88.75);(55.62,88.75)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(56.88,74.38);(56.88,74.38);(54.38,76.25);(54.38,76.25)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(56.88,74.38);(56.88,74.38);(54.38,72.5);(54.38,72.5)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(52.5,83.12);(52.5,83.12);(52.5,79.38);(52.5,79.38)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(52.5,83.12);(52.5,83.12);(49.38,81.25);(49.38,81.25)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(58.75,83.12);(58.75,83.12);(58.75,79.38);(58.75,79.38)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(58.75,83.12);(58.75,83.12);(61.88,81.25);(61.88,81.25)"
+%	 />
+%<ellipse p3= "(21.25,80.62)"
+%	 p2= "(21.25,83.12)"
+%	 fill-style= "solid"
+%	 p1= "(18.75,83.12)"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<ellipse p3= "(29.38,66.25)"
+%	 p2= "(29.38,68.75)"
+%	 fill-style= "solid"
+%	 p1= "(26.88,68.75)"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<ellipse p3= "(13.12,66.25)"
+%	 p2= "(13.12,68.75)"
+%	 fill-style= "solid"
+%	 p1= "(10.62,68.75)"
+%	 closure= "open"
+%	 angle-end= "0"
+%	 angle-start= "0"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(20,81.88);(20,81.88);(28.12,67.5);(28.12,67.5)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(28.12,67.5);(28.12,67.5);(11.88,67.5);(11.88,67.5)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(11.88,67.5);(11.88,67.5);(20,81.88);(20,81.88)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(16.88,76.25);(16.88,76.25);(16.88,72.5);(16.88,72.5)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(16.88,76.25);(16.88,76.25);(13.75,74.38);(13.75,74.38)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(23.12,76.25);(23.12,76.25);(23.12,72.5);(23.12,72.5)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(23.12,76.25);(23.12,76.25);(26.25,74.38);(26.25,74.38)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(18.75,67.5);(18.75,67.5);(21.25,69.38);(21.25,69.38)"
+%	 />
+%<multicurve fill-style= "none"
+%	 points= "(18.75,67.5);(18.75,67.5);(21.25,65.62);(21.25,65.62)"
+%	 />
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(46.25,69.38)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$1$
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(63.12,69.38)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$2$
+%</text>
+%<text text-vert-align= "center-v"
+%	 fill-style= "none"
+%	 anchor-point= "(55.62,94.38)"
+%	 text-frame= "noframe"
+%	 text-hor-align= "center-h"
+%	 >
+%$3$
+%</text>
+%</jpic>
+%%End JPIC-XML
+%LaTeX-picture environment using emulated lines and arcs
+%You can rescale the whole picture (to 80% for instance) by using the command \def\JPicScale{0.8}
+\ifx\JPicScale\undefined\def\JPicScale{1}\fi
+\unitlength \JPicScale mm
+\begin{picture}(105,94.38)(0,0)
+\linethickness{0.3mm}
+\put(41.87,24.37){\circle*{2.5}}
+
+\linethickness{0.3mm}
+\put(50,10){\circle*{2.5}}
+
+\linethickness{0.3mm}
+\put(33.75,10){\circle*{2.5}}
+
+\linethickness{0.3mm}
+\multiput(0,60)(0.54,-0.12){167}{\line(1,0){0.54}}
+\linethickness{0.3mm}
+\multiput(32.5,90)(0.12,-0.29){307}{\line(0,-1){0.29}}
+\linethickness{0.3mm}
+\multiput(11.25,10.62)(0.12,0.12){589}{\line(0,1){0.12}}
+\linethickness{0.3mm}
+\multiput(41.88,24.38)(0.12,-0.21){68}{\line(0,-1){0.21}}
+\linethickness{0.3mm}
+\put(33.75,10){\line(1,0){16.25}}
+\linethickness{0.3mm}
+\multiput(33.75,10)(0.12,0.21){68}{\line(0,1){0.21}}
+\put(81.25,-3.12){\makebox(0,0)[cc]{$x_1=x_2$}}
+
+\put(105,38.12){\makebox(0,0)[cc]{$x_1=x_3$}}
+
+\put(90.62,86.25){\makebox(0,0)[cc]{$x_2=x_3$}}
+
+\linethickness{0.3mm}
+\multiput(40.62,10)(0.16,-0.12){16}{\line(1,0){0.16}}
+\linethickness{0.3mm}
+\multiput(40.62,10)(0.16,0.12){16}{\line(1,0){0.16}}
+\linethickness{0.3mm}
+\put(36.88,15.62){\line(0,1){3.13}}
+\linethickness{0.3mm}
+\multiput(36.88,15.62)(0.31,0.13){10}{\line(1,0){0.31}}
+\linethickness{0.3mm}
+\put(46.88,15.62){\line(0,1){3.13}}
+\linethickness{0.3mm}
+\multiput(43.75,16.88)(0.31,-0.13){10}{\line(1,0){0.31}}
+\linethickness{0.3mm}
+\put(78.13,34.37){\circle*{2.5}}
+
+\linethickness{0.3mm}
+\put(86.25,20){\circle*{2.5}}
+
+\linethickness{0.3mm}
+\put(70,20){\circle*{2.5}}
+
+\linethickness{0.3mm}
+\multiput(78.12,34.38)(0.12,-0.21){68}{\line(0,-1){0.21}}
+\linethickness{0.3mm}
+\put(70,20){\line(1,0){16.25}}
+\linethickness{0.3mm}
+\multiput(70,20)(0.12,0.21){68}{\line(0,1){0.21}}
+\linethickness{0.3mm}
+\put(73.12,25.62){\line(0,1){3.13}}
+\linethickness{0.3mm}
+\multiput(73.12,25.62)(0.31,0.13){10}{\line(1,0){0.31}}
+\linethickness{0.3mm}
+\put(83.12,25.62){\line(0,1){3.13}}
+\linethickness{0.3mm}
+\multiput(80,26.88)(0.31,-0.13){10}{\line(1,0){0.31}}
+\linethickness{0.3mm}
+\multiput(76.88,21.88)(0.16,-0.12){16}{\line(1,0){0.16}}
+\linethickness{0.3mm}
+\multiput(76.88,18.12)(0.16,0.12){16}{\line(1,0){0.16}}
+\linethickness{0.3mm}
+\put(11.87,47.5){\circle*{2.5}}
+
+\linethickness{0.3mm}
+\put(20,33.13){\circle*{2.5}}
+
+\linethickness{0.3mm}
+\put(3.75,33.13){\circle*{2.5}}
+
+\linethickness{0.3mm}
+\multiput(11.88,47.5)(0.12,-0.21){68}{\line(0,-1){0.21}}
+\linethickness{0.3mm}
+\put(3.75,33.12){\line(1,0){16.25}}
+\linethickness{0.3mm}
+\multiput(3.75,33.12)(0.12,0.21){68}{\line(0,1){0.21}}
+\linethickness{0.3mm}
+\multiput(10.62,33.12)(0.16,-0.12){16}{\line(1,0){0.16}}
+\linethickness{0.3mm}
+\multiput(10.62,33.12)(0.16,0.12){16}{\line(1,0){0.16}}
+\linethickness{0.3mm}
+\put(6.88,38.75){\line(0,1){3.13}}
+\linethickness{0.3mm}
+\multiput(6.88,38.75)(0.31,0.12){10}{\line(1,0){0.31}}
+\linethickness{0.3mm}
+\multiput(15.62,41.25)(0.16,-0.12){16}{\line(1,0){0.16}}
+\linethickness{0.3mm}
+\put(15.62,38.12){\line(0,1){3.13}}
+\linethickness{0.3mm}
+\put(84.37,68.13){\circle*{2.5}}
+
+\linethickness{0.3mm}
+\put(92.5,53.75){\circle*{2.5}}
+
+\linethickness{0.3mm}
+\put(76.25,53.75){\circle*{2.5}}
+
+\linethickness{0.3mm}
+\multiput(84.38,68.12)(0.12,-0.21){68}{\line(0,-1){0.21}}
+\linethickness{0.3mm}
+\put(76.25,53.75){\line(1,0){16.25}}
+\linethickness{0.3mm}
+\multiput(76.25,53.75)(0.12,0.21){68}{\line(0,1){0.21}}
+\linethickness{0.3mm}
+\put(89.38,59.38){\line(0,1){3.12}}
+\linethickness{0.3mm}
+\multiput(86.25,60.62)(0.31,-0.12){10}{\line(1,0){0.31}}
+\linethickness{0.3mm}
+\multiput(83.12,55.62)(0.16,-0.12){16}{\line(1,0){0.16}}
+\linethickness{0.3mm}
+\multiput(83.12,51.88)(0.16,0.12){16}{\line(1,0){0.16}}
+\linethickness{0.3mm}
+\put(81.25,58.75){\line(0,1){3.75}}
+\linethickness{0.3mm}
+\multiput(78.12,60.62)(0.2,0.12){16}{\line(1,0){0.2}}
+\linethickness{0.3mm}
+\put(55.63,88.75){\circle*{2.5}}
+
+\linethickness{0.3mm}
+\put(63.75,74.37){\circle*{2.5}}
+
+\linethickness{0.3mm}
+\put(47.5,74.37){\circle*{2.5}}
+
+\linethickness{0.3mm}
+\multiput(55.62,88.75)(0.12,-0.21){68}{\line(0,-1){0.21}}
+\linethickness{0.3mm}
+\put(47.5,74.38){\line(1,0){16.25}}
+\linethickness{0.3mm}
+\multiput(47.5,74.38)(0.12,0.21){68}{\line(0,1){0.21}}
+\linethickness{0.3mm}
+\multiput(54.38,76.25)(0.16,-0.12){16}{\line(1,0){0.16}}
+\linethickness{0.3mm}
+\multiput(54.38,72.5)(0.16,0.12){16}{\line(1,0){0.16}}
+\linethickness{0.3mm}
+\put(52.5,79.38){\line(0,1){3.74}}
+\linethickness{0.3mm}
+\multiput(49.38,81.25)(0.19,0.12){16}{\line(1,0){0.19}}
+\linethickness{0.3mm}
+\put(58.75,79.38){\line(0,1){3.74}}
+\linethickness{0.3mm}
+\multiput(58.75,83.12)(0.2,-0.12){16}{\line(1,0){0.2}}
+\linethickness{0.3mm}
+\put(20,81.87){\circle*{2.5}}
+
+\linethickness{0.3mm}
+\put(28.13,67.5){\circle*{2.5}}
+
+\linethickness{0.3mm}
+\put(11.87,67.5){\circle*{2.5}}
+
+\linethickness{0.3mm}
+\multiput(20,81.88)(0.12,-0.21){68}{\line(0,-1){0.21}}
+\linethickness{0.3mm}
+\put(11.88,67.5){\line(1,0){16.24}}
+\linethickness{0.3mm}
+\multiput(11.88,67.5)(0.12,0.21){68}{\line(0,1){0.21}}
+\linethickness{0.3mm}
+\put(16.88,72.5){\line(0,1){3.75}}
+\linethickness{0.3mm}
+\multiput(13.75,74.38)(0.2,0.12){16}{\line(1,0){0.2}}
+\linethickness{0.3mm}
+\put(23.12,72.5){\line(0,1){3.75}}
+\linethickness{0.3mm}
+\multiput(23.12,76.25)(0.2,-0.12){16}{\line(1,0){0.2}}
+\linethickness{0.3mm}
+\multiput(18.75,67.5)(0.16,0.12){16}{\line(1,0){0.16}}
+\linethickness{0.3mm}
+\multiput(18.75,67.5)(0.16,-0.12){16}{\line(1,0){0.16}}
+\put(46.25,69.38){\makebox(0,0)[cc]{$1$}}
+
+\put(63.12,69.38){\makebox(0,0)[cc]{$2$}}
+
+\put(55.62,94.38){\makebox(0,0)[cc]{$3$}}
+
+\end{picture}

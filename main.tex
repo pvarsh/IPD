@@ -1,0 +1,182 @@
+% main.tex, to be used with thesis.tex
+% This contains the main work of your thesis.
+
+\chapter{Abstract}
+One of the most famous models in game theory, the Prisoner's Dilemma, is an example of a game in which the Nash equilibrium solution is clearly not beneficial for either player. Regardless of the opponent's move, defection is always the dominant strategy in a single play of the game, and the resulting mutual defection costs both players the higher payoff they would have received from the unstable mutual cooperation play. If, however, the players have a nonzero chance of repeat interaction, turning the game into the Iterated Prisoner's Dilemma, defection may no longer be dominant, and the game allows for a rich field of strategies that utilize any available information about the opponent and vary their behavior between defection and cooperation (which can be viewed as punishment or reward) in the attempt to maximize the player's payoff or manipulate the opponent's payoff. Iterated Prisoner's Dilemma has been applied in ecology, sociology, evolutionary biology, international relations and behavior of firms in the market. This paper will review the history of Iterated Prisoner's Dilemma and its applications and will focus on the recent results by Press and Dyson (2012) showing the existence of a class of Zero Determinant strategies that allow a player to unilaterally determine her opponent's expected payoff, and to use extortion against some types of opponents. It will also examine the relationship between Zero Determinant strategies and the class of countervailing strategies proposed by J.P. Langlois and review the findings of Adami and Hintze, who show that the Zero Determinant strategies are not evolutionarily stable.
+
+\chapter{Introduction}
+
+Brief description of the Prisoner's Dilemma and it uses in modeling and understanding human interactions and evolutionary processes. Finishing the introduction by saying that recent results by Press \& Dyson, 2012 and several papers that followed it brought the subject to attention again. This will mostly mirror and expand the current version of the abstract.
+
+
+\chapter{Preliminaries}
+
+\section{Solution concepts}
+This may be split up in subsection or just presented as a series of definitions with some discussion.
+
+\subsection{Games and Iterated Games}
+Normal and extensive form. Prisoner's dilemma. Repeated games and discounting. Continuous PD (if I discuss countervailing strategies).
+
+\begin{definition}
+Game. Generic game.
+\end{definition}
+
+\begin{proposition}
+``Every generic $2 \times 2$ game is equivalent to either the prisoner's dilemma, the battle of the sexes, or the hawk-dove.'' (Gintis, p.286)
+\end{proposition}
+
+Karl Sigmund in Calculus of Selfishness defines average payoff in addition to the geometric discounting with
+$
+\mathbb{P}(\mbox{another iteration}) = w < 1
+$
+which is useful for the limiting case $w=1$:
+\[
+\lim_{n \rightarrow \infty} \frac{A(0) + \dots + A(n)}{n+1}
+\]
+where $A(n)$ is the payoff in round $n$.
+\subsection{Nash equilibrium}
+\begin{definition}
+Nash equilibrium, strict Nash equilibrium.
+\end{definition}
+
+\begin{theorem}
+Every symmetric game admits a symmetric Nash equilibrium. (Sigmund, Section 2.5)(May leave out)
+\end{theorem}
+\subsection{Subgame perfection}
+
+\subsection{Markov perfection}
+If I discuss countervailing strategies. 
+ 
+\subsection{ESS}
+May include criticisms of John Maynard Smith's ESS definition and discuss more modern alterations. Alternatively, the criticisms and discussion may be included in the discussion of papers.
+\begin{definition}$x \in \Delta$ is an evolutionary stable strategy (ESS) if for every strategy $y \neq x$ there exists some $\bar{\epsilon}_y \in (0, 1)$ such that inequality
+\[
+u[x, \epsilon y + (1-\epsilon) x ] > u [ y, \epsilon y + (1- \epsilon) x]
+\]
+holds for all $\epsilon \in (0, \bar{\epsilon}_y)$.
+\end{definition}
+\begin{proposition}
+\[
+\Delta^{ESS} = \{ x \in \Delta^{NE} : u(y, y) < u(x, y) \enspace \forall y \in \beta^* (x), y \neq x \}
+\]
+\end{proposition}
+
+
+``Also if $(x, x) \in \Theta$ is a strict Nash equilibrium, then $x$ is evolutionarily stable by default---then there are no alternative best replies. This observation has immediate implications concerning the connection between evolutionary stability and social efficiency: Evolutionary stability does not in general imply that average population fitness $u(x, x)$ is maximized.'' (Weibull, P38).
+
+An example of potential social inefficiency of ESS is the one-shot prisoner's dilemma, whose only NE, and thus only ESS is to always defect.
+
+There are games with no ESS, for example Rock Paper Scissors (Weibull, P.40)
+
+May include results about ESS and trembling hand perfection (Weibull, P42). Evolutionary stability requires behavior that is not only ``rational'' and ``coordinated'' in the sense of Nash equilibrium but also ``cautious.''
+
+\subsubsection{Invasion barriers}
+In the ``setting of finite games, evolutionary stability implies that $\bar{\epsilon}_y$ can be taken to be the same for all mutants; that is, an evolutionary stable strategy $x$ has a uniform invasion barrier.'' (Weibull, P.43)
+\begin{proposition}
+$x \in \Delta^{ESS}$ if and only if $x$ has a uniform invasion barrier. (Weibull, P.43).
+\end{proposition}
+
+
+\subsection{Some strategies}
+TFT, Generous TFT, Pavlov (Win-Stay, Lose-Shift).
+
+\section{Replicator dynamics}
+This section will be based either on \emph{Game Theory Evolving} (Gintis, H.), \emph{Evolutionary Game Theory} (Weibull, J.W.), or \emph{The Calculus of Selfishness} (Sigmund, K).
+
+Will possibly have some discussion of imitation dynamics, but for now it looks like imitation is not used in any of the papers I am discussing, so I will most likely leave out imitation.
+\begin{theorem}
+In symmetric $2 \times 2$ games a population state is asymptotically stable in the replicator dynamics if and only if the corresponding mixed strategy is evolutionarily stable. (Weibull, p.75).
+\end{theorem}
+
+\begin{theorem}
+Strongly dominated strategies do not survive in a replicator dynamic. (Theorem 12.3, Gintis, p.280). Stated without proof.
+\end{theorem}
+\begin{theorem}
+Weakly dominated strategy cannot achieve unitary probability as $t \rightarrow \infty$ in a replicator dynamic. (Theorem 12.4, Gintis, p.281). Stated without proof.
+\end{theorem}
+
+\begin{theorem}
+Weakly dominated strategy cannot achieve unitary probability as $t \rightarrow \infty$ in a replicator dynamic.
+\end{theorem}
+
+\subsubsection{Replicator dynamics and ESS}
+There is an example of a Nash equilibrium (Gintis, section 10.13) that ``cannot be invaded by any pure strategy mutant but can be invaded by an appropriate mixed-strategy mutant. We can show that this Nash equilibrium is unstable under the replicator dynamic. This is why we insisted that the ESS concept be defined in terms of mixed- rather than pure-strategy mutants; an ESS is an asymptotically stable equilibrium only if the concept is so defined.'' (Gintis, p. 286)
+
+\section{Agent based modeling}
+I'm not yet sure I want to discuss this approach in the preliminaries. It seems pretty self-explanatory, so I may just refer to it when citing and discussing results.
+
+\section{Learning}
+A short description of learning. Press and Dyson talk about performance of extortionate ZD strategies against an opponent who learns by climbing up his payoff gradient.
+
+\chapter{Results}
+I haven't yet decided if each of the papers I focus on will occupy its own section or if their results will be woven in a more continuous narrative. I may revisit Maynard Smith's ESS here.
+
+\section{Axelrod, tournaments, TFT}
+Axelrod's characterization of successful competitors (nice, retaliating, forgiving).
+
+\section{Press and Dyson: zero determinant strategies}
+This will be a summary of the paper's arguments along with the proofs of the theorems. The three results are:
+
+\begin{theorem}
+There exists strategies that can unilaterally set the opponent's score or demand and get an extortionate share. Press and Dyson note that the ability to unilaterally set the opponent's score allows the ZD player to simulate an arbitrary fitness landscape for the evolutionary opponent. They also discuss what happens when extortionate ZD player plays against an evolutionary opponent. 
+\end{theorem}
+\begin{theorem}
+Longer memory does not offer any advantage.
+\end{theorem}
+\begin{theorem}
+ZD strategies succeed without Markov equilibrium. Press and Dyson used the game's stationary distribution to derive their ZD strategies. This result shows that the opponent cannot  ```keep the game out of Markov equilibrium'' or play ``inside the Markov equilibration time scale.'''
+\end{theorem}
+
+
+There is another proof of existence of ZD strategies in (Hilbe, Nowak, Sigmund, 2013), but I will most likely use the Press and Dyson proof.
+
+\subsection{Stewart and Plotkin comments on Press and Dyson}
+Steward and Plotkin ran an Axelrod-style tournament using the usual set of strategies and two additional ZD strategies Extort-2 ($S_X - P = 2(S_Y - P)$) and Zero Determinant Generous Tit For Tat, ZDGTFT-2 ($S_X - R = 2(S_Y - R)$) and found that Extort-2 had the second number of head-to-head wins (the winningest strategy, of course, was the Pyrrhic AllD), while ZDGTFT-2 achieved the highest score.
+
+
+\section{Evolutionary stability of ZD}
+This section will be based on two papers. Their abstracts are.
+\subsection{Adami and Hintze, 2013}
+\begin{quote}``Here we show that ZD strategies are at most weakly dominant, are not evolutionarily stable, and will instead evolve into less coercive strategies. We show that ZD strategies with an informational advantage over other players that allows them to recognize each other can be evolutionarily stable (and able to exploit other players). However, such an advantage is bound to be short-lived as opposing strategies evolve to counteract the recognition''.
+\end{quote}
+
+Adami and Hintze define a new game in which players chose a role in $\{ZD, O\}$ (I think this is for ZD that are not extortionate), and the payoffs are the long-term average payoffs when playing an IPD with chosen roles. They then analyze this new game using replicator equations. In particular they look at two-strategy populations \{AllD, ZD\} and \{Pavlov, ZD\}. ZD loses to AllD in evolutionary contest. Pavlov, $q_{PAV} = (1, 0, 0, 1)$, cooperates with itself, is ESS, and loses to ZD in every direct competition, however Pavlov drives ZD to extinction (using replicator equations).
+
+Then they acknowledge that the reformulation of the game may not perfectly reflect the dynamics that happen when the agents in the population play random one-shot games against each other. To address that, they created agent-based simulations and found that 
+
+
+\subsection{Hilbe, Nowak, Sigmund, 2013}
+\begin{quote}``Here, were analyze the evolutionary performance of this new class of strategies. We show that in reasonably large populations, they can act as catalysts for the evolution of cooperation, similar to TFT, but that they are not the stable outcome of natural selection. In very small populations, however, extortioners hold their ground. Extortion strategies do particularly well in coevolutionary arms races between two distinct populations. Significantly, they benefit the population that evolves at the slower rate, an example of the so-called ``Red King'' effect. This may affect the evolution of interactions between host species and their endosymbionts''.
+\end{quote}
+
+\section{Countervailing}
+If time and space allow.
+
+\chapter{Other results and discussions}
+Some of these may make more sense to include in the above discussions than give them their own section. Some may just not be a good fit for this paper.
+\section{Learning vs. Evolution in IPD}
+\section{An empirical approach to PD}
+From Lave, L.B. 1962. There is evidence that people do not play the Nash Equilibrium. These results could be added to the solution concepts chapter.
+
+\section{Conclusion}
+From \emph{The Selfish Gene, 3rd Ed, p.75}:
+\begin{quote}
+This theoretical conclusion is not far from what actually happens in most wild animals. We have in a sense explained the `gloved fist' aspect of animal aggression. Of core the details depend on the exact numbers of `points' awarded for winning, being injured, wasting time, and so on. In elephant seals the prize for winning meat be near-monopoly rights over a large harem of females. The pay-off for winning must therefore be rated very high. Small wonder that fights are vicious and the probability of serious injury is also high. The cost of wasting grime should presumably be regarded as small in comparison with the cost of being injured and the benefit of winning. For a small bird in a cold climate, on the other hand, the cost of wasting grime may be paramount. A great tit when feeding nestlings needs to catch an average of one prey per thirty seconds. Every second of daylight is precious. Even the comparatively short time wasted in a hawk/hawk fight should perhaps be regarded as more serious than the risk of injury to such a bird. Unfortunately we know too little at present to assign realistic numbers to the costs and benefits of various outcomes in nature*...
+\end{quote}
+
+\section{Notation}
+Notation from various sources. Once the content of the paper is clear, I will make sure notation is consistent. 
+
+$\Delta$ strategy space (Weibull)
+
+$\Theta$ strategy profile (Weibull)
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
