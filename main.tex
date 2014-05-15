@@ -11,7 +11,7 @@ Brief description of the Prisoner's Dilemma and it uses in modeling and understa
 
 \chapter{Preliminaries}
 
-\section{Solution concepts}
+\section{Games and Solution concepts}
 This may be split up in subsection or just presented as a series of definitions with some discussion.
 
 \subsection{Games and Iterated Games}
@@ -23,6 +23,10 @@ Game.
 \begin{definition}
 Normal and extensive form games.
 \end{definition}
+
+\begin{example}
+Prisoner's dilemma, coordination game (or Stag Hunt; appears in Zero Determinant with Tags analysis in Adami and Hintze), Hawk-Dove (may exclude).
+\end{example}
 \begin{definition}
 Generic game and equivalence. (Gintis, p.285)
 
@@ -98,8 +102,17 @@ $x \in \Delta^{ESS}$ if and only if $x$ has a uniform invasion barrier. (Weibull
 \subsection{Some strategies}
 TFT, Generous TFT, Pavlov (Win-Stay, Lose-Shift).
 
+%%%%%%%%%%%%%%%%  REPLICATOR DYNAMICS  %%%%%%%%%%%%%%%%
 \section{Replicator dynamics}
 This section will be based either on \emph{Game Theory Evolving} (Gintis, H.), \emph{Evolutionary Game Theory} (Weibull, J.W.), or \emph{The Calculus of Selfishness} (Sigmund, K).
+
+\begin{definition}
+A replicator dynamic.
+\end{definition}
+
+\begin{definition}
+Fixed point.
+\end{definition}
 
 Will possibly have some discussion of imitation dynamics, but for now it looks like imitation is not used in any of the papers I am discussing, so I will most likely leave out imitation.
 \begin{theorem}
@@ -132,6 +145,7 @@ I haven't yet decided if each of the papers I focus on will occupy its own secti
 \section{Axelrod, tournaments, TFT}
 Axelrod's characterization of successful competitors (nice, retaliating, forgiving).
 
+%%%%%%%%%%%%%%%%  PRESS & DYSON  %%%%%%%%%%%%%%%%
 \section{Press and Dyson: zero determinant strategies}
 This will be a summary of the paper's arguments along with the proofs of the theorems. The three results are:
 
@@ -139,7 +153,9 @@ This will be a summary of the paper's arguments along with the proofs of the the
 There exists strategies that can unilaterally set the opponent's score or demand and get an extortionate share. Press and Dyson note that the ability to unilaterally set the opponent's score allows the ZD player to simulate an arbitrary fitness landscape for the evolutionary opponent. They also discuss what happens when extortionate ZD player plays against an evolutionary opponent. 
 \end{theorem}
 \begin{theorem}
-Longer memory does not offer any advantage.
+Shortest memory player sets the rules of the game.
+
+(Note from Adami \& Hintze: this is true in a head-to-head competition, however in evolutionary setting longer memory may offer an advantage as the strategy would be able to recognize an opponent playing the same strategy, which would enable the long-memory player to conditionally cooperate, a conditionally cooperating ZD can be ESS).
 \end{theorem}
 \begin{theorem}
 ZD strategies succeed without Markov equilibrium. Press and Dyson used the game's stationary distribution to derive their ZD strategies. This result shows that the opponent cannot  ```keep the game out of Markov equilibrium'' or play ``inside the Markov equilibration time scale.'''
@@ -168,12 +184,11 @@ Then they acknowledge that the reformulation of the game may not perfectly refle
 \end{quote}
 
 \section{Countervailing}
-If time and space allow.
 
 \chapter{Other results and discussions}
 Some of these may make more sense to include in the above discussions than give them their own section. Some may just not be a good fit for this paper.
 \section{An empirical approach to PD}
-From Lave, L.B. 1962. There is evidence that people do not play the Nash Equilibrium. These results could be added to the solution concepts chapter.
+From Lave, L.B. 1962. There is evidence that people do not play the Nash Equilibrium even in iterated prisoner's dilemma with a fixed number of plays. In this setting . These results could be added to the solution concepts chapter.
 
 \section{Conclusion}
 From \emph{The Selfish Gene, 3rd Ed, p.75}:
