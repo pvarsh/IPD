@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  27 MAY 2014 10:11
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  27 MAY 2014 15:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -331,50 +331,52 @@ Chapter 1.
 Chapter 2.
 [4
 
-]
+] [5]
 Chapter 3.
-[5
+[6
 
-] [6] [7] [8]
+] [7] [8] [9]
 Chapter 4.
-[9
+[10
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 177.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 192.
 
  (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 177.
- [10] [11]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 192.
+ [11]
+[12]
 Chapter 5.
-[12
+[13
 
-]) [13]
+]) [14]
 No file thesis.bbl.
 (./thesis.aux (./main.aux)) ) 
 Here is how much of TeX's memory you used:
- 3021 strings out of 493315
- 40803 string characters out of 6137904
- 102475 words of memory out of 5000000
- 6399 multiletter control sequences out of 15000+600000
- 11074 words of font info for 43 fonts, out of 8000000 for 9000
+ 3024 strings out of 493315
+ 40835 string characters out of 6137904
+ 102481 words of memory out of 5000000
+ 6401 multiletter control sequences out of 15000+600000
+ 11433 words of font info for 44 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  42i,6n,28p,1673b,188s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmti12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfo
-nts/symbols/msbm10.pfb>
-Output written on thesis.pdf (13 pages, 121745 bytes).
+lic/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmti12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsf
+onts/symbols/msbm10.pfb>
+Output written on thesis.pdf (14 pages, 139812 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
+ 86 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
