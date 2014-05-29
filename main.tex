@@ -12,19 +12,95 @@ The question extends beyond human behavior as we observe patterns of cooperation
 
 These examples share a common structure. Each involves two participants making a choice to cooperate (fix prices, say no to steroids, remove trade restrictions, reduce nuclear weapons stocks, share blood with the less fortunate bat) or defect (undercut the competitor, use steroids, establish trade restrictions, increase weapons stockpiles, hoard the blood). Mutual cooperation yields a higher advantage to both parties than mutual defection, but if one individual cooperates, while the other defects, the defector gains a large advantage, while the cooperator is left a sucker.
 
-This scenario was originally formalized in 1950 by Merrill Flood and Melvin Dresher at RAND corporation. Soon after Albert W. Tucker offered this illustrative parable that gave the game its name, the Prisoner?s Dilemma.
+This scenario was originally formalized in 1950 by Merrill Flood and Melvin Dresher at RAND corporation. Soon after Albert W. Tucker offered this illustrative parable that gave the game its name, the Prisoner's Dilemma.
 
 \textit{\textbf{Description of the prisoner dilemma with payoff table goes here.}}
 
-At first look the proposition may seem pessimistic. When the game is played once by players who have no possibility of future interaction, the only rational move is to defect even though mutual cooperation would lead to a higher payoff for both players. To see this we assume the opponent?s move is fixed and analyze our choices. \textit{\textbf{Describe the solution. Motivate Nash Equilibrium.}}
+At first look the proposition may seem pessimistic. When the game is played once by players who have no possibility of future interaction, the only rational move is to defect even though mutual cooperation would lead to a higher payoff for both players. To see this we assume the opponent's move is fixed and analyze our choices. \textit{\textbf{Describe the solution. Motivate Nash Equilibrium.}}
 \begin{definition} Nash equilibrium.
 \end{definition}
 
-The game becomes more interesting---and less gloomy---with the possibility of repeat interaction, for it gives players a chance to reward cooperation and exact vengeance against defectors. When choosing a strategy, one can no longer just maximize the current more payoff, but also consider the shadow of the future. Whereas in the singleton game the pure strategy space had only two points, the repeated game allows for great complexity and leads to some unexpected results that give insights about many problems in sociology, evolutionary biology, and political science.
+The game becomes more interesting---and less gloomy---with the possibility of repeat interaction, for it gives players a chance to reward cooperation and exact vengeance against defectors. When choosing a strategy, one must no longer just maximize the current payoff, but also consider the shadow of the future. Whereas in the singleton game the pure strategy space had only two points, the repeated game allows for great complexity and leads to some unexpected results that give insights about many problems in sociology, evolutionary biology, and political science.
 
-The aim of this paper is to survey the history of the Iterated Prisoner?s Dilemma focusing on four distinct approaches to its solution and their insights and consequences. In part one it will define and discuss the notion of evolutionary stability (ESS) due to John Maynard Smith that paved the way for game theory applications to evolutionary biology and ecology. Then I will discuss the famous IPD tournaments hosted by Robert Axelrod and his conclusions about qualities shared by successful entrants. Part three will present an approach to modeling evolutionary systems using differential equations known as replicator dynamics. Finally part four will describe a class of Zero Determinant (ZD) strategies discovered by Press and Dyson in 2012 and discuss ZD strategies' evolutionary stability and role in mixed strategy populations.
+The aim of this paper is to survey the history of the Iterated Prisoner's Dilemma focusing on four distinct approaches to its solution and their insights and consequences. In part one it will define and discuss the notion of evolutionary stability (ESS), due to John Maynard Smith, that paved the way for game theory applications to evolutionary biology and ecology. Then I will discuss the famous IPD tournaments hosted by Robert Axelrod and his conclusions about qualities shared by successful entrants. Part three will present an approach to modeling evolutionary systems using differential equations known as replicator dynamics. Finally part four will describe a class of Zero Determinant (ZD) strategies discovered by Press and Dyson in 2012 and discuss ZD strategies' evolutionary stability and role in mixed strategy populations.
+
+\chapter{New organization of the paper}
+
+We may want to find the `best' strategy, but then we need to develop some preliminaries in order to understand what it means for a strategy to be `good'.
+
+Proposition 1, (p 15) in Axelrod is a simple argument that with high enough discount parameter, there is no single best strategy independent of opponent's strategy. \textit{\textbf{This uses discounting, so needs to be either introduced in Axelrod section or after discounting is introduced in preliminaries.}}
+
+\section{Preliminaries}
+
+\begin{definition}Game. Normal form game. Extensive form game.
+\end{definition}
+
+Note that PD is not zero-sum, so the goal is not to beat the opponent but to do well for yourself, which is not the same thing.
+
+\begin{definition}Pure and mixed strategy.
+\end{definition}
+
+\begin{definition}Nash equilibrium.
+\end{definition}
+
+Empty threats as motivation for subgame perfection.
+
+\begin{definition}Subgame Perfect Nash Equilibrium.
+\end{definition}
+
+\begin{definition}
+Generic game and equivalence. (This is used in Adami and Hintze, perhaps makes more sense to define it right before using in the ZD section of the paper).
+\end{definition}
+
+\section{Axelrod's Tournaments and TFT}
+This section will motivate the discounted IPD model by showing that discounting is equivalent to a fixed probability of repeat encounter. Introduce TFT and describe its four characteristics that Axelrod concluded were key to its success \textit{\textbf{(these are taken from Wikipedia, will find exact words in Axelrod later)}}:
+\begin{itemize}
+\item Be nice: cooperate, never be the first to defect.
+\item Be provocable: return defection for defection, cooperation for cooperation.
+\item Don't be envious:: be fair with your partner.
+\item Don't be too clever: or, don't try to be tricky.
+\end{itemize}
+Discuss TFT and ESS (TFT is ESS if and only if the discount factor is sufficiently great). TFT does not earn more than opponent. TFT's success is in its ability to do well both against `nice' and against `bad' strategies. Discuss how TFT variants did not perform as well as TFT (JOSS - TFT with a probabilistic opportunistic defection vs. TFT example, p 39). Small group of TFT can invade AllD populations. Population can be split into different subpopulations that are TFT to members of the same subpopulation, but AllD to the other subpopulation.
+
+Importance of being nice. JOSS v TFT showed us that opportunistic defection hurt the strategy's score in the tournament. Axelrod shows that TFTT (TIT FOR TWO TATS) would have actually won the tournament if entered. He notes that most submissions were trying to gain advantage from opportunistic defection, but the bigger advantage could be won by instead being more forgiving/nicer.
+
+
+\subsection{Examples}
+
+\begin{itemize}
+\item`Live and let live' cooperation in the trench warfare during WWI. Enabled by the static nature of the war when soldiers faced the same soldiers on the other side for long periods of time. Soldiers and officers ignored the orders of the high command and only fired warning/demonstration shots.
+\item There is a list of references to papers about arms race, oligopolistic competition and vote trading on (p. 28), and non-empirical papers on meaning of rationality (Luce and Raiffa), choices which affect other people (Schelling), Cooperation without enforcement (Taylor) (p. 29)
+
+\end{itemize}
+
+
+\subsection{Other points and themes in Axelrod}
+\textit{\textbf{The following quote perhaps better used or paraphrased in the introduction to motivate interest in IPD.}} ``The model of the iterated Prisoner's Dilemma is much less restricted than it may at first appear. Not only can it apply to interactions between two bacteria or interactions between two primates, but it can also apply to the interactions between a colony of bacteria and, say, a primate serving as a host. There is no assumption that payoffs of the two sides are comparable. Provided that the payoffs to each side satisfy the inequalities that define the Prisoner's Dilemma, as given in chapter 1, the results of the analysis will be applicable'' (p 95)
+
+\textit{\textbf{The following quote may be used in ESS section or Axelrod section}} ``The chronological story that emerges from this analysis is the following. ALL D is the primeval state and is evolutionarily stable. But cooperation based on reciprocity can gain a foothold through two different mechanisms. First, there can be kinship between mutant strategies, giving the genes of the mutants some stake in each other's success, thereby altering the payoff of the interaction when viewed from the perspective of the gene rather than the individual. A second mechanism to overcome ego tap defection is for the mutant strategies to arrive in a cluster so that they provide a nontrivial proportion of the interactions each has, even if they are so few as to provide a negligible proportion of the interactions which the ALL D individuals have. Then the tournament approach described in chapter 2 demonstrates that once a variety of strategies is present, TIT FOR TAT is an extremely robust one. It does well in a wide range of circumstances and gradually displaces all other strategies in an ecological simulation that contains a great variety of more or less sophisticated decision rules... \emph{Thus cooperation based on reciprocity can get started in a predominantly noncooperative world, can thrive in a variegated environment, and can defend itself once fully established} (emphasis added).'' (p. 99)
+
+\textit{\textbf{Mechanisms for mutualism when players can't recognize each other.}}Continuous contact (hermit crab \& sea-anemone, tree and its mycorrhizal fungi); constant meeting place (aquatic cleaner mutualizes in coastal and reef situations (Trivers 1971). (p 101). ``Territory can serve this purpose.... Consistent with the theory, such male territorial birds show much more aggressive reactions when the song of an unfamiliar male rather than a neighbor is reproduced nearby'' (p. 102)
+
+\textit{\textbf{Perhaps a curious side note.}} Prosopagnosia and the location of lesions that cause it: ``This localization of cause, and specificity of effect, indicates that the recognition of individual faces has been an important enough task for a significant portion of the brain's resources to be devoted to it'' (p. 102)
+
+\textit{\textbf{Another side note.}} There have been papers that applied IPD to model the increase in pathogen activity when the host is weakened (possibly by another pathogen), which could increase the chances that the first pathogen can transmit. (p. 103-104).
+
+\textit{\textbf{Another side note.}} Cooperation is not necessarily a socially desirable outcome. Examples: corruption is an act of cooperation between politicians and moneyed interests, price fixing is an act of cooperation between companies. (p. 18)
+
+\textit{\textbf{Another side note.}} ``Examples of what is left out by this formal abstraction include the third parties, the problems of implementing a choice, and the uncertainty about what the other player actually did on the preceding move.'' (p. 19)
+
+\section{ESS}
+This section will contain motivation of ESS in terms of stability and resistance to invasion, formal definition using $\epsilon$-neighborhoods. Based on Maynard Smith's article and book \emph{The Logic of Animal Conflict} and \emph{Evolution and the Theory of Games}.
+
+Stability of AllD.
+
+\textit{\textbf{Segue to the next section:}} the ESS gives us both an intuitive framework and a formal topologic understanding of fitness of strategies. The proliferation of cheap computing power in the 1970s gave us another tool to study strategies -- agent-based models.
 
 \chapter{Preliminaries}
+
+
+Some preliminary definitions and general results are in order before we immerse ourselves in 
+
 
 \section{Games and Solution concepts}
 This may be split up in subsection or just presented as a series of definitions with some motivation.
