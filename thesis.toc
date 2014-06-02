@@ -1,33 +1,37 @@
-\contentsline {chapter}{\numberline {1}Abstract}{3}
-\contentsline {chapter}{\numberline {2}Introduction}{4}
-\contentsline {chapter}{\numberline {3}New organization of the paper}{6}
-\contentsline {section}{\numberline {3.1}Preliminaries}{6}
-\contentsline {section}{\numberline {3.2}Axelrod's Tournaments and TFT}{6}
-\contentsline {subsection}{\numberline {3.2.1}Examples}{7}
-\contentsline {subsection}{\numberline {3.2.2}Other points and themes in Axelrod}{8}
-\contentsline {section}{\numberline {3.3}ESS}{9}
-\contentsline {chapter}{\numberline {4}Preliminaries}{10}
-\contentsline {section}{\numberline {4.1}Games and Solution concepts}{10}
-\contentsline {subsection}{\numberline {4.1.1}Games and Iterated Games}{10}
-\contentsline {subsection}{\numberline {4.1.2}Nash equilibrium}{11}
-\contentsline {subsection}{\numberline {4.1.3}Subgame perfection}{11}
-\contentsline {subsection}{\numberline {4.1.4}Markov perfection}{11}
-\contentsline {subsection}{\numberline {4.1.5}ESS}{11}
-\contentsline {subsubsection}{Invasion barriers}{12}
-\contentsline {subsection}{\numberline {4.1.6}Some strategies}{12}
-\contentsline {section}{\numberline {4.2}Replicator dynamics}{12}
-\contentsline {subsubsection}{Replicator dynamics and ESS}{12}
-\contentsline {section}{\numberline {4.3}Agent based modeling}{13}
-\contentsline {section}{\numberline {4.4}Learning}{13}
-\contentsline {chapter}{\numberline {5}Results}{14}
-\contentsline {section}{\numberline {5.1}Axelrod, tournaments, TFT}{14}
-\contentsline {section}{\numberline {5.2}Press and Dyson: zero determinant strategies}{14}
-\contentsline {subsection}{\numberline {5.2.1}Stewart and Plotkin comments on Press and Dyson}{15}
-\contentsline {section}{\numberline {5.3}Evolutionary stability of ZD}{15}
-\contentsline {subsection}{\numberline {5.3.1}Adami and Hintze, 2013}{15}
-\contentsline {subsection}{\numberline {5.3.2}Hilbe, Nowak, Sigmund, 2013}{15}
-\contentsline {section}{\numberline {5.4}Countervailing}{16}
-\contentsline {chapter}{\numberline {6}Other results and discussions}{17}
-\contentsline {section}{\numberline {6.1}An empirical approach to PD}{17}
-\contentsline {section}{\numberline {6.2}Conclusion}{17}
-\contentsline {section}{\numberline {6.3}Notation}{18}
+\contentsline {chapter}{\numberline {1}Abstract}{4}
+\contentsline {chapter}{\numberline {2}Introduction}{5}
+\contentsline {chapter}{\numberline {3}New organization of the paper}{7}
+\contentsline {section}{\numberline {3.1}Preliminaries}{7}
+\contentsline {section}{\numberline {3.2}Axelrod's Tournaments and TFT}{7}
+\contentsline {subsection}{\numberline {3.2.1}Examples}{8}
+\contentsline {subsection}{\numberline {3.2.2}Other points and themes in Axelrod}{9}
+\contentsline {section}{\numberline {3.3}ESS}{10}
+\contentsline {subsection}{\numberline {3.3.1}This quote can be used or paraphrased as a segue into ESS}{10}
+\contentsline {subsection}{\numberline {3.3.2}Body of ESS section}{10}
+\contentsline {subsection}{\numberline {3.3.3}TFT is ESS}{10}
+\contentsline {subsection}{\numberline {3.3.4}Quotes and other points from Maynard Smith}{11}
+\contentsline {chapter}{\numberline {4}Preliminaries}{12}
+\contentsline {section}{\numberline {4.1}Games and Solution concepts}{12}
+\contentsline {subsection}{\numberline {4.1.1}Games and Iterated Games}{12}
+\contentsline {subsection}{\numberline {4.1.2}Nash equilibrium}{13}
+\contentsline {subsection}{\numberline {4.1.3}Subgame perfection}{13}
+\contentsline {subsection}{\numberline {4.1.4}Markov perfection}{13}
+\contentsline {subsection}{\numberline {4.1.5}ESS}{13}
+\contentsline {subsubsection}{Invasion barriers}{14}
+\contentsline {subsection}{\numberline {4.1.6}Some strategies}{14}
+\contentsline {section}{\numberline {4.2}Replicator dynamics}{14}
+\contentsline {subsubsection}{Replicator dynamics and ESS}{14}
+\contentsline {section}{\numberline {4.3}Agent based modeling}{15}
+\contentsline {section}{\numberline {4.4}Learning}{15}
+\contentsline {chapter}{\numberline {5}Results}{16}
+\contentsline {section}{\numberline {5.1}Axelrod, tournaments, TFT}{16}
+\contentsline {section}{\numberline {5.2}Press and Dyson: zero determinant strategies}{16}
+\contentsline {subsection}{\numberline {5.2.1}Stewart and Plotkin comments on Press and Dyson}{17}
+\contentsline {section}{\numberline {5.3}Evolutionary stability of ZD}{17}
+\contentsline {subsection}{\numberline {5.3.1}Adami and Hintze, 2013}{17}
+\contentsline {subsection}{\numberline {5.3.2}Hilbe, Nowak, Sigmund, 2013}{17}
+\contentsline {section}{\numberline {5.4}Countervailing}{18}
+\contentsline {chapter}{\numberline {6}Other results and discussions}{19}
+\contentsline {section}{\numberline {6.1}An empirical approach to PD}{19}
+\contentsline {section}{\numberline {6.2}Conclusion}{19}
+\contentsline {section}{\numberline {6.3}Notation}{20}
