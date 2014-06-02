@@ -53,6 +53,17 @@ Generic game and equivalence. (This is used in Adami and Hintze, perhaps makes m
 \end{definition}
 
 \section{Axelrod's Tournaments and TFT}
+
+\textit{\textbf{this section's text is not the final text, just a roadmap}}
+
+Axelrod held two rounds of tournaments. The first with 6? submissions, the second with 62. TFT won both tournaments. Axelrod analyzes the success of TFT. In particular he shows two other strategies that could have beat TFT in the first tournament. These `better' strategies were among entrants in the second tournament, but did not do very well as they were thwarted by other new entrants. It's interesting to see that many strategies that did not end up doing well for themselves were important in creating a fitness landscape for other strategies, that is they had large effect on scores of other strategies, but did not have a strong effect on TFT - an argument for TFT's robustness.
+
+Then Axelrod motivates the evolutionary approach with average payoffs of each tournament (generation) determining reproductive fitness. With the starting set of strategies of the second tournament, TFT prevails, that success is robust to changing the initial distribution of strategies. This provides the segue to ESS section that follows.
+
+Discussion of \textit{collective stability} will probably be omitted, as it's almost the same as ESS. A strategy is collectively stable if it is in Nash Equilibrium with itself. ESS are collectively stable. TFT is collectively stable, while the only ESS is AllD. Strategies that invade AllD the best are called \textit{maximally discriminating} (p. 66).
+
+Can a population of TFT be invaded? Proposition 7, p 67 shows that if a nice strategy cannot be invaded by a single individual, then it cannot be invaded by a cluster. 
+
 This section will motivate the discounted IPD model by showing that discounting is equivalent to a fixed probability of repeat encounter. Introduce TFT and describe its four characteristics that Axelrod concluded were key to its success \textit{\textbf{(these are taken from Wikipedia, will find exact words in Axelrod later)}}:
 \begin{itemize}
 \item Be nice: cooperate, never be the first to defect.
@@ -91,6 +102,12 @@ Importance of being nice. JOSS v TFT showed us that opportunistic defection hurt
 
 \section{ESS}
 This section will contain motivation of ESS in terms of stability and resistance to invasion, formal definition using $\epsilon$-neighborhoods. Based on Maynard Smith's article and book \emph{The Logic of Animal Conflict} and \emph{Evolution and the Theory of Games}.
+
+This quote can be used or paraphrased as a segue into ESS. 
+``Paradoxically, it has turned out that game theory is more readily applied to biology than to the field of economic behavior for which it was originally designed. There are two reasons for this. First, the theory requires that the values of different outcomes (for example, financial rewards, the risks of death and the pleasures of a clear conscience) be measured on a single scale. In human applications, this measure is provided by `utility' -- a somewhat artificial and uncomfortable concept: in biology, Darwinian fitness provides a natural and genuinely one-dimensional scale. Secondly, and more importantly, in seeking the solution of a game, the concept of human rationality is replaced by that of evolutionary stability. The advantage here is that there are good theoretical reasons to expect populations to evolve to stable states, wheres there are grounds for doubting whether human beings always behave rationally'' (Maynard Smith, Preface)
+
+History of game theoretic modeling of evolution: Lewontin (1961), Fisher (1930), Hamilton (1967) (p.2)
+
 
 Stability of AllD.
 
