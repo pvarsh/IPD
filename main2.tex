@@ -10,6 +10,16 @@
 \item Audience.
 \end{itemize}
 
+\subsection{FOCUS}
+\begin{itemize}
+\item Exposition:
+\item Purpose: my reading of the history of the problem.
+\item Replicator dynamics: originally probably from Darwinian biological systems, but nothing prevents replicator dynamics to be combined with sophisticated strategies (TF2T, contrite TFT: in Langlois notes, defecting on guilty opponent maintains non guilty status - Markov Perfect, Subgame Perfect).
+\item Curiosity: TFT as extortionate? Any Subgame Perfect EQ has a countervailing and coercive part. 
+\item Continuous case, replicator dynamics.
+\item Explain assumptions and conclusions in proofs rather than quote proofs.
+\item Example by Langlois.
+\end{itemize}
 
 \chapter{Abstract}
 One of the most famous models in game theory, the Prisoner's Dilemma, is an example of a game in which the Nash equilibrium solution is clearly not beneficial for either player. Regardless of the opponent's move, defection is always the dominant strategy in a single play of the game, and the resulting mutual defection costs both players the higher payoff they would have received from the unstable mutual cooperation play. If, however, the players have a nonzero chance of repeat interaction, turning the game into the Iterated Prisoner's Dilemma, defection may no longer be dominant, and the game allows for a rich field of strategies that utilize any available information about the opponent and vary their behavior between defection and cooperation (which can be viewed as punishment or reward) in the attempt to maximize the player's payoff or manipulate the opponent's payoff. Iterated Prisoner's Dilemma has been applied in ecology, sociology, evolutionary biology, international relations and behavior of firms in the market. This paper will review the history of Iterated Prisoner's Dilemma and its applications and will focus on the recent results by Press and Dyson (2012) showing the existence of a class of Zero Determinant strategies that allow a player to unilaterally determine her opponent's expected payoff, and to use extortion against some types of opponents. It will also examine the relationship between Zero Determinant strategies and the class of countervailing strategies proposed by J.P. Langlois and review the findings of Adami and Hintze, who show that the Zero Determinant strategies are not evolutionarily stable.
@@ -34,13 +44,14 @@ The game becomes more interesting---and less gloomy---with the possibility of re
 
 The aim of this paper is to survey the history of the Iterated Prisoner's Dilemma focusing on four distinct approaches to its solution and their insights and consequences. In part one it will define and discuss the notion of evolutionary stability (ESS), due to John Maynard Smith, that paved the way for game theory applications to evolutionary biology and ecology. Then I will discuss the famous IPD tournaments hosted by Robert Axelrod and his conclusions about qualities shared by successful entrants. Part three will present an approach to modeling evolutionary systems using differential equations known as replicator dynamics. Finally part four will describe a class of Zero Determinant (ZD) strategies discovered by Press and Dyson in 2012 and discuss ZD strategies' evolutionary stability and role in mixed strategy populations.
 
-\chapter{New organization of the paper}
+
+%%%%%%%%%%%%%%	CHAPTER: PRELIMINARIES      %%%%%%%%%%%%%%
+\chapter{Preliminaries}
 
 We may want to find the `best' strategy, but then we need to develop some preliminaries in order to understand what it means for a strategy to be `good'.
 
 Proposition 1, (p 15) in Axelrod is a simple argument that with high enough discount parameter, there is no single best strategy independent of opponent's strategy. \textit{\textbf{This uses discounting, so needs to be either introduced in Axelrod section or after discounting is introduced in preliminaries.}}
 
-\section{Preliminaries}
 
 \begin{definition}Game. Normal form game. Extensive form game.
 \end{definition}
@@ -62,7 +73,7 @@ Empty threats as motivation for subgame perfection.
 Generic game and equivalence. (This is used in Adami and Hintze, perhaps makes more sense to define it right before using in the ZD section of the paper).
 \end{definition}
 
-\section{Axelrod's Tournaments and TFT}
+\chapter{Axelrod's Tournaments and TFT}
 
 \textit{\textbf{this section's text is not the final text, just a roadmap}}
 
@@ -125,20 +136,20 @@ The success of IPD and TFT is at least partially to their simplicity -- simpler 
 \end{itemize}
 
 
-\section{ESS}
+\chapter{ESS}
 This section will contain motivation of ESS in terms of stability and resistance to invasion, formal definition using $\epsilon$-neighborhoods. Based on Maynard Smith's article and book \emph{The Logic of Animal Conflict} and \emph{Evolution and the Theory of Games}.
 
-\subsection{This quote can be used or paraphrased as a segue into ESS}
+\section{This quote can be used or paraphrased as a segue into ESS}
 ``Paradoxically, it has turned out that game theory is more readily applied to biology than to the field of economic behavior for which it was originally designed. There are two reasons for this. First, the theory requires that the values of different outcomes (for example, financial rewards, the risks of death and the pleasures of a clear conscience) be measured on a single scale. In human applications, this measure is provided by `utility' -- a somewhat artificial and uncomfortable concept: in biology, Darwinian fitness provides a natural and genuinely one-dimensional scale. Secondly, and more importantly, in seeking the solution of a game, the concept of human rationality is replaced by that of evolutionary stability. The advantage here is that there are good theoretical reasons to expect populations to evolve to stable states, wheres there are grounds for doubting whether human beings always behave rationally'' (Maynard Smith, Preface)
 
 
-\subsection{Body of ESS section}
+\section{Body of ESS section}
 ``A `strategy' is a behavioral phenotype; i.e. it is a specification of what an individual will do in any situation in which it may find itself... the concept is couched in terms of a `strategy' because it arose in the context of animal behavior. The idea, however, can be applied equally well to any kind of phenotypic variation, and the word strategy could be replaced by the word phenotype; for example, a strategy could be the growth form of a plant, or the age at first reproduction, or the relative numbers of sons and daughters produced by a parent'' (p. 10)
 
-\subsection{TFT is ESS}
+\section{TFT is ESS}
 Proof that TFT is an ESS using the idea that if a strategy is a best response to TFT, then it must make the same decision every time it encounters the initial state, so only AllC, AllD and DCDC... are possible best responses, and for large enough discount factors they do worse than TFT. (Maynard Smith p. 203)
 
-\subsection{TFT is not ESS after all?}
+\section{TFT is not ESS after all?}
 In article \textit{No pure strategy is evolutionarily stable in the repeated Prisoner's Dilemma game}(Nature, 1987) Boyd and Lorberbaum show that TFT is not ESS. I haven't yet worked through their argument.
 
 
@@ -146,7 +157,7 @@ History of game theoretic modeling of evolution: Lewontin (1961), Fisher (1930),
 
 Stability of AllD.
 
-\subsection{Quotes and other points from Maynard Smith}
+\section{Quotes and other points from Maynard Smith}
 ``An obvious weakness of the game-theoretic approach to evolution is that it places great emphasis on equilibrium states, whereas evolution is a process of continuous, or at least periodic change. The same criticism can be leveled at the emphasis on equilibria in population genetics... there are, however, two situations in which game theory models force us to think about change as well as constancy.'' these situations are not reflected in IPD (when either the game has more than one or no ESS, IPD's only ISS is AllD). (p. 8)
 
 On truth or testability of game theoretic models: ``I think it would be a mistake, however, to stick too rigidly to the criterion of falsifiability when judging theories in population biology. For example, Volterra's equations... their merit is to show that even the simplest possible model of such an interaction leads to sustained oscillation -- a conclusion it would have been hard to reach by purely verbal reasoning.''
