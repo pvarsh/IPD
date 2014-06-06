@@ -32,11 +32,32 @@ The question extends beyond human behavior as we observe patterns of cooperation
 
 These examples share a common structure. Each involves two participants making a choice to cooperate (fix prices, say no to steroids, remove trade restrictions, reduce nuclear weapons stocks, share blood with the less fortunate bat) or defect (undercut the competitor, use steroids, establish trade restrictions, increase weapons stockpiles, hoard the blood). Mutual cooperation yields a higher advantage to both parties than mutual defection, but if one individual cooperates, while the other defects, the defector gains a large advantage, while the cooperator is left a sucker.
 
-This scenario was originally formalized in 1950 by Merrill Flood and Melvin Dresher at RAND corporation. Soon after Albert W. Tucker offered this illustrative parable that gave the game its name, the Prisoner's Dilemma.
+This scenario was originally formalized in 1950 by Merrill Flood and Melvin Dresher at RAND corporation. Soon after Albert W. Tucker offered this illustrative parable that gave the game its name, the Prisoner's Dilemma. In Tucker's tale two prisoners are arrested on a minor charge. The prosecution suspects a more serious crime but does not have evidence to convict unless the prisoners testify against each other. Without the testimony (that is if the prisoners \textit{cooperate} with each other), both would be convicted of the minor charge and receive a small sentence, say one month jail time. However if one prisoner testifies (or \textit{defects} against the other), and the other prisoner keeps mum (cooperates), then the defecting prisoner will have the minor charge dropped, and the cooperating prisoner will receive a large sentence, say five years. Finally if both prisoners rat each other out (or mutually defect), they will both receive large, but lesser sentences, say two years each.
 
-\textit{\textbf{Description of the prisoner dilemma with payoff table goes here.}}
 
-At first look the proposition may seem pessimistic. When the game is played once by players who have no possibility of future interaction, the only rational move is to defect even though mutual cooperation would lead to a higher payoff for both players. To see this we assume the opponent's move is fixed and analyze our choices. \textit{\textbf{Describe the solution. Motivate Nash Equilibrium.}}
+\begin{center}
+  \begin{tabular}{ | c | c | c | }
+    \hline
+    & Mum & Rat \\
+    \hline
+    Mum & (-0.1, -0.1) & (-5, 0) \\ \hline
+    Rat & (0, -5) & (-2, -2)  \\ \hline
+  \end{tabular}
+\end{center}
+
+In most literature, however, the problem is presented with positive payoffs, usually with the following values.
+
+\begin{center}
+  \begin{tabular}{ | c | c | c | }
+    \hline
+    & Cooperate & Defect \\
+    \hline
+    Cooperate & (3, 3) & (0, 5) \\ \hline
+    Defect & (5, 0) & (1, 1)  \\ \hline
+  \end{tabular}
+\end{center}
+
+At first look the proposition may seem pessimistic. When the game is played once by players who have no possibility of future interaction, the only rational move is to defect even though mutual cooperation would lead to a higher payoff for both players. To see this we assume our opponent's move is fixed and analyze our choices. Given that our opponent cooperated, we may choose to cooperate and receive a payoff of 3, or defect for a payoff of 5, thus we choose to defect. If our opponent defected, then our choice of cooperation would yield 0, and defection would yield 1, thus regardless of the opponent's choice, it pays for us to defect. In other words if we choose the strategy of defection, we cannot improve our payoff by a unilateral change of strategy. This solution concept is one of the most famous and important in game theory is called the Nash equilibrium (NE) in honor of mathematician John Forbes Nash, who showed that at least one mixed strategy Nash equilibrium exists in any game with a finite set of actions [Wikipedia: \url{http://en.wikipedia.org/wiki/Nash_equilibrium#History}]
 \begin{definition} Nash equilibrium.
 \end{definition}
 
@@ -68,6 +89,7 @@ Empty threats as motivation for subgame perfection.
 
 \begin{definition}Subgame Perfect Nash Equilibrium.
 \end{definition}
+
 
 \begin{definition}
 Generic game and equivalence. (This is used in Adami and Hintze, perhaps makes more sense to define it right before using in the ZD section of the paper).
@@ -225,6 +247,8 @@ Every symmetric game admits a symmetric Nash equilibrium. (Sigmund, Section 2.5)
 \end{theorem}
 \subsection{Subgame perfection}
 
+TFT is not subgame perfect since if a player decides to defect on a certain move and then return to TFT against a TFT opponent, then they will continue DCDC\dots cycle with a lower payoff than CCC\dots (Gintis, p. 209). Contrite TFT is subgame perfect.
+
 \subsection{Markov perfection}
 If I discuss countervailing strategies. 
  
@@ -285,9 +309,6 @@ Strongly dominated strategies do not survive in a replicator dynamic. (Theorem 1
 Weakly dominated strategy cannot achieve unitary probability as $t \rightarrow \infty$ in a replicator dynamic. (Theorem 12.4, Gintis, p.281). Stated without proof.
 \end{theorem}
 
-\begin{theorem}
-Weakly dominated strategy cannot achieve unitary probability as $t \rightarrow \infty$ in a replicator dynamic.
-\end{theorem}
 
 \subsubsection{Replicator dynamics and ESS}
 There is an example of a Nash equilibrium (Gintis, section 10.13) that ``cannot be invaded by any pure strategy mutant but can be invaded by an appropriate mixed-strategy mutant. We can show that this Nash equilibrium is unstable under the replicator dynamic. This is why we insisted that the ESS concept be defined in terms of mixed- rather than pure-strategy mutants; an ESS is an asymptotically stable equilibrium only if the concept is so defined.'' (Gintis, p. 286)
