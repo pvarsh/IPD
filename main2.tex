@@ -69,23 +69,35 @@ The aim of this paper is to survey the history of the Iterated Prisoner's Dilemm
 %%%%%%%%%%%%%%	CHAPTER: PRELIMINARIES      %%%%%%%%%%%%%%
 \chapter{Preliminaries}
 
-Given a game, we may want to find the `best' strategy, but first we need to develop some preliminaries in order to understand how to assess the `goodness' of a strategy. This section will define games in Normal and Extensive forms, pure and mixed strategies. It will also introduce rationality assumptions of different forms of Nash Equilibrium and briefly discuss the caveats of rationality assumptions.
+Given a game, we may want to find the `best' strategy, but first we need to develop some preliminaries in order to understand how to assess the `goodness' of a strategy. This section will define games in Normal and Extensive forms as well as pure and mixed strategies. It will also introduce rationality assumptions of different forms of Nash Equilibrium and briefly discuss the caveats of rationality assumptions.
 
-\begin{definition} A normal form game is a tuple
+\begin{definition} A \textbf{normal form} game is a tuple $G = (N, A, F)$, where $N = \{1,2,\dots,m\}$ is the set of players, $S = \{S_1, S_2, \dots, S_m\}$ is the set of actions, or pure strategies, one for each player, and $F = \{F_1, F_2, \dots, F_m\}$ is a set of payoff functions, $F_i \colon S_1 \times S_2 \times \dots \times S_m \rightarrow \mathbf{R}$.
+\end{definition}
+
+The description of the Prisoner's Dilemma in the introduction is an example of a Normal form game. It specifies the players (two prisoners), the actions available to each (cooperate and defect), and the payoff function $F(S_1, S_2) \rightarrow R\times R$ for each outcome $F(CC) = (3,3)$, $F(CD) = (0, 5)$, $F(DC) = (5,0)$, and $F(DD) = (1,1)$. A two-player game in normal form can be represented as a matrix of ordered pairs of payoffs, so it is sometimes called a bimatrix game. This form is useful for identifying Nash equilibria and eliminating strictly dominated strategies, which are actions leading to outcomes are strictly less desirable than outcomes of another action regardless of the opponents' actions (Prisoner's Dilemma does not have any strictly dominated strategies). It is important to note that all of the game's information is provided by its matrix, so players do not have a way to communicate their intentions prior to making the move, have no information about behavioral idiosyncrasies of the opponent, and derive no positive or negative utility from either spite (hurting their opponent), guilt (for hurting their opponent) or altruism (helping their opponent at a cost to themselves).
+
+When we turn to the Iterated Prisoner's Dilemma another form of game specification, the extensive form, becomes illustrative.
+
+\begin{definition} (From Osborne and Rubinstein, p.90) An \textbf{extensive game with perfect information} has the following components.
+\begin{enumerate}
+\item A set $N$ of players.
+\item A set $H$ of sequences (finite or infinite) that satisfies the following three properties.
+	\begin{enumerate}
+	\item The empty sequence $\emptyset$ is a member of $H$
+	\item If $(a^k)_{k=1,2,\dots,K} \in H$ and $L < K$ then $(a^k)_{k=1,2,\dots,L} \in H$.
+	\item If an infinite sequence $(a^k)_{k=1}^\infty$ satisfies $(a^k)_{k=1,\dots,L} \in H$ for every positive integer $L$, then $(a^k)_{k=1}^\infty \in H$.
+	\end{enumerate}
+	Each member of $H$ is a \textbf{history}; each component of a history is an \textbf{action} taken by a player. A history $(a^k)_{k=1,\dots,K} \in H$ is \textbf{terminal} if it is infinite or if there is no $a^{K+1}$ such that $(a^k)_{k=1,\dots,K+1} \in H$. The set of terminal histories is denoted $Z$.
+\item A function $P$ that assigns to each nonterminal history (each member of $H \ Z$ a member of $N$. ($P$ is the \textbf{player function}, $P(h)$ being the player who takes an action after the history $h$.)
+\item For each player $i \in N$ a preference relation $\succeq_i$ on $Z$.
+\end{enumerate}
 \end{definition}
 
 
-
-Faced with a game, the player attempts to maximize her payoff. Since the outcome depends on all players' actions, the player must make certain rationality assumptions about her opponents.
-
-It turns out that goodness of a strategy depends on our assumption about what behavior is rational, and how much rationality we can expect from the players. Faced with a game, each player's task is to maximize her own payoff. In order to do that, the player needs to have a hypothesis of what the other player will do. These hypothesis are the rationality assumptions.
-
-\textit{\textbf{Perhaps add a sentence or paragraph about the game being fully described by its matrix. That is the players get no emotional utility from reaching a socially optimal outcome or from helping another player. There is also no transfer of utility}}
-
-The description of the Prisoner's Dilemma in the introduction is an example of a Normal form game. It specifies the players (two prisoners), the actions available to each (cooperate and defect), and the payoff function for each outcome, where the outcomes are (CC, CD, DC, DD). A two-player game in normal form can be represented as a matrix of ordered pairs of payoffs, so it is sometimes called a bimatrix game. This form is useful for identifying Nash equilibria and eliminating strictly dominated strategies (actions leading to outcomes are strictly less than outcomes of another action regardless of the opponents' actions). Prisoner's Dilemma does not have any strictly dominated strategies.
+Faced with a game, the player attempts to maximize her payoff. Since the outcome depends on all players' actions, the player must make certain rationality assumptions about her opponents. The key assumption is that the opponent is only interested in maximizing her own payoff.
 
 
-The matrix representation is convenient for certain types of rationality analyses, namely elimination of strictly dominated strategies and finding Nash equilibria.
+
 
 
 Proposition 1, (p 15) in Axelrod is a simple argument that with high enough discount parameter, there is no single best strategy independent of opponent's strategy. \textit{\textbf{This uses discounting, so needs to be either introduced in Axelrod section or after discounting is introduced in preliminaries.}}
