@@ -69,7 +69,24 @@ The aim of this paper is to survey the history of the Iterated Prisoner's Dilemm
 %%%%%%%%%%%%%%	CHAPTER: PRELIMINARIES      %%%%%%%%%%%%%%
 \chapter{Preliminaries}
 
-We may want to find the `best' strategy, but then we need to develop some preliminaries in order to understand what it means for a strategy to be `good'.
+Given a game, we may want to find the `best' strategy, but first we need to develop some preliminaries in order to understand how to assess the `goodness' of a strategy. This section will define games in Normal and Extensive forms, pure and mixed strategies. It will also introduce rationality assumptions of different forms of Nash Equilibrium and briefly discuss the caveats of rationality assumptions.
+
+\begin{definition} A normal form game is a tuple
+\end{definition}
+
+
+
+Faced with a game, the player attempts to maximize her payoff. Since the outcome depends on all players' actions, the player must make certain rationality assumptions about her opponents.
+
+It turns out that goodness of a strategy depends on our assumption about what behavior is rational, and how much rationality we can expect from the players. Faced with a game, each player's task is to maximize her own payoff. In order to do that, the player needs to have a hypothesis of what the other player will do. These hypothesis are the rationality assumptions.
+
+\textit{\textbf{Perhaps add a sentence or paragraph about the game being fully described by its matrix. That is the players get no emotional utility from reaching a socially optimal outcome or from helping another player. There is also no transfer of utility}}
+
+The description of the Prisoner's Dilemma in the introduction is an example of a Normal form game. It specifies the players (two prisoners), the actions available to each (cooperate and defect), and the payoff function for each outcome, where the outcomes are (CC, CD, DC, DD). A two-player game in normal form can be represented as a matrix of ordered pairs of payoffs, so it is sometimes called a bimatrix game. This form is useful for identifying Nash equilibria and eliminating strictly dominated strategies (actions leading to outcomes are strictly less than outcomes of another action regardless of the opponents' actions). Prisoner's Dilemma does not have any strictly dominated strategies.
+
+
+The matrix representation is convenient for certain types of rationality analyses, namely elimination of strictly dominated strategies and finding Nash equilibria.
+
 
 Proposition 1, (p 15) in Axelrod is a simple argument that with high enough discount parameter, there is no single best strategy independent of opponent's strategy. \textit{\textbf{This uses discounting, so needs to be either introduced in Axelrod section or after discounting is introduced in preliminaries.}}
 
@@ -186,6 +203,12 @@ On truth or testability of game theoretic models: ``I think it would be a mistak
 
 \textit{\textbf{Segue to the next section:}} the ESS gives us both an intuitive framework and a formal topologic understanding of fitness of strategies. The proliferation of cheap computing power in the 1970s gave us another tool to study strategies -- agent-based models.
 
+\subsubsection{Another example of non-PD ESS}
+Egg recognition vs. altruistic adoption in Guillemots as an example of ESS in nature. \textit{\textbf{Dawkins, p.102}}
+
+
+
+%%%%%%%%%%%%%%% CHAPTER: PRELIMINARIES %%%%%%%%%%%%%%%%%
 \chapter{Preliminaries}
 
 
