@@ -1,0 +1,285 @@
+% main.tex, to be used with thesis.tex
+% This contains the main work of your thesis.
+
+
+\chapter{Abstract}
+One of the most famous models in game theory, the Prisoner's Dilemma, is an example of a game in which the Nash equilibrium solution is clearly not beneficial for either player. Regardless of the opponent's move, defection is always the dominant strategy in a single play of the game, and the resulting mutual defection costs both players the higher payoff they would have received from the unstable mutual cooperation play. If, however, the players have a nonzero chance of repeat interaction, turning the game into the Iterated Prisoner's Dilemma, defection may no longer be dominant, and the game allows for a rich field of strategies that utilize any available information about the opponent and vary their behavior between defection and cooperation (which can be viewed as punishment or reward) in the attempt to maximize the player's payoff or manipulate the opponent's payoff. Iterated Prisoner's Dilemma has been applied in ecology, sociology, evolutionary biology, international relations and behavior of firms in the market. This paper will review the history of Iterated Prisoner's Dilemma and its applications and will focus on the recent results by Press and Dyson (2012) showing the existence of a class of Zero Determinant strategies that allow a player to unilaterally determine her opponent's expected payoff, and to use extortion against some types of opponents. It will also examine the relationship between Zero Determinant strategies and the class of countervailing strategies proposed by J.P. Langlois and review the findings of Adami and Hintze, who show that the Zero Determinant strategies are not evolutionarily stable.
+
+\chapter{Introduction}
+
+The question that inspired the body of research I focus on in this paper is simple to state: in a world of self-interested individuals (actors?), when does it make sense to cooperate?  Real life examples abound. \textit{\textbf{(Include examples: Price fixing. Athletes and steroid use. Governments and trade. Cold war.)}}
+
+The question extends beyond human behavior as we observe patterns of cooperation everywhere in nature from reciprocal food exchange in vampire bats (expand), to countless examples interspecies cooperation or symbiosis \textit{\textbf{(Include examples in Axelrod, p90).}}
+
+These examples share a common structure. Each involves two participants making a choice to cooperate (fix prices, say no to steroids, remove trade restrictions, reduce nuclear weapons stocks, share blood with the less fortunate bat) or defect (undercut the competitor, use steroids, establish trade restrictions, increase weapons stockpiles, hoard the blood). Mutual cooperation yields a higher advantage to both parties than mutual defection, but if one individual cooperates, while the other defects, the defector gains a large advantage, while the cooperator is left a sucker.
+
+This scenario was originally formalized in 1950 by Merrill Flood and Melvin Dresher at RAND corporation. Soon after Albert W. Tucker offered this illustrative parable that gave the game its name, the Prisoner's Dilemma. In Tucker's tale two prisoners are arrested on a minor charge. The prosecution suspects a more serious crime but does not have evidence to convict unless the prisoners testify against each other. Without the testimony (that is if the prisoners \textit{cooperate} with each other), both would be convicted of the minor charge and receive a small sentence, say one month jail time. However if one prisoner testifies (or \textit{defects} against the other), and the other prisoner keeps mum (cooperates), then the defecting prisoner will have the minor charge dropped, and the cooperating prisoner will receive a large sentence, say five years. Finally if both prisoners rat each other out (or mutually defect), they will both receive large, but lesser sentences, say two years each.
+
+
+\begin{center}
+  \begin{tabular}{ | c | c | c | }
+    \hline
+    & Mum & Rat \\
+    \hline
+    Mum & (-0.1, -0.1) & (-5, 0) \\ \hline
+    Rat & (0, -5) & (-2, -2)  \\ \hline
+  \end{tabular}
+\end{center}
+
+In most literature, however, the problem is presented with positive payoffs, usually with the following values.
+
+\begin{center}
+  \begin{tabular}{ | c | c | c | }
+    \hline
+    & Cooperate & Defect \\
+    \hline
+    Cooperate & (3, 3) & (0, 5) \\ \hline
+    Defect & (5, 0) & (1, 1)  \\ \hline
+  \end{tabular}
+\end{center}
+
+At first look the proposition may seem pessimistic. When the game is played once by players who have no possibility of future interaction, the only rational move is to defect even though mutual cooperation would lead to a higher payoff for both players. To see this we assume our opponent's move is fixed and analyze our choices. Given that our opponent cooperated, we may choose to cooperate and receive a payoff of 3, or defect for a payoff of 5, thus we choose to defect. If our opponent defected, then our choice of cooperation would yield 0, and defection would yield 1, thus regardless of the opponent's choice, it pays for us to defect. In other words if we choose the strategy of defection, we cannot improve our payoff by a unilateral change of strategy. This solution concept, one of the most famous and important in game theory, is called Nash equilibrium (NE) in honor of mathematician John Forbes Nash, who showed that at least one mixed strategy Nash equilibrium exists in any game with a finite set of actions [Wikipedia: \url{http://en.wikipedia.org/wiki/Nash_equilibrium#History}]
+\begin{definition} Nash equilibrium.
+\end{definition}
+
+The game becomes more interesting---and less gloomy---with the possibility of repeat interaction, which gives players a chance to reward cooperation and exact vengeance against defectors. When choosing a strategy, one must no longer just maximize the current payoff, but also consider the shadow of the future. Whereas in the singleton game the pure strategy space had only two points, the repeated game allows for great complexity and leads to some unexpected results that give insights about many problems in sociology, evolutionary biology, and political science.
+
+The aim of this paper is to survey the history of the Iterated Prisoner's Dilemma focusing on four distinct approaches to its solution and their insights and consequences. In part one it will define and discuss the notion of evolutionary stability (ESS), due to John Maynard Smith, that paved the way for game theory applications to evolutionary biology and ecology. Then I will discuss the famous IPD tournaments hosted by Robert Axelrod and his conclusions about qualities shared by successful entrants. Part three will present an approach to modeling evolutionary systems using differential equations known as replicator dynamics. Finally part four will describe a class of Zero Determinant (ZD) strategies discovered by Press and Dyson in 2012 and discuss ZD strategies' evolutionary stability and role in mixed strategy populations.
+
+
+%%%%%%%%%%%%%%	CHAPTER: PRELIMINARIES      %%%%%%%%%%%%%%
+\chapter{Preliminaries}
+
+\subsection{Solution concepts}
+
+%%%%%%%%
+\subsubsection{June 11. Normal form PD}
+
+One of the simplest ways to describe a game is a \textbf{normal} or \textbf{strategic} form. It specifies the players, actions available to them, and their payoffs for each outcome. In the Prisoner's Dilemma, the players are $\{1, 2\}$, each player chooses between \textit{cooperation} (C) and \textit{defection} (D), and the payoffs are described by the Table \ref{table:normalFormPD}, where 1 is the row player and 2 is the column player. The letters stand for Traitor (defecting when the opponent is cooperating), Reward (for mutual cooperation), Punishment (for mutual defection), and the Sucker's payoff (cooperating when the opponent is defecting). The precise values may vary---as long as the ordering $T > R > P > S$ is preserved, the game will remain a Prisoner's Dilemma.
+
+\begin{table}[h]
+	\begin{center}
+		\begin{tabular}{ | c | c | c | }
+	    		\hline
+	    		& Cooperate & Defect \\[2ex]
+	    		\hline
+	    		Cooperate & (R = 3, R = 3) & (S = 0, T = 5) \\[2.5ex] \hline
+	    		Defect & (T = 5, S = 0) & (P = 1, P = 1)  \\[2.5ex] \hline
+	  	\end{tabular}
+		\caption{Prisoner's Dilemma in normal form}
+		\label{table:normalFormPD}
+	\end{center}
+\end{table}
+
+This matrix of ordered pairs is the exhaustive description of the game, and any aspects of the scenario not encoded in it, such as feelings of guilt from defection or pleasure from altruism, pre-game or post-game communication between the players, are assumed not to exist.
+
+\subsubsection{June 11. Solution concepts}
+
+Strategic thinking requires players to make rationality assumptions about their opponents. Different assumptions can be appropriate for modeling different problems and may lead to different solutions. Because of this game theorists rarely speak of solving a game, but rather finding a certain type of solution.
+
+A short examination of the payoffs in Table \ref{table:normalFormPD} tells us that the row player's second row payoffs are strictly greater than the first row payoffs $(T > R, P > S)$, and similarly the second column dominates the first column for the column player. Choosing a strictly dominated strategy of cooperation can then be considered irrational for each player, which leads us to the outcome (D, D) with payoffs (1, 1). At first glance this procedure, called \textbf{elimination of strictly dominated strategies}, seems harmless, however removing the first row and the first column reduces the game to a one-strategy game, eliminating all choice and costing both players the opportunity to receive a preferred (3, 3) payoff of mutual cooperation. In fact the Prisoner's Dilemma is an illustration of the failure of rationality assumptions at yielding an optimal solution, as the rational solution using dominated strategy elimination would clearly not be preferred by self-interested players. Behavioral experiments have shown that even in anonymous one-time interactions, people often choose to cooperate despite the irrationality of that strategy \cite{Khadjavi2013163}. If solving a game mathematically may neither lead to a good outcome nor agree with observed human behavior, then the solution needs to be considered cautiously.
+
+\subsubsection{June 13. Solution concepts}
+Throughout this paper we will consider various solutions to the Iterated Prisoner's Dilemma. The solutions cannot be thought of as
+
+
+%%%%%%%%
+
+\subsubsection{Prior to June 11}
+Having found ourselves in a Prisoner's Dilemma we may want to turn to mathematics to tell us what to do, however we are unlikely to reach a conclusive answer. To begin, any strategic thinking requires us to impose some rationality assumption on our opponent. One such assumption is that he would never adopt a strategy that always leads to a lower payoff than some other strategy. If we examine the game's matrix (Table 1), we see that the row player's payoff in column one is 3 for Cooperate and 5 for Defect, and for the second column it is 0 for Cooperate and 1 for Defect. Thus the strategy of defection strictly dominates the strategy of Cooperation. Since the game is symmetric, the analysis holds for the column player as well, and we conclude that rational players will always defect. In experiments facing anonymous human opponents, however, some people still chose to cooperate, so our assumption of rationality may not adequately represent the real state of the world. If we give up on our ambition to find the true solution, the various solution concepts can provide different lenses through which we can gain insight on processes modeled by games.
+
+In a way the prisoner's dilemma can be seen as an illustration of a failure of rationality assumptions. Using either elimination of strictly dominated strategies or the Nash equilibrium we arrive at a result that is clearly unfavorable for either player, the mutual defection.
+
+One of the assumptions made by the game is lack of prior knowledge of the other player, and an impossibility of any future interaction - the cooperating player cannot punish the defecting player after serving her term. Unless the players are completely anonymous, this assumption is not very realistic. One way to extend the model to allow for possibility of future interaction is to simply repeat the game. If the number of repetitions is deterministic, however, the gloomy prediction of a string of mutual defections remains. To see this consider the very last interactions the players will have (both players know it is the last). Then without the fear of punishment or the need to communicate good intentions both players will play the Nash equilibrium of mutual defection. But if both players know that their final move will be (D, D), then the same thinking applies to the penultimate move, and by backward induction we arrive at the equilibrium of always playing defect, which will be denoted ALLD.
+
+An even more realistic scenario is if the players do not know the precise number of iterations they are going to play, but at each turn they know that there is a nonzero probability $\delta$ of a repeat interaction. The expected value of a contest then becomes
+\[
+U_i(\mathbf{S}) = \sum_{t=0}^\infty \delta^t u_i\left(x^{(t)}_1, x^{(t)}_2\right)
+\]
+which is mathematically equivalent to an infinitely iterated game with discounted payoffs. \textit{\textbf{this is sloppy}}.
+
+\chapter{TIT FOR TAT and the Robert Axelrod tournaments}
+
+According to Robert Axelrod, there was a rich literature exploring the Prisoner's Dilemma by the late 1970s, but most of it was focused on analyzing situations that shared the game's structure in various social sciences rather than finding the best way to play the game \cite[p.28]{axelrod1984evolution}. 
+
+Looking to understand how various strategies may perform against each other, he invited fourteen game theorists who specialized in disciplines of psychology, economics, political science, mathematics, and sociology to participate in a computer tournament. Each participant submitted a strategy (player) that described how to play the 200-move iterated Prisoner's Dilemma given the current position and history of prior interaction. In addition Axelrod added a player called RANDOM, which played a mixed strategy of $(0.5, 0.5)$ on every move. Each of the fifteen strategies was set to play each other strategy and itself, and the tournament was repeated five times to get more stable estimates of scores for each pair of players.
+
+The simplest submission, entered by Professor Anatol Rapoport, University of Toronto, went on to win the tournament. The strategy, called TIT FOR TAT (TFT) started by cooperating on the first move and on all other moves simply repeated its opponents previous move.
+
+Axelrod circulated the results and solicited entries for the second round of the tournament, this time receiving sixty two entries from professionals and hobbyists. In the first tournament many strategies, knowing that the game only had 200 iterations attempted to use end-of-game tactics to boost their score or to avoid being taken advantage of in the final moves of the game. To avoid this end-of-game opportunism, Axelrod introduced the probability of repeat interaction of $w = 0.99654$, so with probability $0.00346$ any iteration could be the last one of the game. Once again Anatol Rapoport submitted TIT FOR TAT, and once again it won.
+
+The unexpected success of TIT FOR TAT, which can never receive a score higher than its opponent's in a single match, was subject of a series of papers and a book \textit{The Evolution of Cooperation} by Axelrod in which he discusses robustness and possible real world examples of the strategy. He suggested that the following four characteristics made TIT FOR TAT successful.
+\begin{enumerate}
+\item \textit{Don't be envious} \\
+TFT is not trying to beat its opponents, instead it is designed to do well for itself when playing against a wide range of strategies
+\item \textit{Don't be first to defect} \\
+The tournaments showed that strategies that were nice, that is that did not defect unless provoked did considerably better than strategies that used unprovoked defection
+\item \textit{Reciprocate cooperation and defection} \\
+A strategy that only reciprocates defection, like the grim trigger, gives up the possibility of letting bygones be bygones and returning to mutual cooperation. A strategy that only reciprocates cooperation is easily exploitable by unprovoked defections.
+\item \textit{Don't be too clever} \\
+Rules that constructed complex inferences about their opponents did not do very well likely because the advantages they received from correct inferences did not outweigh the losses due to incorrect ones
+\end{enumerate}
+
+Many of these characteristics were shared by other strategies that did well in the tournaments. In fact submissions that tried to get ahead by using unprovoked defections generally did worse than the players that erred on a more forgiving side. In his analysis of the first tournament, Axelrod notes that TIT FOR TAT did not have to win. One strategy that would have done better is the more forgiving TIT FOR TWO TATS, which only retaliates after two consecutive defections by its opponent. TIT FOR TWO TATS, however, is not better than TIT FOR TAT in any absolute way---it was submitted in the second tournament by John Maynard Smith and only finished in 24th place. The poor performance of TIT FOR TWO TATS was due to it being exploited by strategies that tested how much defection they could get away with. It is a good illustration of the principle that there can not be a single best strategy independent of the population of other strategies: although these testing strategies spelled doom for TIT FOR TWO TATS, they themselves did not do well in the end \cite[p.47]{axelrod1984evolution}.
+
+To further study the robustness of TIT FOR TAT, Axelrod turned to the approach of evolutionary or ecological stability developed by John Maynard Smith in which the average payoff that a strategy receives in a given population determines its reproductive fitness. Each generation of strategies plays a round robin tournament similar to round two described above, and relative frequency of strategies in the next generation is determined by the relative frequency and average payoffs in the current generation. The chronology of this ecological computational experiment is interesting. In the early generations strategies that are too nice are exploited by meaner strategies, which leads to proliferation of mean strategies and near extinction of too forgiving ones. The mean strategies are usually not very good at playing against other mean strategies, and as their numbers increase while the prey becomes sparse, their fitness suffers, and they eventually lose prominence. TIT FOR TAT, which receives the payoff of $R = 3$ against itself and other nice strategies, and which does not allow exploitation by mean strategies, once again proved to be very robust in this ecological setting and came out on top in every simulation \cite[p.53]{axelrod1984evolution}.
+
+The idea that to remain ecologically or evolutionarily fit a strategy needs to perform well against opponents, but also against itself was first formalized by John Maynard Smith in his 1973 paper \textit{The Logic of Animal Conflict} \cite{MaynardSmith1973}. He defined a strategy $I$ to be an \textit{evolutionarily stable strategy (ESS)} if a large population employing $I$ could not be invaded by a mutant playing some other strategy $J$, or more precisely if $W(J, I)$ is the payoff to $J$ in a contest with $I$, and $W(I, I)$ is the payoff to $I$ playing against itself, then
+\begin{align*}
+\textrm{either } & W(J, I) < W(I, I) \\
+\textrm{or } & W(J, I) = W(I, I) \textrm{ and } W(I, J) > W(J, J)
+\end{align*}
+In his 1981 paper \textit{The Emergence of Cooperation among Egoists} \cite{RobertAxelrod_1981}, Axelrod defined a slight modification of ESS restricting its inequality. He called a strategy \textit{collectively stable} if $W(J, I) < W(I, I)$ for any mutant invading strategy $J$ in a population of strategies $I$. This restriction allowed him to provide a characterization theorem for this class of strategies. The underlying idea for the characterization is that the incumbent can prevent the newcomer from invading if no matter what the newcomer does, the incumbent can keep his score sufficiently low. Axelrod introduces the definition: $B$ has a \textit{secure position} over $A$ on move $n$ if no matter what $A$ does from move $n$ onwards, $W(A|B) \leq W(B|B)$, assuming that $B$ defects from move $n$ onwards. If $V_n(A|B)$ denotes $A$'s discounted cumulative score in the moves before move $n$, then we can say that $B$ has a secure position over $A$ on move $n$ if 
+\[
+V_n(A | B) + w^{n-1} P/(1-w) \leq V(B | B)
+\]
+or equivalently
+\begin{equation}\label{eq:secpos}
+V_n(A | B) \leq  V(B | B) - w^{n-1} P/(1-w) 
+\end{equation}
+thus the characterization theorem, which is a version of the folk theorem of repeated games, ``embodies the advice that if you want to employ a collectively stable strategy, you should only cooperate when you can afford an exploitation by the other side and still retain your secure position'' \cite[p.313]{RobertAxelrod_1981}.
+
+\begin{theorem}The characterization theorem.
+$B$ is a collectively stable strategy if and only if $B$ defects on move $n$ whenever the other player's cumulative score so far is too great, specifically when
+\begin{equation}\label{eq:charactthm}
+W_n(A|B) > V(B|B) - w^{n-1}(T + wP/(1-w)).
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+The converse implication uses induction. Assume $B$ is a strategy that defects as required by~\ref{eq:charactthm}. To have a secure position over $A$ on move $n=1$, $B$ is required to defect on every move, that is $B$ is the $ALLD$ strategy, and $V(A | ALLD) \leq V(ALLD | ALLD)$ for any strategy $A$, so $B$ has a secure position over A on the first move.
+
+If $B$ has a secure position over $A$ on move $n$, we need to show that it will maintain its secure position on move $n+1$. First, if $B$ defects on move $n$, $A$ gets at most $P$, so
+\[
+V_{n+1}(A|B) \leq V_n(A|B) + w^{n-1}P
+\]
+Using~\ref{eq:secpos}, we get
+\begin{align*}
+V_{n+1}(A|B) 
+&\leq V(B|B) - w^{n-1}P/(1-w) + w^{n-1}P \\
+&\leq V(B|B) - w^{n}P/(1-w)
+\end{align*}
+$B$ is only allowed to cooperate on move $n$ if $B$ can afford to be exploited by $A$, that is
+\[
+V_n (A | B) \leq V(B | B) - w^{n-1}(T + wP/(1-w)).
+\]
+Since $A$ can get at most $T$ on the $n$'th move,
+\begin{align*}
+V_{n+1} (A | B)
+&\leq V(B | B) - w^{n-1} (T + wP/(1-w)) + w^{n-1}T \\
+&= V(B | B) - w^n P / (1-w)
+\end{align*}
+thus if $B$ follows the prescription of the theorem, it will preserve its secure position over $A$ and will be collectively stable.
+
+The forward implication is proved by contradiction. Suppose that $B$ is collectively stable, and there is an $A$ and an $n$ such that $B$ does not defect on move $n$ when
+\[
+V_n (A | B) > V(B | B) - w^{n-1}(T + wP / (1-w))
+\]
+or, equivalently, when
+\begin{equation}\label{eq:charactthm2}
+V_n (A | B) + w^{n-1}(T + wP / (1-w)) > V(B | B).
+\end{equation}
+Now define $A'$ to be the same as $A$ on the first $n-1$ moves, and from move $n$ onward. Since $B$ cooperates on move $n$, $A'$ gets $T$, and at least $P$ on the following moves. So
+\[
+V(A'|B) \geq V_n (A | B) + w^{n-1}(T + wP/(1-w)).
+\]
+combined with~\ref{eq:charactthm2} this yields $V(A' | B) > V(B | B)$, so $A'$ invades $B$, and hence $B$ is not collectively stable.
+\end{proof}
+
+Axelrod proves a number of other results supporting his conviction that TIT FOR TAT is good at playing the game, but acknowledging that there cannot be a single best strategy.
+
+\begin{theorem}
+If the discount parameter $w$ is sufficiently high, there is no best strategy independent of the strategy used by the other player~\cite[Theorem 1]{RobertAxelrod_1981}.
+\end{theorem}
+
+\begin{theorem}
+TIT FOR TAT is a collectively stable strategy if and only if
+\[
+w \geq \max \left( \frac{T-R}{T-P}, \frac{T-R}{R-S}\right)
+\]
+or, alternatively, TIT FOR TAT is a collectively stable strategy if and only if it is invadeable neither by ALLD nor the strategy which alternates defection and cooperation~\cite[Theorem 2]{RobertAxelrod_1981}.
+\end{theorem}
+
+\begin{theorem}
+For a nice strategy to be collectively stable, it must be provoked by the first defection of the other player~\cite[Theorem 4]{RobertAxelrod_1981}
+\end{theorem}
+
+\begin{theorem}
+Any rule, $B$ which may be the first to cooperate is collectively stable only when $w$ is sufficiently large.~\cite[Theorem 5]{RobertAxelrod_1981}
+\end{theorem}
+
+\begin{theorem}\label{thm:alld_stable}
+ALLD is always collectively stable~\cite[Theorem 6]{RobertAxelrod_1981}
+\end{theorem}
+
+
+\subsubsection{Clustering and emergence of cooperation}
+Axelrod's tournaments and Maynard Smith's ideas of evolutionary stability have given a rather positive answer on rationality of cooperation among self-interested individuals, but it seems at odds with Theorem~\ref{thm:alld_stable}. If we can assume that at some point cooperation did not exist, then the stability of ALLD implies that cooperation would never emerge from individual mutations, since cooperating individuals would not be able to invade a population of defectors.
+
+This pessimistic prediction changes if we allow cooperators to arrive in clusters to the population of defectors. Clusters of cooperation are likely to develop along close kin or individuals occupying the same or neighboring territories. Richard Dawkins' in his best seller \textit{The Slefish Gene}\cite{dawkins2006selfish} describes how such kin-based cooperation or altruism can be modeled and understood if we focus not on survival and procreation of individuals in a population, but of units of genetic information.
+
+To model invasion by a cluster, we still assume that the majority of the population is using the strategy $B$, but now the newcomers $A$ are arriving in sufficient numbers and sufficiently near each other so that the probability that $A$ interacts with $A$ is $p \in (0, 1)$, and the probability that $A$ interacts with $B$ is $1-p$. Then the expected score for a newcomer is $pV(A | A) + (1-p) V(A | B)$, and for the incumbent $V(B | B)$. So the $p$-cluster of newcomers $A$ will invade $B$ if $pV(A | A) + (1-p) V(A | B) > V(B|B)$, or solving for $p$,
+\[
+p > \frac{V(B|B) - V(A|B)}{V(A|A) - V(A|B)}.
+\]
+We can now calculate the size of the cluster necessary for TIT FOR TAT to invade ALLD. Given our usual values of T, R, P, S, and $w = 0.9$, we get $p > 1/21$, that is if TIT FOR TAT newcomers have just a five percent chance of interactions with other TIT FOR TAT players, they can successfully invade a world of noncooperative players. As $w$ increases, the minimum value of $p$ necessary for TIT FOR TAT to invade is reduced even lower~\cite{RobertAxelrod_1981}.
+
+\textit{\textbf{(Note: May leave the next two theorems out)}}
+\begin{theorem}\label{thm:alld_stable}
+The strategies which can invade ALLD in a cluster with the smallest value of p are those which are maximally discriminating, such as TIT FOR TAT~\cite[Theorem 7]{RobertAxelrod_1981}
+\end{theorem}
+
+\begin{theorem}\label{thm:alld_stable}
+If a nice strategy cannot be invaded by a single individual, it cannot be invaded by any cluster of individuals either~\cite[Theorem 8]{RobertAxelrod_1981}
+\end{theorem}
+
+\subsubsection{Plan for the rest of Axelrod section}
+Mention other theorems from 1981 paper. Mention clustering. Mention that collective stability theorems apply to ESS except the characterization theorem. Mention pavlov. Mention the paper that argues that no pure strategy is ESS.
+
+
+\subsubsection{TFT is realistic}
+Another feature that makes TFT attractive for studying emergence of cooperation is its simplicity. It does not take a great leap of faith to imagine reciprocity-based behaviors emerge in human society or the animal kingdom. \textit{\textbf{(An example?)}}
+
+\subsection{So TFT is awesome. What else is out there?}
+
+\subsubsection{Pavlov}
+\textit{Q:} Is Pavlov 'maximally discriminating' \cite[p.316]{RobertAxelrod_1981}?\\
+\textit{A:} Pavlov is not maximally discriminating, it goes back and forth between C and D when playing ALLD \cite{Nowak1993}.
+
+\subsubsection{No pure strategy is ESS}
+
+
+
+\subsubsection{Payoff as reproductive fitness}
+One mechanism that could introduce reciprocal cooperation to a population of egotistically defecting players is kin recognition or territorial behavior. Axelrod shows that given a high enough probability of repeat interaction, a small group of TFT can invade a large population of ALLD. In fact TFT invasion requires the minimal 
+
+
+\subsubsection{TFT and strategy goodness}
+\begin{enumerate}
+\item \textit{Note: the first tournament did not have discounting, that is $w = 1$}
+\item Four characteristics of good strategies \cite[p.110]{axelrod1984evolution}.
+\item TFT did not need to win (TFTT, Look Ahead \cite[p.39]{axelrod1984evolution}, RESPONSIVE DOWNING \textit{Axelrod does not call it responsive downing})
+\item Interesting that players tried to gain advantage from opportunistic defections, while more could be gained from being nicer than TFT (TFTT is an example)
+\item Kingmakers - strategies that may not do very well themselves, but are important in the fitness landscape for other strategies
+\end{enumerate}
+
+\subsubsection{Second tournament}
+\begin{enumerate}
+\item $w = 0.99654$, so on average there are still 200 games
+\item 63 rules including RANDOM
+\item Robustness of TFT was tested by conducting six tournaments with different starting distributions of strategies, TFT won 5 and came 2nd in the remaining
+\end{enumerate}
+
+\subsubsection{Segue to ESS}
+Another way to think of robustness is...
+
+
+\chapter{ESS}
+Invented by biologist John Maynard Smith when he was unaware of the Nash equilibrium in game theory \cite[p.53]{nowak2006evolutionary}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+

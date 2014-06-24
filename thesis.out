@@ -1,39 +1,8 @@
-\BOOKMARK [1][-]{section.0.1}{Notes from June 3, 2014}{}% 1
-\BOOKMARK [2][-]{subsection.0.1.1}{What to ask}{section.0.1}% 2
-\BOOKMARK [2][-]{subsection.0.1.2}{FOCUS}{section.0.1}% 3
-\BOOKMARK [0][-]{chapter.1}{Abstract}{}% 4
-\BOOKMARK [0][-]{chapter.2}{Introduction}{}% 5
-\BOOKMARK [0][-]{chapter.3}{Preliminaries}{}% 6
-\BOOKMARK [0][-]{chapter.4}{Axelrod's Tournaments and TFT}{}% 7
-\BOOKMARK [1][-]{subsection.4.0.3}{Examples}{chapter.4}% 8
-\BOOKMARK [2][-]{subsection.4.0.4}{Other points and themes in Axelrod}{subsection.4.0.3}% 9
-\BOOKMARK [2][-]{subsection.4.0.5}{Beating TFT: Pavlov}{subsection.4.0.3}% 10
-\BOOKMARK [0][-]{chapter.5}{ESS}{}% 11
-\BOOKMARK [1][-]{section.5.1}{This quote can be used or paraphrased as a segue into ESS}{chapter.5}% 12
-\BOOKMARK [1][-]{section.5.2}{Body of ESS section}{chapter.5}% 13
-\BOOKMARK [1][-]{section.5.3}{TFT is ESS}{chapter.5}% 14
-\BOOKMARK [1][-]{section.5.4}{TFT is not ESS after all?}{chapter.5}% 15
-\BOOKMARK [1][-]{section.5.5}{Quotes and other points from Maynard Smith}{chapter.5}% 16
-\BOOKMARK [0][-]{chapter.6}{Preliminaries}{}% 17
-\BOOKMARK [1][-]{section.6.1}{Games and Solution concepts}{chapter.6}% 18
-\BOOKMARK [2][-]{subsection.6.1.1}{Games and Iterated Games}{section.6.1}% 19
-\BOOKMARK [2][-]{subsection.6.1.2}{Nash equilibrium}{section.6.1}% 20
-\BOOKMARK [2][-]{subsection.6.1.3}{Subgame perfection}{section.6.1}% 21
-\BOOKMARK [2][-]{subsection.6.1.4}{Markov perfection}{section.6.1}% 22
-\BOOKMARK [2][-]{subsection.6.1.5}{ESS}{section.6.1}% 23
-\BOOKMARK [2][-]{subsection.6.1.6}{Some strategies}{section.6.1}% 24
-\BOOKMARK [1][-]{section.6.2}{Replicator dynamics}{chapter.6}% 25
-\BOOKMARK [1][-]{section.6.3}{Agent based modeling}{chapter.6}% 26
-\BOOKMARK [1][-]{section.6.4}{Learning}{chapter.6}% 27
-\BOOKMARK [0][-]{chapter.7}{Results}{}% 28
-\BOOKMARK [1][-]{section.7.1}{Axelrod, tournaments, TFT}{chapter.7}% 29
-\BOOKMARK [1][-]{section.7.2}{Press and Dyson: zero determinant strategies}{chapter.7}% 30
-\BOOKMARK [2][-]{subsection.7.2.1}{Stewart and Plotkin comments on Press and Dyson}{section.7.2}% 31
-\BOOKMARK [1][-]{section.7.3}{Evolutionary stability of ZD}{chapter.7}% 32
-\BOOKMARK [2][-]{subsection.7.3.1}{Adami and Hintze, 2013}{section.7.3}% 33
-\BOOKMARK [2][-]{subsection.7.3.2}{Hilbe, Nowak, Sigmund, 2013}{section.7.3}% 34
-\BOOKMARK [1][-]{section.7.4}{Countervailing}{chapter.7}% 35
-\BOOKMARK [0][-]{chapter.8}{Other results and discussions}{}% 36
-\BOOKMARK [1][-]{section.8.1}{An empirical approach to PD}{chapter.8}% 37
-\BOOKMARK [1][-]{section.8.2}{Conclusion}{chapter.8}% 38
-\BOOKMARK [1][-]{section.8.3}{Notation}{chapter.8}% 39
+\BOOKMARK [0][-]{chapter.1}{Abstract}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Introduction}{}% 2
+\BOOKMARK [0][-]{chapter.3}{Preliminaries}{}% 3
+\BOOKMARK [1][-]{subsection.3.0.1}{Solution concepts}{chapter.3}% 4
+\BOOKMARK [0][-]{chapter.4}{TIT FOR TAT and the Robert Axelrod tournaments}{}% 5
+\BOOKMARK [1][-]{subsection.4.0.2}{So TFT is awesome. What else is out there?}{chapter.4}% 6
+\BOOKMARK [0][-]{chapter.5}{ESS}{}% 7
+\BOOKMARK [0][-]{chapter*.14}{Bibliography}{}% 8
