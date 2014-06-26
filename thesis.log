@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  24 JUN 2014 16:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  26 JUN 2014 13:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -485,6 +485,14 @@ Package: thm-restate 2012/05/04 v63
 Package: thm-amsthm 2012/05/04 v63
 \thmt@style@headstyle=\toks35
 ))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
 \c@theorem=\count120
 \c@conjecture=\count121
 \c@definition=\count122
@@ -616,66 +624,57 @@ Chapter 4.
 
 ] [10]
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
-t line 142.
- [11] [12]
+t line 145.
+ [11] [12] [13] [14] [15]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 243.
+(hyperref)                than one, level fixed on input line 277.
 
-[13] [14]
+[16] [17] [18]
 Chapter 5.
-) [15
+) [19
 
 ] (./thesis.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 38.
- [16
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 39.
+ [20
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 39.
  (./thesis.aux (./main3-flow.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 38.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 38.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 39.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 39.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: EDB0DA297AA7A3AEF49ABDEC34081739;549.
 
-
-Package rerunfilecheck Warning: File `thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: CCB5397F2EE4CE79D0831F106E1E0C10;467
-(rerunfilecheck)             After:  21853B2BC3D9AB0C41B6470CFA46A8F9;467.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 38.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 39.
  ) 
 Here is how much of TeX's memory you used:
- 7447 strings out of 493315
- 109265 string characters out of 6137904
- 203304 words of memory out of 5000000
- 10676 multiletter control sequences out of 15000+600000
+ 7505 strings out of 493315
+ 110174 string characters out of 6137904
+ 206322 words of memory out of 5000000
+ 10719 multiletter control sequences out of 15000+600000
  12223 words of font info for 47 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 34i,10n,30p,1679b,409s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{chapter*.13} has been referenced but does not exi
-st, replaced by a fixed one
-
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
-/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb>
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
-usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
-r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
-local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loc
-al/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
-l/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/
-texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/t
-exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on thesis.pdf (16 pages, 168938 bytes).
+ 34i,9n,30p,1679b,408s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pf
+b></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
+r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/l
+ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
+cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/loca
+l/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local
+/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on thesis.pdf (20 pages, 195689 bytes).
 PDF statistics:
- 255 PDF objects out of 1000 (max. 8388607)
- 223 compressed objects within 3 object streams
- 80 named destinations out of 1000 (max. 500000)
- 65 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 289 PDF objects out of 1000 (max. 8388607)
+ 253 compressed objects within 3 object streams
+ 91 named destinations out of 1000 (max. 500000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 

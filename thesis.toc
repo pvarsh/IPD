@@ -8,14 +8,18 @@
 \contentsline {subsubsection}{Prior to June 11}{7}{section*.4}
 \contentsline {chapter}{\numberline {4}TIT FOR TAT and the Robert Axelrod tournaments}{9}{chapter.4}
 \contentsline {subsubsection}{Clustering and emergence of cooperation}{13}{section*.5}
-\contentsline {subsubsection}{Plan for the rest of Axelrod section}{13}{section*.6}
-\contentsline {subsubsection}{TFT is realistic}{13}{section*.7}
-\contentsline {subsection}{\numberline {4.0.2}So TFT is awesome. What else is out there?}{14}{subsection.4.0.2}
-\contentsline {subsubsection}{Pavlov}{14}{section*.8}
-\contentsline {subsubsection}{No pure strategy is ESS}{14}{section*.9}
-\contentsline {subsubsection}{Payoff as reproductive fitness}{14}{section*.10}
-\contentsline {subsubsection}{TFT and strategy goodness}{14}{section*.11}
-\contentsline {subsubsection}{Second tournament}{14}{section*.12}
-\contentsline {subsubsection}{Segue to ESS}{14}{section*.13}
-\contentsline {chapter}{\numberline {5}ESS}{15}{chapter.5}
-\contentsline {chapter}{Bibliography}{16}{chapter*.14}
+\contentsline {subsubsection}{Comparing ESS, collective stability, and Nash equilibrium}{13}{section*.6}
+\contentsline {subsubsection}{Win-Stay, Lose-Shift}{15}{section*.7}
+\contentsline {subsubsection}{Conclusion of Part 1}{16}{section*.8}
+\contentsline {subsection}{\numberline {4.0.2}Notes on plan for Part 2}{16}{subsection.4.0.2}
+\contentsline {subsubsection}{Plan for the rest of Axelrod section}{17}{section*.9}
+\contentsline {subsubsection}{TFT is realistic}{17}{section*.10}
+\contentsline {subsection}{\numberline {4.0.3}So TFT is awesome. What else is out there?}{17}{subsection.4.0.3}
+\contentsline {subsubsection}{Pavlov}{17}{section*.11}
+\contentsline {subsubsection}{No pure strategy is ESS}{17}{section*.12}
+\contentsline {subsubsection}{Payoff as reproductive fitness}{17}{section*.13}
+\contentsline {subsubsection}{TFT and strategy goodness}{17}{section*.14}
+\contentsline {subsubsection}{Second tournament}{18}{section*.15}
+\contentsline {subsubsection}{Segue to ESS}{18}{section*.16}
+\contentsline {chapter}{\numberline {5}ESS}{19}{chapter.5}
+\contentsline {chapter}{Bibliography}{20}{chapter*.17}
