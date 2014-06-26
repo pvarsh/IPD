@@ -1,25 +1,10 @@
-\contentsline {chapter}{\numberline {1}Abstract}{3}{chapter.1}
-\contentsline {chapter}{\numberline {2}Introduction}{4}{chapter.2}
-\contentsline {chapter}{\numberline {3}Preliminaries}{6}{chapter.3}
-\contentsline {subsection}{\numberline {3.0.1}Solution concepts}{6}{subsection.3.0.1}
-\contentsline {subsubsection}{June 11. Normal form PD}{6}{section*.1}
-\contentsline {subsubsection}{June 11. Solution concepts}{6}{section*.2}
-\contentsline {subsubsection}{June 13. Solution concepts}{7}{section*.3}
-\contentsline {subsubsection}{Prior to June 11}{7}{section*.4}
-\contentsline {chapter}{\numberline {4}TIT FOR TAT and the Robert Axelrod tournaments}{9}{chapter.4}
-\contentsline {subsubsection}{Clustering and emergence of cooperation}{13}{section*.5}
-\contentsline {subsubsection}{Comparing ESS, collective stability, and Nash equilibrium}{13}{section*.6}
-\contentsline {subsubsection}{Win-Stay, Lose-Shift}{15}{section*.7}
-\contentsline {subsubsection}{Conclusion of Part 1}{16}{section*.8}
-\contentsline {subsection}{\numberline {4.0.2}Notes on plan for Part 2}{16}{subsection.4.0.2}
-\contentsline {subsubsection}{Plan for the rest of Axelrod section}{17}{section*.9}
-\contentsline {subsubsection}{TFT is realistic}{17}{section*.10}
-\contentsline {subsection}{\numberline {4.0.3}So TFT is awesome. What else is out there?}{17}{subsection.4.0.3}
-\contentsline {subsubsection}{Pavlov}{17}{section*.11}
-\contentsline {subsubsection}{No pure strategy is ESS}{17}{section*.12}
-\contentsline {subsubsection}{Payoff as reproductive fitness}{17}{section*.13}
-\contentsline {subsubsection}{TFT and strategy goodness}{17}{section*.14}
-\contentsline {subsubsection}{Second tournament}{18}{section*.15}
-\contentsline {subsubsection}{Segue to ESS}{18}{section*.16}
-\contentsline {chapter}{\numberline {5}ESS}{19}{chapter.5}
-\contentsline {chapter}{Bibliography}{20}{chapter*.17}
+\contentsline {chapter}{\numberline {1}Cooperation}{3}{chapter.1}
+\contentsline {subsection}{\numberline {1.0.1}Introduction}{3}{subsection.1.0.1}
+\contentsline {subsection}{\numberline {1.0.2}Theorems}{3}{subsection.1.0.2}
+\contentsline {subsection}{\numberline {1.0.3}Draft of chapter}{3}{subsection.1.0.3}
+\contentsline {subsubsection}{Clustering and emergence of cooperation}{7}{section*.1}
+\contentsline {subsubsection}{Comparing ESS, collective stability, and Nash equilibrium}{8}{section*.2}
+\contentsline {subsubsection}{Win-Stay, Lose-Shift}{9}{section*.3}
+\contentsline {subsubsection}{Conclusion of Part 1}{10}{section*.4}
+\contentsline {subsubsection}{Notes on plan for Part 2}{11}{section*.5}
+\contentsline {chapter}{Bibliography}{12}{chapter*.6}
