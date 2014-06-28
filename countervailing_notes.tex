@@ -1,0 +1,164 @@
+% main.tex, to be used with thesis.tex
+% This contains countervailing computations and perhaps other notes for part 2
+
+
+\chapter{Countervailing}
+
+These are the payoffs for Langlois 
+$\left(
+	\begin{array}{cc}
+		0 & -2 \\
+		1 & -1
+	\end{array}
+\right)
+$
+and Axelrod
+$
+\left(
+	\begin{array}{cc}
+		3 & 1 \\
+		5 & 0
+	\end{array}
+\right)
+$
+values of
+$
+\left(
+	\begin{array}{cc}
+		R & S \\
+		T & P
+	\end{array}
+\right)
+$
+
+\begin{align*}
+&(1-x_i,\enspace x_i) 
+\left(
+	\begin{array}{cc}
+		R & S \\
+		T & P
+	\end{array}
+\right)
+\left(
+	\begin{array}{c}
+	1-x_j \\
+	x_j
+	\end{array}
+\right)
+\\
+= &(1-x_i)(1-x_j) R + (1-x_i)x_j S + x_i(1-x_j)T + x_i x_j P
+\\
+= &(1 - x_i - x_j + x_i x_j)R + (x_j - x_i x_j)S + (x_i - x_i x_j)T + x_i x_j P
+\\
+=& \begin{cases}
+      	-2 x_j + 2 x_i x_j + x_i - x_i x_j - x_i x_j 	& \textrm{Langlois}\\
+	3 + 2x_i - 3x_j - x_i x_j 				&\textrm{Axelrod}
+      \end{cases}
+\\
+=& \begin{cases}
+	x_i - 2x_i x_j			& \textrm{Langlois}	\\
+	3 + 2x_i - 3x_j - x_i x_j 	&\textrm{Axelrod}
+      \end{cases}
+\end{align*}
+
+
+\subsubsection{Are countervailing strategies ZD?}
+
+Payoff matrices each player are $S_X = (R, S, T, P)^T = (0, -2, 1, -1)^T$ and $S_Y = (R, T, S, P)^T = (0, 1, -2, -1)^T$.
+
+The memory one IPD with mixed strategies $\mathbf{p} = (p_1, p_2, p_3, p_4), \mathbf{q} = (q_1, q_2, q_3, q_4)$ for players $X, Y$ respectively is a Markov chain with the transition probability matrix
+\[
+\left[
+\begin{array}{c c c c}
+p_1q_1 & p_1 (1-q_1) & (1-p_1)q_1 & (1-p_1)(1-q_1) \\
+p_2q_3 & p_2 (1-q_3) & (1-p_2)q_3 & (1-p_2)(1-q_3) \\
+p_3q_2 & p_3 (1-q_2) & (1-p_3)q_2 & (1-p_3)(1-q_2) \\
+p_4q_4 & p_4 (1-q_4) & (1-p_4)q_4 & (1-p_4)(1-q_4)
+\end{array}
+\right]
+\]
+with the stationary vector $\frac{\mathbf{v}}{\mathbf{v} \cdot \mathbf{1}}$, where $\mathbf{v}$ is not necessarily normalized.
+
+Press and Dyson show that the dot product of $\mathbf{v}$ with an arbitrary vector $\mathbf{f}$ is given by the determinant
+\[
+\mathbf{v}\cdot \mathbf{f} \equiv D(\mathbf{p}, \mathbf{q}, \mathbf{f})
+= \det
+\left[
+\begin{array}{c c c c}
+-1 + p_1 q_1    &	-1 + p_1	&	-1 + q_1	&	f_1 \\
+p_2 q_3         &	-1 + p_2	&	-q_3		&	f_2 \\
+p_3 q_2 		&	p_3			&	-1 + q_2	&	f_3 \\
+p_4 q_4			&	p_4			&	q_4			&	f_4
+\end{array}
+\right]
+\]
+and that the payoffs for $S_X$ and $S_Y$ are given by
+\begin{align*}
+S_X =
+\frac{\mathbf{v} \cdot \mathbf{S}_X}{\mathbf{v} \cdot \mathbf{1}} =
+\frac{D(\mathbf{p}, \mathbf{q}, \mathbf{S}_X)}{D(\mathbf{p}, \mathbf{q}, \mathbf{1})}
+\\
+\\
+S_Y =
+\frac{\mathbf{v} \cdot \mathbf{S}_Y}{\mathbf{v} \cdot \mathbf{1}} =
+\frac{D(\mathbf{p}, \mathbf{q}, \mathbf{S}_Y)}{D(\mathbf{p}, \mathbf{q}, \mathbf{1})}
+\end{align*}
+so a linear (affine?) combination of payoffs is given by
+\[
+\alpha S_X + \beta S_Y + \gamma
+=
+\frac{D(\mathbf{p}, \mathbf{q}, \alpha\mathbf{S}_X + \beta\mathbf{S}_Y + \gamma \mathbf{1})}{D(\mathbf{p}, \mathbf{q}, \mathbf{1})}
+\]
+from the countervailing example with $\psi_j (x_i, x_j) = \frac{x_i + x_j}{2.7}$ yielding $\mathbf{p} = (0, \frac{1}{2.7}, \frac{1}{2.7}, \frac{2}{2.7})^T$
+\[
+\left(
+\renewcommand{\arraystretch}{1.3}
+\begin{array}{c}
+0 \\
+\frac{1}{2.7}\\
+\frac{1}{2.7}\\
+\frac{2}{2.7}
+\end{array}
+\right)
+=
+\alpha
+\left(
+\renewcommand{\arraystretch}{1.3}
+\begin{array}{r}
+0 \\
+-2 \\
+1\\
+-1
+\end{array}
+\right)
++
+\beta
+\left(
+\renewcommand{\arraystretch}{1.3}
+\begin{array}{r}
+0 \\
+1 \\
+-2\\
+-1
+\end{array}
+\right)
++
+\left(
+\renewcommand{\arraystretch}{1.3}
+\begin{array}{r}
+\gamma \\
+\gamma \\
+\gamma \\
+\gamma
+\end{array}
+\right)
+\]
+solving for $\alpha$, $\beta$, $\gamma$, we get $\alpha = \beta = -\frac{1}{2.7}$, $\gamma = 0$,
+so the strategy $\mathbf{p}$ is the ZD strategy that enforces the relationship $-\frac{1}{2.7}S_X - \frac{1}{2.7}S_Y = 0$ or simply $S_X + S_Y = 0 = R$.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
