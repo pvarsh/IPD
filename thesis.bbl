@@ -1,46 +1,44 @@
 \begin{thebibliography}{1}
 
-\bibitem{axelrod1984evolution}
-R.~Axelrod.
-\newblock {\em The evolution of cooperation}.
-\newblock Political Science / Science. Basic Books, 1984.
+\bibitem{Adami_Hintze_2014}
+Christoph Adami and Arend Hintze.
+\newblock Evolutionary instability of zero-determinant strategies demonstrates
+  that winning is not everything, 2014.
 
-\bibitem{RobertAxelrod_1981}
-Robert Axelrod.
-\newblock The emergence of cooperation among egoists.
-\newblock {\em The American Political Science Review}, 1981.
+\bibitem{Hilbe23042013}
+Christian Hilbe, Martin~A. Nowak, and Karl Sigmund.
+\newblock Evolution of extortion in iterated prisoner's dilemma games.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  110(17):6913--6918, 2013.
 
-\bibitem{Boyd_Lorberbaum_1987}
-Robert Boyd and Jeffrey~P. Lorberbaum.
-\newblock {No pure strategy is evolutionarily stable in the repeated Prisoner's
-  Dilemma game}.
-\newblock {\em Nature}, 327(6117):58--59, May 1987.
+\bibitem{Hilbe_extortion_compliance}
+Christian Hilbe, Martin~A. Nowak, and Arne Traulsen.
+\newblock Adaptive dynamics of extortion and compliance.
+\newblock {\em PLoS ONE}, 8(11):e77886, 11 2013.
 
-\bibitem{dawkins2006selfish}
-R.~Dawkins.
-\newblock {\em The Selfish Gene: 30th Anniversary Edition}.
-\newblock ISSR library. OUP Oxford, 2006.
+\bibitem{iliopoulos_2010}
+Dimitris Iliopoulos, Arend Hintze, and Christoph Adami.
+\newblock Critical dynamics in the evolution of stochastic strategies for the
+  iterated prisoner's dilemma.
+\newblock {\em PLoS Comput Biol}, 6(10):e1000948, 10 2010.
 
-\bibitem{Khadjavi2013163}
-Menusch Khadjavi and Andreas Lange.
-\newblock Prisoners and their dilemma.
-\newblock {\em Journal of Economic Behavior and Organization}, 92(0):163 --
-  175, 2013.
+\bibitem{Press26062012}
+William~H. Press and Freeman~J. Dyson.
+\newblock Iterated prisoner?s dilemma contains strategies that dominate any
+  evolutionary opponent.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  109(26):10409--10413, 2012.
 
-\bibitem{MaynardSmith1973}
-J.~{Maynard Smith} and G.~R. Price.
-\newblock The logic of animal conflict.
-\newblock {\em Nature}, 246(5427):15--18, 1973.
+\bibitem{Stewart26062012}
+Alexander~J. Stewart and Joshua~B. Plotkin.
+\newblock Extortion and cooperation in the prisoner's dilemma.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  109(26):10134--10135, 2012.
 
-\bibitem{nowak2006evolutionary}
-M.A. Nowak.
-\newblock {\em Evolutionary Dynamics}.
-\newblock Harvard University Press, 2006.
-
-\bibitem{Nowak1993}
-Martin Nowak and Karl Sigmund.
-\newblock A strategy of win-stay, lose-shift that outperforms tit-for-tat in
-  the prisoner's dilemma game.
-\newblock {\em Nature}, 364(6432):56--58, 1993.
+\bibitem{Stewart03092013}
+Alexander~J. Stewart and Joshua~B. Plotkin.
+\newblock From extortion to generosity, evolution in the iterated prisoner's
+  dilemma.
+\newblock {\em Proceedings of the National Academy of Sciences}, 2013.
 
 \end{thebibliography}

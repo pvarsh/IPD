@@ -4,7 +4,7 @@
 
 \chapter{Countervailing}
 
-These are the payoffs for Langlois 
+These are the payoffs for Langlois
 $\left(
 	\begin{array}{cc}
 		0 & -2 \\
@@ -16,8 +16,8 @@ and Axelrod
 $
 \left(
 	\begin{array}{cc}
-		3 & 1 \\
-		5 & 0
+		3 & 0 \\
+		5 & 1
 	\end{array}
 \right)
 $
@@ -50,23 +50,18 @@ $
 \\
 = &(1 - x_i - x_j + x_i x_j)R + (x_j - x_i x_j)S + (x_i - x_i x_j)T + x_i x_j P
 \\
+= &R + (T-R)x_i + (S-R)x_j  + (R - S - T + P)x_ix_j \\
 =& \begin{cases}
-      	-2 x_j + 2 x_i x_j + x_i - x_i x_j - x_i x_j 	& \textrm{Langlois}\\
-	3 + 2x_i - 3x_j - x_i x_j 				&\textrm{Axelrod}
-      \end{cases}
-\\
-=& \begin{cases}
-	x_i - 2x_i x_j			& \textrm{Langlois}	\\
+	x_i - 2x_j			& \textrm{Langlois}	\\
 	3 + 2x_i - 3x_j - x_i x_j 	&\textrm{Axelrod}
       \end{cases}
 \end{align*}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsubsection{Are countervailing strategies ZD?}
+\subsubsection{Question about discounting}
 
-Payoff matrices each player are $S_X = (R, S, T, P)^T = (0, -2, 1, -1)^T$ and $S_Y = (R, T, S, P)^T = (0, 1, -2, -1)^T$.
-
-The memory one IPD with mixed strategies $\mathbf{p} = (p_1, p_2, p_3, p_4), \mathbf{q} = (q_1, q_2, q_3, q_4)$ for players $X, Y$ respectively is a Markov chain with the transition probability matrix
+In the derivation of Zero Determinant strategies, Press and Dyson use the transition probability matrix 
 \[
 \left[
 \begin{array}{c c c c}
@@ -77,9 +72,7 @@ p_4q_4 & p_4 (1-q_4) & (1-p_4)q_4 & (1-p_4)(1-q_4)
 \end{array}
 \right]
 \]
-with the stationary vector $\frac{\mathbf{v}}{\mathbf{v} \cdot \mathbf{1}}$, where $\mathbf{v}$ is not necessarily normalized.
-
-Press and Dyson show that the dot product of $\mathbf{v}$ with an arbitrary vector $\mathbf{f}$ is given by the determinant
+for IPD with mixed strategies $\mathbf{p} = (p_1, p_2, p_3, p_4), \mathbf{q} = (q_1, q_2, q_3, q_4)$ for players $X, Y$ respectively. If $\mathbf{v}$ is the stationary distribution of the above Markov chain, then they show that the dot product of $\mathbf{v}$ with an arbitrary vector $\mathbf{f}$ is given by the determinant
 \[
 \mathbf{v}\cdot \mathbf{f} \equiv D(\mathbf{p}, \mathbf{q}, \mathbf{f})
 = \det
@@ -90,9 +83,21 @@ p_2 q_3         &	-1 + p_2	&	-q_3		&	f_2 \\
 p_3 q_2 		&	p_3			&	-1 + q_2	&	f_3 \\
 p_4 q_4			&	p_4			&	q_4			&	f_4
 \end{array}
-\right]
+\right],
 \]
-and that the payoffs for $S_X$ and $S_Y$ are given by
+so if $\mathbf{S}_X = (R, S, T, P)$, then on average $X$'s payoff is $\mathbf{v}\cdot\mathbf{S}_X = D(\mathbf{p}, \mathbf{q}, \mathbf{S}_X)$. Press and Dyson use this average payoff for their definitions and proofs, so in their game there is no discounting.
+
+\textitbf{Question: }I'm not sure if this is a problem when comparing ZD strategies with countervailing strategies, which use a discount factor in their definition.
+
+One way I could see doing this is making the game have five states: $(cc, cd, dc, dd, \textrm{sink})$, where sink is the end of game state associated with payoff of 0 for both players. I'm not sure what will happen to the ZD strategies if they are defined on this 5-state Markov chain.
+
+The other way would be to say that if $X$'s average payoff is $S_X = \mathbf{v}\cdot\mathbf{S}_X$, then $X$'s discounted payoff should be $\frac{S_X}{1-w}$.
+
+Is either of these approaches reasonable?
+
+\subsubsection{Are countervailing strategies ZD? Using your example.}
+
+The payoffs for $S_X$ and $S_Y$ are given by
 \begin{align*}
 S_X =
 \frac{\mathbf{v} \cdot \mathbf{S}_X}{\mathbf{v} \cdot \mathbf{1}} =
@@ -155,10 +160,40 @@ from the countervailing example with $\psi_j (x_i, x_j) = \frac{x_i + x_j}{2.7}$
 \]
 solving for $\alpha$, $\beta$, $\gamma$, we get $\alpha = \beta = -\frac{1}{2.7}$, $\gamma = 0$,
 so the strategy $\mathbf{p}$ is the ZD strategy that enforces the relationship $-\frac{1}{2.7}S_X - \frac{1}{2.7}S_Y = 0$ or simply $S_X + S_Y = 0 = R$.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\subsubsection{Langlois' Countervailing example with Axelrod's R, S, T, P values}
 
+Taking $g_i(x_j) = - \gamma_i x_j$ does not work out. Instead here's an attempt with $g_i(x_j) = R - \gamma_i x_j = 3 - \gamma_i x_j$, this way it is consistent with $Langlois'$ example, since $R = 0$ in Langlois' definition and $R = 3$ in Axelrod's definition.
 
-
-
-
+Then we have
+\[
+g_i (x_j) = 3 - \gamma_i x_j
+\]
+solving the countervailing equation
+\[
+3 - \gamma_i x_j = 3 + 2 x_i - 3 x_j - x_i x_j - \delta \gamma_i \psi_j
+\]
+which yields
+\[
+\psi_j (x_i, x_j) = \frac{2x_i + (\gamma_i - 3) x_j - x_i x_j}{\delta \gamma_i}
+\]
+with the requirement that
+\[
+\psi_j  \in [0, 1]
+\]
+setting $x_j = 0$ we get $\gamma_i > 0$, and setting $x_i = 0$ gives us $(\gamma_i - 3) > 0$ or $\gamma_i > 3$. To solve $2 x_i + (\gamma_i - 3) x_j - x_i x_j \leq \delta \gamma_i$, we see that $\frac{\partial\textrm{LHS}}{\partial x_i} \geq 0$, so we can take $x_i = 1$, but $\frac{\partial\textrm{LHS}}{\partial x_j} \geq 0$ needs $\gamma_i \geq 4$. With that restriction, we can also take $x_j = 1$, and we get
+\[
+\frac{2 + (\gamma_i - 3) -1}{\delta \gamma_i} \leq 1
+\]
+or
+\[
+\frac{2}{1-\delta} \geq \gamma_i.
+\]
+Thus
+\[
+\psi(x_i, x_j) \in [0, 1] \textrm{ whenever } 4 \leq \gamma_i \leq \frac{2}{1-\delta}.
+\]
+Taking $\delta = .9$, and $\gamma_i = 5$, we get
+\[
+\psi_j (x_i, x_j) = \frac{2x_i + 2x_j - x_i x_j}{4.5}
+\]

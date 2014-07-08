@@ -1,0 +1,198 @@
+% main.tex, to be used with thesis.tex
+% This contains the cooperation chapter
+
+
+\chapter{Manipulation}
+
+Much of the innovation in the history of IPD came from various refinements of the Nash equilibrium. Reframing the equilibrium in terms of ecology led to Axelrod's idea of collective stability and his analysis of the success of TIT FOR TAT. An evolutionary refinement of by Maynard Smith allowed the introduction of mutations and a stability robust to them. It exposed a weakness of TFT---it could be invaded by a pair of strategies. To account for possibility of error or miscommunication, Richard Selten proposed the trembling hand perfect equilibrium, and simulations showed that a simple strategy WSLS performed well in this error-prone environment. Not all successful strategies have the simple elegance of TFT and WSLS, however. In 2010 Iliopoulos, Hintze, and Adami showed that stability of strategies depended on the mutation rate, and analyzed a strategy they called GENERAL COOPERATOR $\mathbf{q}_{\textrm{GC}} = (0.935, 0.229, 0.266, 0.42)$, which was the evolutionary fixed point at low mutation rates \cite{iliopoulos_2010}.
+
+In 2012 a new class of strategies was born out of yet another approach to solving the dilemma. If the IPD is restricted to memory-one strategies, which can only use the previous state of the game in each decision, it can be thought of as a Markov process with states CC, CD, DC, DD. Since the strategies can be described as vectors of probabilities the player will cooperate given each of the four states of the game
+\begin{align*}
+\mathbf{p} &= (p_\CC, p_\CD, p_\DC, p_\DD) \\
+\mathbf{q} &= (q_\CC, q_\DC, q_\CD, q_\DD)
+\end{align*}
+where $p_2 = \mathds{P}(\textrm{player 1 cooperates } | \CD)$. Then the Markov transition probabilities are
+\[
+\left[
+\begin{array}{c c c c}
+p_1q_1 & p_1 (1-q_1) & (1-p_1)q_1 & (1-p_1)(1-q_1) \\
+p_2q_3 & p_2 (1-q_3) & (1-p_2)q_3 & (1-p_2)(1-q_3) \\
+p_3q_2 & p_3 (1-q_2) & (1-p_3)q_2 & (1-p_3)(1-q_2) \\
+p_4q_4 & p_4 (1-q_4) & (1-p_4)q_4 & (1-p_4)(1-q_4)
+\end{array}
+\right]
+.\]
+
+If $\mathbf{v}$ is the stationary distribution of the above chain, then we can define the long term average payoffs to be
+\begin{align*}
+S_X &= \mathbf{v} \cdot \mathbf{S}_X = \mathbf{v} \cdot (\sR, \sS, \sT, \sP) \\
+S_Y &= \mathbf{v} \cdot \mathbf{S}_Y = \mathbf{v} \cdot (\sR, \sT, \sS, \sP).
+\end{align*}
+Press and Dyson's discovery was that the dot product of the stationary distribution $\mathbf{v}$ with an arbitrary 4-vector $\mathbf{f}$ is given by the following determinant
+\[
+\mathbf{v}\cdot \mathbf{f} \equiv D(\mathbf{p}, \mathbf{q}, \mathbf{f})
+= \det
+\left[
+\begin{array}{c c c c}
+-1 + p_1 q_1    &	-1 + p_1	&	-1 + q_1	&	f_1 \\
+p_2 q_3         &	-1 + p_2	&	-q_3		&	f_2 \\
+p_3 q_2 		&	p_3			&	-1 + q_2	&	f_3 \\
+p_4 q_4			&	p_4			&	q_4			&	f_4
+\end{array}
+\right],
+\]
+in which the second column is $\tilde{\mathbf{p}} \equiv (-1 + p_1, -1 + p_2, p_3, p_4)$ is entirely controlled by the first player, and the third column $\tilde{\mathbf{q}} \equiv (-1 + q_1, -p_3, -1 + q_2, q_4)$ is entirely controlled by the second player. This allows each player to unilaterally make the determinant vanish by setting their column to be a scalar multiple o $\mathbf{f}$. The opportunity for roguery arises when we consider $\mathbf{f} = \alpha \mathbf{S}_X + \beta \mathbf{S}_Y + \gamma\mathbf{1}$. Since $\mathbf{v} \cdot  (\alpha \mathbf{S}_X + \beta \mathbf{S}_Y + \gamma\mathbf{1}) = \alpha S_X + \beta S_Y + \gamma$, each player can unilaterally enforce a linear relation between long the players' long term average payoffs by setting determinant to zero. The strategies that enforce this linear relationship were christened \textit{zero determinant (ZD)} strategies.
+
+Press and Dyson focused on two types of ZD strategies. The first allows X  to unilaterally set her opponent's score by setting $\alpha = 0$ and thus forcing $\beta S_Y + \gamma = 0$. Solving the equations
+\begin{align*}
+-1 + p_1 &= \beta \sR + \gamma \\
+-1 + p_2 &= \beta \sT + \gamma \\
+p_3 &= \beta \sS + \gamma \\
+p_4 &= \beta \sP + \gamma
+\end{align*}
+to eliminate the parameters $\beta$ and $\gamma$ and expressing $p_2$ and $p_3$ as functions of $p_1$ and $p_4$, they arrive at the strategy
+\begin{align*}
+p_2 = \frac{p_1(T - P) - (1+p_4)(T-R)}{R-P} \\
+p_3 = \frac{(1-p_1)(P-S)+p_4(R-S)}{R-P}
+\end{align*}
+which sets Y's score to a weighted average of $P$ and $R$
+\[
+S_Y = \frac{(1-p_1)P + p_4 R}{(1-p_1) + p_4}.
+\]
+This equation has feasible solutions when $p_1$ is close to but not equal to 1, and $p_4$ is close to but not equal 0.
+
+Using a similar calculation Press and Dyson show that $X$ cannot set her own score with $\tilde{\mathbf{p}} = \alpha \mathbf{S}_X + \gamma \mathbf{1}$, as
+\[
+p_2 = \frac{(1+p_4)(R-S) - p_1(P-S)}{R-P} \geq 1
+\]
+except for $\mathbf{p} = (1, 1, 0, 0)$.
+
+
+The second type of ZD strategies described by Press and Dyson is even more devilish. It allows X to demand and get an extortionate share of the payoff surplus over the mutual defection value $P$ by setting
+\[
+\tilde{\mathbf{p}} = \phi [(\mathbf{S}_X - P\mathbf{1}) - \chi (\mathbf{S}_Y - P \mathbf{1})]
+\]
+which leads to
+\begin{align*}
+p_1 &= 1 - \phi(\chi-1) \frac{R-P}{P-S} \\
+p_2 &= 1 - \phi\left(1 + \chi \frac{T-P}{P-S}\right) \\
+p_3 &= \phi (\chi + \frac{T-P}{P-S}) \\
+p_4 &= 0
+\end{align*}
+with feasible strategies existing for any $\chi$ and
+\[
+0 < \phi \leq \frac{P-S}{(P-S) + \chi(T-P)}.
+\].
+Computing the long-run average scores for X and Y with using Axelrod's values $(T, R, P, S) = (5, 3, 1, 0)$ Press and Dyson show
+\[
+S_X = \frac{2 + 13\chi}{2 + 3\chi} > 3 = P\textrm{, and } S_Y = \frac{12 + 3\chi}{2 + 3\chi} < 3 = P
+\]
+for $\chi > 1$, while the limiting fair case $\chi = 1$ and $\phi = 1/5$ reduces to TIT FOR TAT with $\mathbf{p}^\textrm{TFT} = (1, 0, 1, 0)$.
+
+When playing against an extortioner X, Y has two choices, the first is to try to maximize his own score, but that would feed into X's plot and increase X's score even more. The second is to refuse to be extorted by playing AllD either out of spite or in hopes that X recognizes that extortion will not work and switches to a more equitable play. The key to understanding a match between two extortioners is in the $p_4 = q_4 = 0$. Once they reach a mutual defection, they will stay there indefinitely thus receiving a long term average of $P$. This should raise questions about evolutionary stability of extortionate ZD strategies. In the two years since Press and Dyson published their findings, a number of papers came out discussing how well can ZD strategies fare in ecological and evolutionary settings. Before moving on to those results, however, I should note two more theorems established by Press and Dyson.
+
+The first shows that restricting our attention to memory-one strategies is not as limiting as it may seem. They prove that for any finite memory strategy there exists a memory-one strategy... \cmt{review}. In their 2012? paper Adami and Hintze \cite{Adami_Hintze_2014} note that longer memory may provide evolutionary advantage to variants of ZD players who attempt to recognize each other by analyzing longer pattern of play and switch to mutual cooperation in order to increase their evolutionary fitness.
+
+The second ancillary result dispels doubts that may arise about the steady state payoff $S_i = \mathbf{v}\cdot \mathbf{S_i}$, $i \in \{X, Y\}$. It may take hundreds of moves for the linear relationship
+\[
+\alpha S_X + \beta S_Y + \gamma = 0
+\]
+to be established, and one may wonder if there is any way the non-ZD player can prevent that relationship by changing their own play inside the equilibration time scale \cmt{find better wording}. Press and Dyson answer that question negatively, thus showing that in a one-on-one play the non-ZD player cannot benefit from having longer memory or by keeping the game away from the Markov stationary distribution and set the course for the future research to be focused on memory-one strategies, which significantly simplifies the space of strategies and the search for its structure.
+
+
+
+
+The strategies that we saw perform well in the previous chapter were mainly concerned with their own outcomes. The prescription to not be greedy and to reciprocate was shown to be robust, as was the simple idea of doing what works and not doing what doesn't work (Win-Stay Lose-Shift). In this chapter I will focus on approaches that attempt to manipulate the opponent's payoff. \cmt{This is not a good characterization of strategies in this chapter; some of them are extortionary, others aren't.}
+
+\section{Results}
+
+\subsubsection{IPD contains strategies that dominate any evolutionary opponent, Press, Dyson \cite{Press26062012}
+\\(April 19, 2012)}
+This paper introduced ZD strategies and talked about two types of ZDs. Extortioners (including the fair extortioner TFT), and strategies that unilaterally set opponent's score. The scenario that Press and Dyson describe is an infinite play between two opponents. If one of the opponents knows about ZD and the other attempts to optimize his score, then the ZD opponent can extort. However if both opponents play ZD, there is no surplus to share (this is easy to see since $p_4 = q_4 = 0$ for extortioners). 
+
+
+\subsubsection{Stewart and Plotkin \cite{Stewart26062012}
+\\(June 26, 2012)}
+Stewart and Plotkin plug in two ZD strategies in Axelrod's first tournament in a short follow-up paper \cite{Stewart26062012}. The strategies are Extort-2 with $S_X - P = 2(S_Y - P)$ that guarantees player X twice the share of payoffs above P compared with those received by Y. ZDGTFT-2 forces $S_X - R = 2(S_Y - R)$ offers Y a higher portion. ZDGTFT-2 won by average score. Extort-2 won the highest number of matches (except ALLD).
+
+\subsubsection{Evolutionary instability of Zero Determinant strategies demonstrates that winning isn't everything, Adami, Hintze \cite{Adami_Hintze_2014}
+\\(August 13, 2012 (v1)) (published in Nature Communications in 2013)}
+
+Adami and Hintze study evolutionary stability of two types of ZD strategies defined by Press and Dyson. The first type sets the opponent's score unilaterally by following 
+\[
+\mathbf{p} = \left(p_1, \frac{p_1(T-P) - (1+p_4)(T-R)}{R-P}, \frac{(1-p_1)(P-S) - p_4(R-S)}{R-P}, p_4\right)
+\]
+with $p_1$ close to but not equal 1, $p_2$ close to but not equal 0.
+
+They define functions $f, h, g$ to be the expected scores in a matches of ZD and some other strategy O against each other and themselves,
+\begin{align*}
+f(\mathbf{p})&=\mathbb{E}(ZD, ZD) = \mathbb{E}(O, ZD)\\
+h(\mathbf{q}) &= \mathbb{E}(O, O)\\
+g(\mathbf{p}, \mathbf{q}) &= \mathbb{E}(ZD, O)
+\end{align*}
+and define a new game in which each player choses whether to play ZD or O with the matrix
+\[
+\left(
+\begin{array}{c c}
+f(\mathbf{p}) & g(\mathbf{p}, \mathbf{q}) \\
+f(\mathbf{p}) & h(\mathbf{q})
+\end{array}
+\right)
+.\]
+Can subtract a constant from each column \cmt{find reference}
+\[
+\left(
+\begin{array}{c c}
+0 & g(\mathbf{p}, \mathbf{q}) - h(\mathbf{q}) \\
+0 & 0
+\end{array}
+\right)
+\]
+so if $g(\mathbf{p}, \mathbf{q}) - h(\mathbf{q}) > 0$ for every O, ZD is weak ESS \cmt{What is Weak ESS?}. A mixture of ZD and O cannot be mixed ESS because ESS enforces the same score on itself as it does on others.
+
+They go on to compare ZD to PAVLOV and show that PAVLOV is the ESS \cmt{Didn't we decide that no pure strategy is ESS in Part 1? Could they be only looking at ESS given no mutations and a fixed starting finite set of strategies?} They do this using the replicator equations
+\[
+\dot{\pi}_i = \pi_i(w_i - \bar{w})
+\]
+where $\pi_i$ is the proportion of population using strategy $i$, $w_i$ is the fitness of strategy $i$, and $\bar{w}$ is the average fitness in the population. They show that independently of initial distribution of ZD and PAVLOV, over time PAVLOV takes over and ZD goes extinct. Agent-based simulations follow qualitatively identical trajectories (time scale may be different).
+
+Another illustrative example is the performance of ZD against the ``general cooperator (GC)'' $\mathbf{q}_{GC} = (0.935, 0.229, 0.266, 0.42)$, which Iliopoulos, Adami, and Hintze showed to be an evolutionary fixed point at low mutation rates \cite{iliopoulos_2010}. $E(Z, GC) = 2.125$ and $E(GC, GC) = 2.11)$, so ZD is a weak ESS. How, then the GC is the evolutionary fixed point and not ZD? Adami and Hintze showed that if a mutation rate favoring GC is used in an agent based simulation with the ZD strategy, ZD evolves into GC. Thus ZD is not genetically or mutationally stable in addition to not being ESS.
+
+Extortionate ZD strategies are not ESS due to their poor performance against other extortioners $p_4 = 0$ means that the game gets stuck in DD state following the first mutual defection. $ZD_E$ strategies that can recognize other $ZD_E$s can be ESS by extorting others but cooperating among themselves. Of course the recognition mechanisms can lead to their opponents evolving methods to behave like $ZD_E$s and thus subvert their advantage. \cmt{Syrphidae flies are colored like wasps or bees}.
+
+This possibility of self recognition suggests that short-memory players cannot set the rules of the game in an evolutionary setting. Press and Dyson's claim that a long-but-finite memory strategy is equivalent to some memory-one strategy is correct, but in evolutionary setting when strategies can use memory to recognize type of opponent, longer memory can be useful, and can lead to better stability if extortioners recognize each other and cooperate.
+
+Other scenarios of useful or successful extortion are given in the following paper (Evolution of Extortion in IPD Games).
+
+\subsubsection{Evolution of extortion in IPD games, Hilbe, Nowak, Sigmund \cite{Hilbe23042013}
+\\(April 23, 2013)}
+Examine the contest between extortioners and four of the most important memory-one strategies. Show that extortion cannot be an outcome of evolution, but can catalyze the emergence of cooperation. Extortion strategies can only get a foothold if the population is very small. If IPD is played between members of two distinct populations, ZD strategies can emerge in the population that evolves more slowly. In particular, extortion strategies can allow host species to enslave their endosymbionts.
+
+WSLS dominates extortioners. 
+
+
+\subsubsection{From extortion to generosity, evolution in the IPD, Stewart, Plotkin \cite{Stewart03092013}
+\\(July 25, 2013)}
+
+Extortion makes for a good headline, but there are ZD strategies that promote cooperation \cmt{Can use this as a way to bring the discussion back to Axelrod's arguments for TFT}
+
+The aftermath of discovery of ZD strategies was a volume of research into 
+extortioners, while generous ZDs did not attract as much attention. It seems people always are trying to find clever ways to undermine their opponents in order to beat the game, these ways did not get them very far in Axelrod's tournaments, and once again not very far in using ZDs. Generous ZDs outperformed PAVLOV and TFT, while extortionate ZDs did not do well in long run.
+
+This paper defines another version of evolutionary robustness for finite populations.
+
+
+\subsubsection{Adaptive Dynamics of Extortion and Compliance, Hilbe, Nowak, Traulsen \cite{Hilbe_extortion_compliance}
+\\(November 1, 2013)}
+
+
+\subsubsection{Notes on plan for Part 2}
+The second body of work that I planned to use focuses on strategies that attempt to manipulate their opponents. The tentative plan for this part is to start with countervailing strategies, then go on to zero determinant strategies, explore what is the relationship between zero determinant and countervailing strategies, and then note that although zero determinant strategies are not ESS, they can perform interesting roles as catalysts of equilibrium shifts (like TFT was in Nowak and Sigmund's simulation). TFT and PAVLOV are both ZD. I will introduce evolutionary dynamics briefly only to be able to quote some results from papers that discuss stability of ZD strategies.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
