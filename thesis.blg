@@ -2,46 +2,47 @@ This is BibTeX, Version 0.99d (TeX Live 2013)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: ch_manipulation.aux
+A level-1 auxiliary file: countervailing_notes.aux
 The style file: plain.bst
 Database file #1: thesis.bib
-You've used 7 entries,
+You've used 11 entries,
             2118 wiz_defined-function locations,
-            545 strings with 5212 characters,
-and the built_in function-call counts, 2289 in all, are:
-= -- 217
-> -- 106
+            578 strings with 5845 characters,
+and the built_in function-call counts, 3431 in all, are:
+= -- 332
+> -- 146
 < -- 0
-+ -- 41
-- -- 34
-* -- 178
-:= -- 390
-add.period$ -- 20
-call.type$ -- 7
-change.case$ -- 38
++ -- 59
+- -- 46
+* -- 257
+:= -- 586
+add.period$ -- 33
+call.type$ -- 11
+change.case$ -- 55
 chr.to.int$ -- 0
-cite$ -- 7
-duplicate$ -- 72
-empty$ -- 185
-format.name$ -- 34
-if$ -- 470
+cite$ -- 11
+duplicate$ -- 117
+empty$ -- 284
+format.name$ -- 46
+if$ -- 709
 int.to.chr$ -- 0
-int.to.str$ -- 7
-missing$ -- 6
-newline$ -- 37
-num.names$ -- 14
-pop$ -- 33
+int.to.str$ -- 11
+missing$ -- 11
+newline$ -- 57
+num.names$ -- 22
+pop$ -- 47
 preamble$ -- 1
-purify$ -- 31
+purify$ -- 45
 quote$ -- 0
-skip$ -- 54
+skip$ -- 82
 stack$ -- 0
-substring$ -- 170
-swap$ -- 7
+substring$ -- 247
+swap$ -- 11
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 28
+type$ -- 42
 warning$ -- 0
-while$ -- 19
-width$ -- 8
-write$ -- 75
+while$ -- 31
+width$ -- 13
+write$ -- 119

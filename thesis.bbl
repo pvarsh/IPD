@@ -1,9 +1,19 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{Adami_Hintze_2014}
 Christoph Adami and Arend Hintze.
 \newblock Evolutionary instability of zero-determinant strategies demonstrates
   that winning is not everything, 2014.
+
+\bibitem{axelrod1984evolution}
+R.~Axelrod.
+\newblock {\em The evolution of cooperation}.
+\newblock Political Science / Science. Basic Books, 1984.
+
+\bibitem{Fudenberg_2006}
+Drew Fudenberg and Lorens~A. Imhof.
+\newblock {Imitation processes with small mutations}.
+\newblock {\em Journal of Economic Theory}, 131(1):251--262, November 2006.
 
 \bibitem{Hilbe23042013}
 Christian Hilbe, Martin~A. Nowak, and Karl Sigmund.
@@ -22,12 +32,24 @@ Dimitris Iliopoulos, Arend Hintze, and Christoph Adami.
   iterated prisoner's dilemma.
 \newblock {\em PLoS Comput Biol}, 6(10):e1000948, 10 2010.
 
+\bibitem{Nowak1993}
+Martin Nowak and Karl Sigmund.
+\newblock A strategy of win-stay, lose-shift that outperforms tit-for-tat in
+  the prisoner's dilemma game.
+\newblock {\em Nature}, 364(6432):56--58, 1993.
+
 \bibitem{Press26062012}
 William~H. Press and Freeman~J. Dyson.
 \newblock Iterated prisoner?s dilemma contains strategies that dominate any
   evolutionary opponent.
 \newblock {\em Proceedings of the National Academy of Sciences},
   109(26):10409--10413, 2012.
+
+\bibitem{Selten_1975}
+R.~Selten.
+\newblock Reexamination of the perfectness concept for equilibrium points in
+  extensive games.
+\newblock {\em International Journal of Game Theory}, 4(1):25--55, 1975.
 
 \bibitem{Stewart26062012}
 Alexander~J. Stewart and Joshua~B. Plotkin.
