@@ -470,4 +470,126 @@ Package: thm-autoref 2012/05/04 v63
 (/usr/local/texlive/2013/texmf-dist/tex/latex/thmtools/aliasctr.sty
 Package: aliasctr 2012/05/04 v63
 
-(/usr/local/texli
+(/usr/local/texlive/2013/texmf-dist/tex/latex/carlisle/remreset.sty)))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/thmtools/thm-listof.sty
+Package: thm-listof 2012/05/04 v63
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/thmtools/thm-restate.sty
+Package: thm-restate 2012/05/04 v63
+)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/thmtools/thm-amsthm.sty
+Package: thm-amsthm 2012/05/04 v63
+\thmt@style@headstyle=\toks35
+))
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+\c@theorem=\count120
+\c@conjecture=\count121
+\c@definition=\count122
+\c@example=\count123
+\c@claim=\count124
+
+(./draftpreamble.aux)
+\openout1 = `draftpreamble.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+
+(/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count125
+\scratchdimen=\dimen121
+\scratchbox=\box52
+\nofMPsegments=\count126
+\nofMParguments=\count127
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count128
+\MPscratchDim=\dimen122
+\MPnumerator=\count129
+\makeMPintoPDFobject=\count130
+\everyMPtoPDFconversion=\toks37
+) (/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\AtBeginShipoutBox=\box53
+Package hyperref Info: Link coloring OFF on input line 56.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count131
+)
+LaTeX Info: Redefining \ref on input line 56.
+LaTeX Info: Redefining \pageref on input line 56.
+LaTeX Info: Redefining \nameref on input line 56.
+\@outlinefile=\write3
+\openout3 = `draftpreamble.out'.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 60.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 60.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 60.
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+./draftpreamble.tex:64: Undefined control sequence.
+l.64 {\Large \bf \mytitle
+                         }
+? 
+./draftpreamble.tex:64: Emergency stop.
+l.64 {\Large \bf \mytitle
+                         }
+End of file on the terminal!
+
+ 
+Here is how much of TeX's memory you used:
+ 7336 strings out of 493315
+ 108199 string characters out of 6137904
+ 196321 words of memory out of 5000000
+ 10667 multiletter control sequences out of 15000+600000
+ 9209 words of font info for 37 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 30i,2n,26p,356b,125s stack positions out of 5000i,500n,10000p,200000b,80000s
+./draftpreamble.tex:64:  ==> Fatal error occurred, no output PDF file produced!
+
