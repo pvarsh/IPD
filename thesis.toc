@@ -1,7 +1,7 @@
 \contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}
 \contentsline {chapter}{\numberline {2}Cooperation}{6}{chapter.2}
-\contentsline {subsubsection}{Clustering and emergence of cooperation}{10}{section*.1}
-\contentsline {subsubsection}{Comparing ESS, collective stability, and Nash equilibrium}{11}{section*.2}
+\contentsline {subsubsection}{Clustering and emergence of cooperation}{11}{section*.1}
+\contentsline {subsubsection}{More on ESS, collective stability, and Nash equilibrium}{11}{section*.2}
 \contentsline {subsubsection}{Win-Stay, Lose-Shift}{13}{section*.3}
 \contentsline {subsubsection}{Conclusion of Part 1}{14}{section*.4}
 \contentsline {chapter}{\numberline {3}Manipulation}{15}{chapter.3}
