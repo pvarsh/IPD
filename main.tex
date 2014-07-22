@@ -3,11 +3,11 @@
 
 
 \chapter{Introduction}
-The question that inspired the body of research I focus on in this paper is simple to state: in a world of self-interested individuals (actors?), when does it make sense to cooperate?  Real life examples abound. \textit{\textbf{(Include examples: Price fixing. Athletes and steroid use. Governments and trade. Cold war.)}}
+The question that inspired the body of research I focus on in this paper is simple to state: in a world of self-interested individuals, when does it make sense to cooperate?  Real life examples abound. Will two profit-minded competing firms engage in price fixing or try to undercut each other? Will athletes take performance-enhancing drugs to gain an edge on their rivals or play fair? Will governments impose tariffs to protect their industries but hurt global output or will they cooperate and remove trade barriers? Will two states locked in an arms race continue building up their weapons arsenal or cooperate and agree to disarmament thus freeing up scarce resources for socially better use.
 
-The question extends beyond human behavior as we observe patterns of cooperation everywhere in nature from reciprocal food exchange in vampire bats (expand), to countless examples interspecies cooperation or symbiosis \textit{\textbf{(Include examples in Axelrod, p90).}}
+The question extends beyond human behavior as we observe patterns of cooperation everywhere in nature from reciprocal food exchange in vampire bats \cite{Wilkinson_1984}, to countless examples interspecies cooperation or symbiosis such as the mutualism between cleaner fish and their hosts \cite{Bshary_2002}.
 
-These examples share a common structure. Each involves two participants making a choice to cooperate (fix prices, say no to steroids, remove trade restrictions, reduce nuclear weapons stocks, share blood with the less fortunate bat) or defect (undercut the competitor, use steroids, establish trade restrictions, increase weapons stockpiles, hoard the blood). Mutual cooperation yields a higher advantage to both parties than mutual defection, but if one individual cooperates, while the other defects, the defector gains a large advantage, while the cooperator is left a sucker.
+These examples share a common structure. Each involves two participants making a choice to cooperate (fix prices, say no to steroids, remove trade restrictions, reduce nuclear weapons stocks, share blood with the less fortunate bat, feed on host's parasites) or defect (undercut the competitor, use steroids, establish trade restrictions, increase weapons stockpiles, hoard the blood, eat the host's mucus instead of the parasites). Mutual cooperation yields a higher advantage to both parties than mutual defection, but if one individual cooperates, while the other defects, the defector gains a large advantage, while the cooperator is left a sucker.
 
 This scenario was originally formalized in 1950 by Merrill Flood and Melvin Dresher at RAND corporation. Soon after Albert W. Tucker offered this illustrative parable that gave the game its name, the Prisoner's Dilemma. In Tucker's tale two prisoners are arrested on a minor charge. The prosecution suspects a more serious crime but does not have evidence to convict unless the prisoners testify against each other. Without the testimony (that is if the prisoners \textit{cooperate (C)} with each other), both would be convicted of the minor charge and receive a small sentence, say one month jail time. However if one prisoner testifies (or \textit{defects (D)} against the other), and the other prisoner keeps mum (cooperates), then the defecting prisoner will have the minor charge dropped, and the cooperating prisoner will receive a large sentence, say five years. Finally if both prisoners rat each other out (or mutually defect), they will both receive large, but lesser sentences, say two years each.
 
@@ -32,7 +32,7 @@ T & P
 \right)
 ,
 \]
-with the telling variable names $R$ (\textit{reward} for mutual cooperation), $S$ (\textit{sucker} who cooperates while the opponent defects), $T$ (\textit{traitor} or unilateral defector), $P$ (\textit{punishment} for mutual defection). The values can vary so long as the ordering $T > R > P > S$ is preserved. We shall often use the following positive values
+with the telling variable names $R$ (\textit{reward} for mutual cooperation), $S$ (\textit{sucker} who cooperates while the opponent defects), $T$ (\textit{temptation} to unilaterally defect), $P$ (\textit{punishment} for mutual defection). The values can vary so long as the ordering $T > R > P > S$ is preserved. We shall often use the following positive values
 \[
 \left(
 \begin{array}{c c}
@@ -88,13 +88,13 @@ The aim of this paper is to survey the history of the Iterated Prisoner's Dilemm
 
 \chapter{Cooperation}
 
-According to Robert Axelrod, there was a rich literature exploring the Prisoner's Dilemma by the late 1970s, but most of it was focused on analyzing situations that shared the game's structure in various social sciences rather than finding the best way to play the game \cite[p.28]{axelrod1984evolution}.
+According to Robert Axelrod, there was a rich literature exploring the Prisoner's Dilemma by the late 1970s, but most of it was focused on analyzing situations that shared the game's structure in various social and biological sciences rather than finding the best way to play the game~\cite[p.28]{axelrod1984evolution}.
 
-Looking to understand how various strategies may perform against each other, he invited fourteen game theorists who specialized in disciplines of psychology, economics, political science, mathematics, and sociology to participate in a computer tournament. Each participant submitted a strategy (player) that described how to play the 200-move iterated Prisoner's Dilemma given the current position and history of prior interaction. In addition Axelrod added a player called RANDOM, which cooperated with probability of one half on every move. Each of the fifteen strategies was set to play each other strategy and itself, and the tournament was repeated five times to get more stable estimates of scores for each pair of players. The score for player $i$ in a match against player $j$ was simply the sum of the payoffs over 200 moves
+Looking to understand how various strategies may perform against each other, he invited fourteen game theorists who specialized in disciplines of psychology, economics, political science, mathematics, and sociology to participate in a computer tournament. Each participant submitted a strategy  that described how to play the 200-move iterated Prisoner's Dilemma given the current position and history of prior interaction. In addition Axelrod added a player called RANDOM, which cooperated with probability of one half on every move. Each of the fifteen strategies was set to play each other strategy and itself, and the tournament was repeated five times to get more stable estimates of scores for each pair of players. The score for player $i$ in a match against player $j$ was simply the sum of the payoffs over 200 moves
 \[
-W(\psi_i, \psi_j) = \sum_{n=1}^{200} \pi_i(x_i^{(n)}, x_j^{(n)}) 
+W(I, J) = \sum_{n=1}^{200} \pi_i(x_i^{(n)}, x_j^{(n)}) 
 \]
-where $x_i^{(n)} \in \{C, D\}$ is $i$'s move at stage $n$ of the game when $i$ follows the strategy $\psi_i$ and $j$ follows the strategy $\psi_j$.
+where $x_i^{(n)} \in \{C, D\}$ is $i$'s move at stage $n$ of the game when $i$ follows the strategy $I$ and $j$ follows the strategy $J$.
 
 The highest possible score $200 T = 1000$ could be achieved by an unconditional defector ($AllD$) playing against an unconditional cooperator ($AllC$), who would receive the payoff of $200 S = 0$. A pair of $AllC$ players would receive $200 R = 600$, and two $AllD$s would earn $200 P = 200$.
 
@@ -106,13 +106,13 @@ Axelrod circulated the results and solicited entries for the second round of the
 
 Allowing for an uncertainty of future interactions fundamentally changes the game. The backwards induction analysis no longer holds, since at no point both players can be sure they shall never meet again, and thus the shadow of the future always looms upon the decision makers. The expected score is now calculated as follows
 \[
-W(\psi_i, \psi_j) = \sum_{n=0}^\infty w^n \pi_i(x_i^{(n)}, x_j^{(n)})
+W(I, J) = \sum_{n=0}^\infty w^n \pi_i(x_i^{(n)}, x_j^{(n)})
 .\]
 For example the payoff to $TFT$ against the defector $AllD$ is
 \[
 W(TFT, AllD) = S + wP + w^2P + w^3P + \dots = S + \frac{wP}{1-w}
 .\]
-If one or both strategies $\psi_i$, $\psi_j$ are stochastic or mixed, then we shall use the same notation $W(\psi_i, \psi_j)$ to mean the expected value of $i$'s discounted payoff.
+If one or both strategies $I$, $J$ are stochastic or mixed, then we shall use the same notation $W(I, J)$ to mean the expected value of $i$'s discounted payoff.
 
 Uncertainty of future interaction is mathematically equivalent to discounting time value of money used in economics and finance. This formulation of the game is sometimes called discounted iterated prisoner's dilemma, and it can be shown that with $w > (T-R)/(R-S)$ TIT FOR TAT is now a Nash equilibrium, although it is not unique \cite[p.207]{axelrod1984evolution}.
 
@@ -136,15 +136,19 @@ Many of these characteristics were shared by other strategies that did well in t
 
 To further study the robustness of TIT FOR TAT, Axelrod turned to the approach of evolutionary or ecological stability developed by John Maynard Smith in which the average payoff that a strategy receives in a given population determines its reproductive fitness. Each generation of strategies plays a round-robin discounted IPD tournament similar to the second tournament described above, and relative frequency of strategies in the next generation is determined by relative frequencies and average payoffs in the current generation. The chronology of this ecological computational experiment is interesting. In the early generations strategies that are too nice are exploited by meaner strategies, which leads to proliferation of mean strategies and near extinction of too forgiving ones. The mean strategies are usually not very good at playing against other mean strategies, and as their numbers increase while the prey becomes sparse, their fitness suffers, and they eventually lose prominence. TFT, which receives the payoff of $R = 3$ against itself and other nice strategies, and which does not allow exploitation by mean strategies, once again proved to be very robust in this ecological setting and came out on top in every simulation \cite[p.53]{axelrod1984evolution}.
 
-The idea that to remain ecologically or evolutionarily fit a strategy needs to perform well against opponents, but also against itself was first formalized by John Maynard Smith in his 1973 paper ``The Logic of Animal Conflict'' \cite{MaynardSmith1973}. He defined a strategy $I$ to be an \textit{evolutionarily stable strategy (ESS)} if a large population employing $I$ could not be invaded by a mutant playing some other strategy $J$, or more precisely if $W(J, I)$ is the payoff to $J$ in a contest with $I$, and $W(I, I)$ is the payoff to $I$ playing against itself, then
+The idea that to remain ecologically or evolutionarily fit a strategy needs to perform well against opponents, but also against itself was first formalized by John Maynard Smith in his 1973 paper ``The Logic of Animal Conflict'' \cite{MaynardSmith1973}. He defined a strategy $J$ to be an \textit{evolutionarily stable strategy (ESS)} if a large population employing $J$ could not be invaded by a mutant playing some other strategy $I$, or more precisely if $W(I, J)$ is the payoff to $I$ in a contest with $J$, and $W(J, J)$ is the payoff to $J$ playing against itself, then
 \begin{equation} \label{eq:ESS}
 \begin{cases} 
-W(J, I) < W(I, I)\\
+W(I, J) < W(J, J)\\
 \textrm{ or}\\
-W(J, I) = W(I, I) \textrm{ and } W(I, J) > W(J, J)
+W(I, J) = W(J, J) \textrm{ and } W(J, I) > W(I, I)
 \end{cases}
 \end{equation}
-In his 1981 paper ``The Emergence of Cooperation among Egoists'' \cite{RobertAxelrod_1981}, Axelrod defined a relaxation of ESS. He called a strategy \textit{collectively stable (CS)} if $W(J, I) \leq W(I, I)$ for any mutant invading strategy $J$ in a population of strategies $I$. Whereas ESS is has more stringent requirements than the Nash equilibrium, CS is equivalent to a symmetric weak Nash equilibrium restated in the language of evolutionary game theory. This modification allowed him to provide a characterization theorem for this class of strategies. The underlying idea for the characterization is that the incumbent can prevent the newcomer from invading if no matter what the newcomer does, the incumbent can keep his score sufficiently low. Axelrod introduces the definition: $J$ has a \textit{secure position} over $I$ on move $n$ if no matter what $I$ does from move $n$ onwards, $W(I,J) \leq W(J,J)$, assuming that $B$ defects from move $n$ onwards. If $W_n(I,J)$ denotes $I$'s discounted cumulative score in the moves before move $n$, then we can say that $J$ has a secure position over $I$ on move $n$ if 
+In his 1981 paper ``The Emergence of Cooperation among Egoists'' \cite{RobertAxelrod_1981}, Axelrod defined a relaxation of ESS. He called a strategy \textit{collectively stable (CS)} if $W(I, J) \leq W(J, J)$ for any mutant invading strategy $I$ in a population of strategies $J$. Whereas ESS is has more stringent requirements than the Nash equilibrium, CS is equivalent to a symmetric weak Nash equilibrium restated in the language of evolutionary game theory. This modification allowed him to provide a characterization theorem for this class of strategies. The underlying idea for the characterization is that the incumbent can prevent the newcomer from invading if no matter what the newcomer does, the incumbent can keep his score sufficiently low. Axelrod introduces the definition: $J$ has a \textit{secure position} over $I$ on move $n$ if no matter what $I$ does from move $n$ onwards, $W(I,J) \leq W(J,J)$, assuming that $B$ defects from move $n$ onwards. If
+\[
+W_n(I,J) = 
+\]
+denotes $I$'s discounted cumulative score in the moves before move $n$, then we can say that $J$ has a secure position over $I$ on move $n$ if 
 \[
 W_n(I, J) + w^{n-1} P/(1-w) \leq W(J, J) 
 \]
@@ -200,35 +204,9 @@ W(I', J) \geq W_n (I, J) + w^{n-1}(T + wP/(1-w)).
 combined with~\ref{eq:charactthm2} this yields $W(I', J) > W(J, J)$, so $I'$ invades $J$, and hence $J$ is not collectively stable.
 \end{proof}
 
-Axelrod proves a number of other results supporting his conviction that TIT FOR TAT is good at playing the game, but acknowledging that there cannot be a single best strategy.
-
-\begin{theorem}
-If the discount parameter $w$ is sufficiently high, there is no best strategy independent of the strategy used by the other player~\cite[Theorem 1]{RobertAxelrod_1981}.
-\end{theorem}
-
-\begin{theorem}
-TIT FOR TAT is a collectively stable strategy if and only if
-\[
-w \geq \max \left( \frac{T-R}{T-P}, \frac{T-R}{R-S}\right)
-\]
-or, alternatively, TIT FOR TAT is a collectively stable strategy if and only if it is invadeable neither by ALLD nor the strategy which alternates defection and cooperation~\cite[Theorem 2]{RobertAxelrod_1981}.
-\end{theorem}
-
-\begin{theorem}
-For a nice strategy to be collectively stable, it must be provoked by the first defection of the other player~\cite[Theorem 4]{RobertAxelrod_1981}
-\end{theorem}
-
-\begin{theorem}
-Any rule, $B$ which may be the first to cooperate is collectively stable only when $w$ is sufficiently large.~\cite[Theorem 5]{RobertAxelrod_1981}
-\end{theorem}
-
-\begin{theorem}\label{thm:alld_stable}
-ALLD is always collectively stable~\cite[Theorem 6]{RobertAxelrod_1981}
-\end{theorem}
-
 
 \subsubsection{Clustering and emergence of cooperation}
-Axelrod's tournaments and Maynard Smith's ideas of evolutionary stability have given a rather positive answer on rationality of cooperation among self-interested individuals, but it seems at odds with the stability of $AllD$ (Theorem~\ref{thm:alld_stable}). If we can assume that at some point cooperation did not exist, then the stability of $AllD$ implies that cooperation would never emerge from individual mutations, since cooperating individuals would not be able to invade a population of defectors.
+Axelrod's tournaments and Maynard Smith's ideas of evolutionary stability have given a rather positive answer on rationality of cooperation among self-interested individuals, but it seems at odds with the stability of $AllD$. If we can assume that at some point cooperation did not exist, then the stability of $AllD$ implies that cooperation would never emerge from individual mutations, since cooperating individuals would not be able to invade a population of defectors.
 
 This pessimistic prediction changes if we allow cooperators to arrive in groups to the population of defectors. Such clusters are likely to develop among close kin or individuals occupying the same or neighboring territories. Richard Dawkins, in his best seller \textit{The Selfish Gene} \cite{dawkins2006selfish}, describes how such kin-based cooperation or altruism can be modeled and understood if we focus not on survival and procreation of individuals in a population, but of units of genetic information.
 
@@ -407,15 +385,7 @@ To study equilibrium distributions of these strategies in finite populations, Hi
 
 Hilbe et al. present another scenario in which extortioners prosper. When the IPD is played between two populations (hosts and their symbionts), or two types within the same populations (buys and sellers, males and females, constituents and representatives), extortion strategies can evolve even in large populations because their low scores when playing their own type does not hinder their fitness. If the first group plays $E_\chi$ and the second group attempts to maximize their own score by playing the best response, the second group will adopt $AllC$. However in this situation the first group is likely to evolve an even more profitable $AllD$ which would force the second group to also switch to $AllD$. An interesting special case was revealed by simulations in which the two populations evolved at different rates of mutations. In a simulation seeded with non-ZD strategies the slowly evolving host populations arrived to a $\delta = 0.1$ neighborhood of $E_\chi$ (Euclidean distance on the 4-cube $(p_1, p_2, p_3, p_4)$), and were able to extract a surplus more than 10-fold larger than what was achieved by the rapidly evolving symbionts. The hosts' payoff after 2000 generations was consistently above the mutual cooperation value $R = b-c = 2$, while the symbionts received scores close to $P = 0$.
 
-The discovery of ZD strategies by Press and Dyson motivated a number of papers that focused on extortionate behavior, however it could be that the more successful ZDs are of an entirely different type -- the generous compliers. Whereas extortioners offer their opponents a choice between receiving a low long-term score of $P$ by maintaining mutual defection or letting the extortioner reap an unfair share of the surplus, the generous ZD proposes that both players receive the long-term score of $R$ and suffers a greater score loss than the opponent if they deviate from mutual cooperation. In their commentary to Press and Dyson, Stewart and Plotkin showed that a generous strategy they called ZDGTFT-2 won an Axelrod-style tournament that contained TFT, GTFT, TF2T, WSLS and a number of other strategies \cite{Stewart26062012}. Using the criterion of \textit{evolutionary robustness}, a modification of ESS to finite populations, they explored the subset of generous ZD strategies (of which ZDGTFT is an example) and found that generous ZDs perform very well in simulations, and in some conditions even outperform WSLS \cite{Stewart03092013}. The chronology of research following Press and Dyson's introduction of ZD strategies is reminiscent of Axelrod's tournaments. Following the success of TFT the players were looking to gain an upper hand by submitting variants of TFT that attempted to take advantage of opponents by not always being nice. These versions almost invariably did worse than TIT FOR TAT, but also worse than more generous variants TF2T and GTFT. Similarly the initial interest in ZDs focused on extortionate and dictatorial equalizer strategies designed to gain at cost to opponent, when in reality ZD strategies that practiced generosity, the opposite of extortion, turned out to give their practitioners better evolutionary outcomes. I find that these results offer an optimistic view of nature, and a somewhat pessimistic view of humanity as represented by the community of evolutionary game theorists whose first instinct, it seems, is to opportunistically defect.
-
-\chapter{Other results and further reading}
-In preparation of this exposition I found some results that due to considerations of time and volume I did not include in this paper. In 1990s Jean Pierre Langlois, who advised me on this paper, introduced a decomposition theorem that showed that subgame perfect equilibria... he called these strategies \textit{countervailing}. One of the properties of countervailing strategies is that they, similarly to equalizer ZDs, can unilaterally set their opponent's score. This led us to wander about the nature of the relationship between the space of countervailing strategies and the space of DS, and we found an example of an intersection.
-
-In 2013 several papers explored the structure of the space of memory-one strategies and ZD strategies. Some of them are cited above, others are ...
-
-Finally this summer Tyler Singer-Clark under the supervision of Scott Aaronson published his senior thesis in which he used the setting of an IPD tournament and an algorithm similar to PageRank to analyze how moral various strategies are if we assume that moral players cooperate with other moral players and defect against immoral players. There is an inherent circularity in this definition of morality, since the only way we classify a player is moral if he is good to other moral players, who in turn have to be good to other moral players etc. PageRank was designed to circumvent a similar circularity in the link structure of the internet, where a page was deemed important if it was linked to by other important pages, which, in turn were deemed important if they had good incoming links and so on.
-
+The discovery of ZD strategies by Press and Dyson motivated a number of papers that focused on extortionate behavior, however it could be that the more successful ZDs are of an entirely different type -- the generous compliers. Whereas extortioners offer their opponents a choice between receiving a low long-term score of $P$ by maintaining mutual defection or letting the extortioner reap an unfair share of the surplus, the generous ZD proposes that both players receive the long-term score of $R$ and suffers a greater score loss than the opponent if they deviate from mutual cooperation. In their commentary to Press and Dyson, Stewart and Plotkin showed that a generous strategy they called ZDGTFT-2 won an Axelrod-style tournament that contained TFT, GTFT, TF2T, WSLS and a number of other strategies \cite{Stewart26062012}. Using the criterion of \textit{evolutionary robustness}, a modification of ESS to finite populations, they explored the subset of generous ZD strategies (of which ZDGTFT is an example) and found that generous ZDs perform very well in simulations, and in some conditions even outperform WSLS \cite{Stewart03092013}. The chronology of research following Press and Dyson's introduction of ZD strategies is reminiscent of Axelrod's tournaments. Following the success of TFT the players were looking to gain an upper hand by submitting variants of TFT that attempted to take advantage of opponents by not always being nice. These versions almost invariably did worse than TIT FOR TAT, but also worse than more generous variants TF2T and GTFT. Similarly the initial interest in ZDs focused on extortionate and dictatorial equalizer strategies designed to gain at cost to opponent, when in reality ZD strategies that practiced generosity, the opposite of extortion, turned out to give their practitioners better evolutionary outcomes. I find that these results offer an optimistic view of nature, and a somewhat pessimistic view of humanity as represented by the community of evolutionary game theorists whose first instinct, it seems, is to not be very nice.
 
 
 \section{Notation}

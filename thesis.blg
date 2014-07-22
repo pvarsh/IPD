@@ -4,44 +4,56 @@ The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: main.aux
 The style file: plain.bst
 Database file #1: thesis.bib
-You've used 13 entries,
+I was expecting a `,' or a `}'---line 282 of file thesis.bib
+ : 
+ : year={2002},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--to sort, need author or key in Bshary_2002
+Warning--empty author in Bshary_2002
+Warning--empty title in Bshary_2002
+Warning--empty journal in Bshary_2002
+Warning--empty year in Bshary_2002
+Warning--there's a number but no volume in Wilkinson_1984
+You've used 15 entries,
             2118 wiz_defined-function locations,
-            592 strings with 5916 characters,
-and the built_in function-call counts, 3779 in all, are:
-= -- 375
-> -- 144
+            600 strings with 6038 characters,
+and the built_in function-call counts, 4220 in all, are:
+= -- 413
+> -- 152
 < -- 1
-+ -- 62
-- -- 44
-* -- 259
-:= -- 654
-add.period$ -- 41
-call.type$ -- 13
-change.case$ -- 59
++ -- 66
+- -- 46
+* -- 298
+:= -- 717
+add.period$ -- 45
+call.type$ -- 15
+change.case$ -- 65
 chr.to.int$ -- 0
-cite$ -- 13
-duplicate$ -- 146
-empty$ -- 315
-format.name$ -- 44
-if$ -- 784
+cite$ -- 21
+duplicate$ -- 167
+empty$ -- 360
+format.name$ -- 46
+if$ -- 873
 int.to.chr$ -- 0
-int.to.str$ -- 13
-missing$ -- 15
-newline$ -- 68
-num.names$ -- 26
-pop$ -- 49
+int.to.str$ -- 15
+missing$ -- 17
+newline$ -- 76
+num.names$ -- 28
+pop$ -- 62
 preamble$ -- 1
-purify$ -- 48
+purify$ -- 53
 quote$ -- 0
-skip$ -- 98
+skip$ -- 110
 stack$ -- 0
-substring$ -- 245
-swap$ -- 16
+substring$ -- 276
+swap$ -- 17
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 48
-warning$ -- 0
-while$ -- 39
-width$ -- 15
-write$ -- 143
+type$ -- 56
+warning$ -- 6
+while$ -- 42
+width$ -- 17
+write$ -- 158
+(There was 1 error message)

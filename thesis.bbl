@@ -1,5 +1,8 @@
 \begin{thebibliography}{10}
 
+\bibitem{Bshary_2002}
+
+
 \bibitem{Adami_Hintze_2014}
 Christoph Adami and Arend Hintze.
 \newblock Evolutionary instability of zero-determinant strategies demonstrates
@@ -71,5 +74,10 @@ Alexander~J. Stewart and Joshua~B. Plotkin.
 \newblock From extortion to generosity, evolution in the iterated prisoner's
   dilemma.
 \newblock {\em Proceedings of the National Academy of Sciences}, 2013.
+
+\bibitem{Wilkinson_1984}
+Gerald~S. Wilkinson.
+\newblock Reciprocal food sharing in the vampire bat.
+\newblock {\em Nature}, (5955):181?184, 1984.
 
 \end{thebibliography}

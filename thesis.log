@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  14 JUL 2014 12:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  14 JUL 2014 16:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -621,22 +621,24 @@ t line 157.
 Chapter 3.
 [15
 
-] [16] [17] [18] [19] [20]
-Chapter 4.
-) [21
-
-] (./thesis.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
- [22
+] [16] [17] [18] [19] [20]) [21] (./thesis.bbl [22
 
 
 ]
+Underfull \hbox (badness 1377) in paragraph at lines 79--82
+[]\OT1/cmr/m/n/12 Gerald S. Wilkin-son.  Re-cip-ro-cal food shar-ing in the vam
+-pire bat.  \OT1/cmr/m/it/12 Na-ture\OT1/cmr/m/n/12 ,
+ []
+
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
+ [23]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
  (./thesis.aux (./main.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 51.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 51.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: B7C5F55123FE9E5BC6E37169BA5652D2;262.
+(rerunfilecheck)             Checksum: EFAA1E3B26E4B7EB58BEA7EFD53A490D;242.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -644,13 +646,13 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 51.
  ) 
 Here is how much of TeX's memory you used:
- 7497 strings out of 493315
- 110102 string characters out of 6137904
- 206426 words of memory out of 5000000
- 10730 multiletter control sequences out of 15000+600000
+ 7490 strings out of 493315
+ 109988 string characters out of 6137904
+ 206469 words of memory out of 5000000
+ 10731 multiletter control sequences out of 15000+600000
  11449 words of font info for 44 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 34i,10n,30p,2412b,408s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,10n,30p,2412b,427s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><
 /usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb>
@@ -662,10 +664,10 @@ local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loc
 al/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
 l/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/
 texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (22 pages, 215754 bytes).
+Output written on thesis.pdf (23 pages, 208598 bytes).
 PDF statistics:
- 262 PDF objects out of 1000 (max. 8388607)
- 224 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 500000)
+ 252 PDF objects out of 1000 (max. 8388607)
+ 213 compressed objects within 3 object streams
+ 61 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
