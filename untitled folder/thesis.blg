@@ -1,30 +1,29 @@
 This is BibTeX, Version 0.99d (TeX Live 2013)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
-A level-1 auxiliary file: main.aux
 The style file: plain.bst
 Database file #1: thesis.bib
 Warning--there's a number but no volume in Wilkinson_1984
 You've used 15 entries,
             2118 wiz_defined-function locations,
-            608 strings with 6239 characters,
-and the built_in function-call counts, 4352 in all, are:
-= -- 432
+            607 strings with 6258 characters,
+and the built_in function-call counts, 4295 in all, are:
+= -- 427
 > -- 158
-< -- 1
+< -- 0
 + -- 68
 - -- 48
-* -- 302
-:= -- 750
+* -- 298
+:= -- 744
 add.period$ -- 47
 call.type$ -- 15
 change.case$ -- 67
 chr.to.int$ -- 0
 cite$ -- 16
-duplicate$ -- 168
-empty$ -- 369
+duplicate$ -- 164
+empty$ -- 363
 format.name$ -- 48
-if$ -- 904
+if$ -- 887
 int.to.chr$ -- 0
 int.to.str$ -- 15
 missing$ -- 17
@@ -34,16 +33,16 @@ pop$ -- 54
 preamble$ -- 1
 purify$ -- 54
 quote$ -- 0
-skip$ -- 110
+skip$ -- 107
 stack$ -- 0
-substring$ -- 297
-swap$ -- 18
-text.length$ -- 1
+substring$ -- 293
+swap$ -- 15
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 56
 warning$ -- 1
-while$ -- 45
+while$ -- 43
 width$ -- 17
-write$ -- 165
+write$ -- 164
 (There was 1 warning)

@@ -2,6 +2,9 @@
 \contentsline {chapter}{\numberline {2}Cooperation}{6}{chapter.2}
 \contentsline {subsubsection}{Clustering and emergence of cooperation}{10}{equation.2.0.4}
 \contentsline {subsubsection}{More on ESS, collective stability, and Nash equilibrium}{11}{equation.2.0.4}
-\contentsline {subsubsection}{Win-Stay, Lose-Shift}{13}{theorem.2.2}
+\contentsline {subsubsection}{Win-Stay, Lose-Shift}{12}{theorem.2.2}
+\contentsline {subsubsection}{Conclusion of Part 1}{14}{theorem.2.2}
 \contentsline {chapter}{\numberline {3}Manipulation}{14}{chapter.3}
 \contentsline {subsubsection}{What can ZDs do?}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}Notation}{20}{section.3.1}
+\contentsline {chapter}{Bibliography}{22}{chapter*.1}

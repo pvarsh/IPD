@@ -5,15 +5,11 @@
 %%%%% TeX class and packages
 
 \documentclass[12pt,oneside]{book}
-\AtBeginDocument{\addtocontents{toc}{\protect\thispagestyle{empty}}} 
 
-\usepackage{amsthm,amsmath,amssymb,amsfonts,latexsym,graphicx,enumerate,setspace,verbatim,tocloft,rotating,qtree}
-\usepackage{amsthm,amsmath,amssymb,amsfonts,latexsym,graphicx,enumerate,setspace,verbatim,tocloft,rotating,hyperref,thmtools,color,dsfont,titlesec,etoolbox}
+\usepackage{amsthm,amsmath,amssymb,amsfonts,latexsym,graphicx,enumerate,setspace,verbatim,tocloft,rotating,titlesec,etoolbox}
 %\usepackage{color}                       % For creating colored text and background
 %\usepackage{hyperref}                 % For creating hyperlinks in cross references
 % other possibly useful packages: textcomp,mathrsfs,amscd,epsfig,euscript,cancel
-
-
 
 %%%%% Layout
 
@@ -42,6 +38,7 @@
 \newtheorem*{remark}{Remark}
 \newtheorem*{note}{Note}
 \newtheorem{claim}{Claim}[chapter]
+
 
 %%%%% Style of chapter and section headers
 
@@ -93,5 +90,6 @@
 \begin{center}
 {\large \bf Abstract}
 \end{center}
+This paper surveys the history of the Iterated Prisoner's Dilemma focusing on the search for robust strategies that perform well against a wide variety of opponents in an evolutionary setting, where good performance is translated to higher reproductive fitness. I begin with the famous round-robin tournaments conducted by Robert Axelrod in 1980s and present Axelrod's analysis of the simple and elegant winner TIT FOR TAT, which for a time seemed to reign supreme among IPD strategies. Then I explore the insight afforded by borrowing from the language and methods of population biology, Darwinian fitness, and evolutionary stability and present results that unseat TIT FOR TAT and perform well in a wider variety of scenarios. The second part of the paper focuses on the 2012 discovery of a class of Zero Determinant strategies that allow each player to unilaterally force a linear relationship between the players' long-term average payoffs leading to opportunities for extortion, dictatorial manipulation of opponent's score, or compliant play. This discovery was followed by a number of papers that explored robustness of the new class of strategies and showed that even with the opportunity to extort, in large populations it may pay to be nice.
 \newpage
 \tableofcontents

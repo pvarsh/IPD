@@ -3,7 +3,8 @@
 
 % Frontmatter shortcuts; note the extra space at the end, which is unfortunately necessary:
 \newcommand\myname{Peter Varshavsky}
-\newcommand\mytitle{Iterated Prisoner's Dilemma: a look at evolution of extortion and cooperation} % The graduate division requires this to be in caps.
+\newcommand\mytitle{Iterated Prisoner's Dilemma:\\
+A look at evolution of extortion and cooperation} % The graduate division requires this to be in caps.
 \newcommand\mydegree{Master of Arts } % change to  Master of Science if applicable
 \newcommand\myfield{Mathematics } % e.g., Mathematics
 \newcommand\thismonth{Month } % graduation month: May / August / December
@@ -136,7 +137,7 @@ The aim of this paper is to survey the history of the Iterated Prisoner's Dilemm
 
 
 \chapter{Cooperation}
-
+\section{Tournaments}
 According to Robert Axelrod, there was a rich literature exploring the Prisoner's Dilemma by the late 1970s, but most of it was focused on analyzing situations that shared the game's structure in various social and biological sciences rather than finding the best way to play the game~\cite[p.28]{axelrod1984evolution}.
 
 Looking to understand how various strategies may perform against each other, he invited fourteen game theorists who specialized in disciplines of psychology, economics, political science, mathematics, and sociology to participate in a computer tournament. Each participant submitted a strategy  that described how to play the 200-move iterated Prisoner's Dilemma given the current position and history of prior interaction. In addition Axelrod added a player called RANDOM, which cooperated with probability of one half on every move. Each of the fifteen strategies was set to play each other strategy and itself, and the tournament was repeated five times to get more stable estimates of scores for each pair of players. The score for player $i$ in a match against player $j$ was simply the sum of the payoffs over 200 moves
@@ -183,6 +184,7 @@ Rules that constructed complex inferences about their opponents did not do very 
 
 Many of these characteristics were shared by other strategies that did well in the tournaments. In fact submissions that tried to get ahead by using unprovoked defections generally did worse than the players that erred on a more forgiving side. In his analysis of the first tournament, Axelrod notes that TIT FOR TAT did not have to win. One strategy that would have done better is the more forgiving TIT FOR TWO TATS (TF2T), which only retaliates after two consecutive defections by its opponent. TF2T, however, is not better than TFT in any absolute way---it was submitted in the second tournament by John Maynard Smith and only finished in 24th place. The poor repeat performance of TF2T was due to it being exploited by strategies that tested how much defection they could get away with. It is a good illustration of the principle that there can not be a single best strategy independent of the population of other strategies: although these testing strategies spelled doom for TF2T, they themselves did not do well in the end \cite[p.47]{axelrod1984evolution}.
 
+\section{Evolution and collective stability}
 To further study the robustness of TIT FOR TAT, Axelrod turned to the approach of evolutionary or ecological stability developed by John Maynard Smith in which the average payoff that a strategy receives in a given population determines its reproductive fitness. Each generation of strategies plays a round-robin discounted IPD tournament similar to the second tournament described above, and relative frequency of strategies in the next generation is determined by relative frequencies and average payoffs in the current generation. The chronology of this ecological computational experiment is interesting. In the early generations strategies that are too nice are exploited by meaner strategies, which leads to proliferation of mean strategies and near extinction of too forgiving ones. The mean strategies are usually not very good at playing against other mean strategies, and as their numbers increase while the prey becomes sparse, their fitness suffers, and they eventually lose prominence. TFT, which receives the payoff of $R = 3$ against itself and other nice strategies, and which does not allow exploitation by mean strategies, once again proved to be very robust in this ecological setting and came out on top in every simulation \cite[p.53]{axelrod1984evolution}.
 
 The idea that to remain ecologically or evolutionarily fit a strategy needs to perform well against opponents, but also against itself was first formalized by John Maynard Smith in his 1973 paper ``The Logic of Animal Conflict'' \cite{MaynardSmith1973}. He defined a strategy $J$ to be an \textit{evolutionarily stable strategy (ESS)} if a large population employing $J$ could not be invaded by a mutant playing some other strategy $I$, or more precisely if $W(I, J)$ is the payoff to $I$ in a contest with $J$, and $W(J, J)$ is the payoff to $J$ playing against itself, then
@@ -254,7 +256,7 @@ combined with~\ref{eq:charactthm2} this yields $W(I', J) > W(J, J)$, so $I'$ inv
 \end{proof}
 
 
-\subsubsection{Clustering and emergence of cooperation}
+\section{Clustering and emergence of cooperation}
 Axelrod's tournaments and Maynard Smith's ideas of evolutionary stability have given a rather positive answer on rationality of cooperation among self-interested individuals, but it seems at odds with the stability of $AllD$. If we can assume that at some point cooperation did not exist, then the stability of $AllD$ implies that cooperation would never emerge from individual mutations, since cooperating individuals would not be able to invade a population of defectors.
 
 This pessimistic prediction changes if we allow cooperators to arrive in groups to the population of defectors. Such clusters are likely to develop among close kin or individuals occupying the same or neighboring territories. Richard Dawkins, in his best seller \textit{The Selfish Gene} \cite{dawkins2006selfish}, describes how such kin-based cooperation or altruism can be modeled and understood if we focus not on survival and procreation of individuals in a population, but of units of genetic information.
@@ -268,7 +270,7 @@ We can now calculate the size of the cluster necessary for TIT FOR TAT to invade
 Invasion in clusters provides a believable mechanism for cooperation to take hold in a population, and prompts two natural questions. Are there strategies that are most efficient in invading populations of defectors in a sense of requiring the smallest $p$-cluster to gain a foothold, and would clustering also help mean strategies to invade populations of nice strategies. Axelrod provided the encouraging answers to both. He called a strategy \textit{maximally discriminating} if it will eventually cooperate even if the other has never cooperated yet, and once it cooperates will never cooperate again with $AllD$ but will always cooperate with another player using the same strategy as it uses, and proved that the strategies which can invade $AllD$ in a cluster with the smallest value of $p$ are those which are maximally discriminating, such as TIT FOR TAT~\cite[Theorem 7]{RobertAxelrod_1981}. He also found that if a nice strategy can resist invasion by a single individual playing an alternate strategy, then it cannot be invaded by any cluster of individuals playing the same strategy~\cite[Theorem 8]{RobertAxelrod_1981}.
 
 
-\subsubsection{More on ESS, collective stability, and Nash equilibrium}
+\section{More on ESS, collective stability, and Nash equilibrium}
 So far this paper described several solution concepts all based on the idea that in an equilibrium it does not pay to unilaterally change behavior: Nash equilibrium, ESS, and collective stability. We denote the set of strategies that are in Nash equilibrium with themselves, also called a \textit{symmetric Nash equilibrium,} $\Delta^{NE}$, the set of ESS strategies $\Delta^{ESS}$, and the set of collectively stable strategies $\Delta^{CS}$. It follows immediately from definitions that $\Delta^{NE} = \Delta^{CS}$. The relationship between $\Delta^{ESS}$ and $\Delta^{CS}$ is more interesting. Our definition of ESS (Equation~\ref{eq:ESS}) is equivalent to
 \[
 \Delta^{ESS} = \{I \in \Delta^{NE} : W(J, J) < W(I, J) \enspace \forall J \in \beta^*(I),\enspace J\neq I \}
@@ -291,7 +293,7 @@ or $w > (T-R) / (T-P)$. Next, let $M$ be a strategy which behaves exactly like $
 
 Boyd and Lorberbaum note that this theorem agrees with Axelrod's insight that no strategy is strictly a best strategy regardless of the remaining population. They are careful to not imply that their theorem disproves the robustness of nice, provokable and forgiving strategies, but instead shows the existence of scenarios where such strategies, robust as they are, can still be invaded and displaced. They present the following scenario in which TIT FOR TAT is invaded by a combination of the more forgiving TIT FOR TWO TATS (TF2T), and SUSPICIOUS TIT FOR TAT (STFT) which defects on the first interaction and then plays TIT FOR TAT for the remainder of the game. In their example STFT is assumed to be maintained in the population by one-way mutation or phenotypic variation. Because $W(TF2T, TFT) = W(TFT, TFT)$ and since the forgiving $TF2T$ can induce $STFT$ to cooperate, while $TFT$ and $STFT$ end up locked in a string of alternating defections, $W(TF2T, STFT) > W(TFT, STFT)$ when $w$ is large enough, so TF2T can invade a predominantly TFT population if it also contains some STFT individuals.
 
-\subsubsection {Win-Stay, Lose-Shift}
+\section {Win-Stay, Lose-Shift}
 One of the main features that makes TFT so attractive for studying emergence of cooperation is its simplicity. It does not take a great leap of faith to imagine reciprocity-based behaviors emerge in human society or the animal kingdom. TFT does not require a long memory or sophisticated optimization calculations, it does not require that the individuals are from the same tribe or species, and that the payoffs are equal or even measured in the same units for the players involved. Whether or not it precisely described the real evolution of cooperation (which it probably did not) is not relevant. Its success lies in giving a simple and constructive proof that a simple system that starts as a population of defectors can develop into a cooperating system. But how unique is TFT in those regards?
 
 In 1993 Martin Nowak and Karl Sigmund published a paper in Nature \cite{Nowak1993} that proposed that another simple and realistic rule called WIN-STAY, LOSE-SHIFT (WSLS) could outperform TIT FOR TAT. Dubbed PAVLOV for its reflex-like response to the payoffs, the rule repeats its previous move if it was rewarded by $R$ or $T$ points, but changes from $C$ to $D$ or from $D$ to $C$ if it was punished by receiving only $S$ or $P$. The discovery of WSLS's dominance was accidental. Nowak and Sigmund were studying the performance of various memory-one strategies (strategies that only use the previous move in determining their next move) in populations where errors were possible, that is there was a nonzero probability that TFT would mistakenly cooperate in response to a defection or vice versa as if due to to unsteadiness of players' trembling hands. If we restrict our attention to memory one strategies, iterated prisoner's dilemma can be thought of as a Markov chain with states $\{CC, CD, DC, DD\}$, then a strategy can be described as a probability of that the player plays $C$ given that the game is in any of the above states $\mathbf{p} = (p_1, p_2, p_3, p_4)$. Thus TFT is described by $\mathbf{p}^{TFT} = (1, 0, 1, 0)$, and WSLS corresponds to $\mathbf{p}^{WSLS} = (1, 0, 0, 1)$. GENEROUS TIT FOR TAT (GTFT) with $\mathbf{p}^{GTFT} = (1, \gamma, 1, \gamma)$ is a variant of TFT that cooperates with some probability $\gamma$ after the opponent's defection (often $\gamma = .3$). Possibility of mistakes can be modeled by changing all unit probabilities in these representations to $1-\epsilon$ and all null probabilities to $\epsilon$, where $\epsilon$ is the probability of error.
@@ -313,6 +315,8 @@ It is interesting that the strategies that do best in these tournaments are some
 
 
 \chapter{Manipulation}
+
+\section{Markov steady state and zero determinants}
 
 Much of the innovation in the history of IPD came from various refinements of the Nash equilibrium. Reframing the equilibrium in terms of ecology led to Axelrod's idea of collective stability and his analysis of the success of TIT FOR TAT. An evolutionary refinement of by Maynard Smith allowed the introduction of mutations and a stability robust to them. It exposed a weakness of TFT---it could be invaded by a pair of strategies. To account for possibility of error or miscommunication, Richard Selten \cite{Selten_1975} proposed the trembling hand perfect equilibrium, and simulations showed that a simple strategy WSLS performed well in this error-prone environment. Not all successful strategies have the simple elegance of TFT and WSLS, however. In 2010 Iliopoulos, Hintze, and Adami showed that stability of strategies depended on the mutation rate, and analyzed a strategy they called GENERAL COOPERATOR (GC) with $\mathbf{q}_{\textrm{GC}} = (0.935, 0.229, 0.266, 0.42)$, which was the evolutionary fixed point at a low rate of mutation \cite{iliopoulos_2010}.
 
@@ -378,7 +382,7 @@ p_2 = \frac{(1+p_4)(R-S) - p_1(P-S)}{R-P} \geq 1
 except for the limiting case $\mathbf{p} = (1, 1, 0, 0)$.
 
 
-The second type of ZD strategies described by Press and Dyson is even more devilish. It allows X to demand and get an extortionate share of the payoff surplus over the mutual defection value $P$ by setting
+The second type of ZD strategies described by Press and Dyson is more devilish. It allows X to demand and get an extortionate share of the payoff surplus over the mutual defection value $P$ by setting
 \[
 \tilde{\mathbf{p}} = \phi [(\mathbf{S}_X - P\mathbf{1}) - \chi (\mathbf{S}_Y - P \mathbf{1})]
 \]
@@ -409,7 +413,7 @@ The second ancillary result dispels doubts that may arise about the steady state
 \]
 to be established, and one may wonder if there is any way the non-ZD player can prevent that relationship by changing its play inside the Markov equilibration time scale. Press and Dyson answer that question negatively, thus showing that in a one-on-one play the non-ZD player cannot benefit from having longer memory or by keeping the game away from the Markov stationary distribution. Thus they set the course for the future research to be focused on memory-one strategies, which significantly simplifies the space of strategies and the search for its structure.
 
-\subsubsection{What can ZDs do?}
+\section{What can ZDs do?}
 
 Since ZD strategies may take hundreds of turns for the average payoffs to settle near their expected steady state values, they may not be particularly useful in modeling short-run scenarios like international relations or duopoly output scenarios where players are not only interested in long-run average scores, but also in maintaining a high current score. In these situations there may be a high probability of future interaction, but interactions may be not frequent enough for long-term averages to sufficiently influence the players' decisions. It is easier to imagine ZD-like these behaviors arise in evolutionary or ecologic systems where numbers of interactions over thousands of generations may be much higher and the laws of large numbers take effect. One needs not assume that players in evolutionary systems are aware of ZD strategies and are capable of consciously calculating the probabilities $(p_1, p_2, p_3, p_4)$ if ZD strategy could evolve as a result of natural selection. The possibility of evolutionary dynamics giving birth to ZD strategies and their stability once they are introduced to a population is the subject of a number of research papers published shortly after Press and Dyson made their discovery. The remainder of this paper presents some of these results.
 

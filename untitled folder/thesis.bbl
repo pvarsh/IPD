@@ -4,17 +4,17 @@
 Christoph Adami and Arend Hintze.
 \newblock Evolutionary instability of zero-determinant strategies demonstrates
   that winning is not everything.
-\newblock {\em Nature Communications}, pages~--, 2014.
-
-\bibitem{axelrod1984evolution}
-R.~Axelrod.
-\newblock {\em The evolution of cooperation}.
-\newblock Political Science / Science. Basic Books, 1984.
+\newblock {\em Nature Communications}, 2014.
 
 \bibitem{RobertAxelrod_1981}
 Robert Axelrod.
 \newblock The emergence of cooperation among egoists.
 \newblock {\em The American Political Science Review}, 1981.
+
+\bibitem{axelrod1984evolution}
+Robert Axelrod.
+\newblock {\em The evolution of cooperation}.
+\newblock Political Science / Science. Basic Books, 1984.
 
 \bibitem{Boyd_Lorberbaum_1987}
 Robert Boyd and Jeffrey~P. Lorberbaum.
@@ -23,13 +23,13 @@ Robert Boyd and Jeffrey~P. Lorberbaum.
 \newblock {\em Nature}, 327(6117):58--59, May 1987.
 
 \bibitem{Bshary_2002}
-R.~Bshary.
+Redouan Bshary.
 \newblock Building up relationships in asymmetric co-operation games between
   the cleaner wrasse labroides dimidiatus and client reef fish.
 \newblock {\em Behavioral Ecology and Sociobiology}, 52(5):365--371, 2002.
 
 \bibitem{dawkins2006selfish}
-R.~Dawkins.
+Richard Dawkins.
 \newblock {\em The Selfish Gene: 30th Anniversary Edition}.
 \newblock ISSR library. OUP Oxford, 2006.
 
@@ -50,7 +50,7 @@ J.~{Maynard Smith} and G.~R. Price.
 \newblock {\em Nature}, 246(5427):15--18, 1973.
 
 \bibitem{Nash1951}
-J.F. Nash.
+John~Forbes Nash.
 \newblock Non-cooperative games.
 \newblock {\em Annals of Mathematics}, 54(2):286--295, 1951.
 
@@ -61,7 +61,7 @@ Martin Nowak and Karl Sigmund.
 \newblock {\em Nature}, 364(6432):56--58, 1993.
 
 \bibitem{Selten_1975}
-R.~Selten.
+Reinhard Selten.
 \newblock Reexamination of the perfectness concept for equilibrium points in
   extensive games.
 \newblock {\em International Journal of Game Theory}, 4(1):25--55, 1975.
@@ -81,6 +81,6 @@ Alexander~J. Stewart and Joshua~B. Plotkin.
 \bibitem{Wilkinson_1984}
 Gerald~S. Wilkinson.
 \newblock Reciprocal food sharing in the vampire bat.
-\newblock {\em Nature}, (5955):181?184, 1984.
+\newblock {\em Nature}, (5955):181--184, 1984.
 
 \end{thebibliography}

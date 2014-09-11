@@ -1,0 +1,10 @@
+\contentsline {chapter}{\numberline {1}Introduction}{3}
+\contentsline {chapter}{\numberline {2}Cooperation}{6}
+\contentsline {section}{\numberline {2.1}Tournaments}{6}
+\contentsline {section}{\numberline {2.2}Evolution and collective stability}{8}
+\contentsline {section}{\numberline {2.3}Clustering and emergence of cooperation}{10}
+\contentsline {section}{\numberline {2.4}More on ESS, collective stability, and Nash equilibrium}{11}
+\contentsline {section}{\numberline {2.5}Win-Stay, Lose-Shift}{13}
+\contentsline {chapter}{\numberline {3}Manipulation}{15}
+\contentsline {section}{\numberline {3.1}Markov steady state and zero determinants}{15}
+\contentsline {section}{\numberline {3.2}What can ZDs do?}{18}
